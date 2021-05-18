@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['architecture_5fid_669',['ARCHITECTURE_ID',['../_c_make_c_x_x_compiler_id_8cpp.html#aba35d0d200deaeb06aee95ca297acb28',1,'CMakeCXXCompilerId.cpp']]]
+  ['win32_5flean_5fand_5fmean_649',['WIN32_LEAN_AND_MEAN',['../framework_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'framework.h']]]
 ];
