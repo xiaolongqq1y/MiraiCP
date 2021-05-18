@@ -1,4 +1,14 @@
 <map id="LowLevelAPI::uploadImg0" name="LowLevelAPI::uploadImg0">
-<area shape="rect" id="node1" title="上传图片" alt="" coords="5,13,175,39"/>
-<area shape="rect" id="node2" href="$class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835" title=" " alt="" coords="223,5,381,47"/>
+<area shape="rect" id="node1" title="上传图片" alt="" coords="5,107,175,133"/>
+<area shape="rect" id="node2" href="$class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="243,56,361,83"/>
+<area shape="rect" id="node5" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="844,56,963,83"/>
+<area shape="rect" id="node6" href="$class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835" title=" " alt="" coords="223,205,381,246"/>
+<area shape="rect" id="node3" href="$class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="443,56,560,83"/>
+<area shape="rect" id="node4" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="662,5,755,32"/>
+<area shape="rect" id="node7" href="$class_contact.html#a6739337b623df49bc51e2fc997bfd6e8" title=" " alt="" coords="429,236,573,263"/>
+<area shape="rect" id="node8" href="$class_contact.html#a869c10fc8e1abeedc10d805576b1450a" title="所属bot" alt="" coords="657,157,760,184"/>
+<area shape="rect" id="node9" href="$class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4" title="当type为3的时候存在，否则为0，可以看作补充id" alt="" coords="650,208,767,235"/>
+<area shape="rect" id="node10" href="$class_contact.html#a220e55b907d54958cd2afb95e65da5a1" title="id在全部情况存在" alt="" coords="666,259,751,285"/>
+<area shape="rect" id="node11" href="$class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066" title="群名称，群成员群名片，或好友昵称" alt="" coords="621,309,796,336"/>
+<area shape="rect" id="node12" href="$class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1" title="当前对象类型" alt="" coords="659,360,759,387"/>
 </map>

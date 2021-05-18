@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,6 +35,21 @@
    </div>
    <div id="projectbrief">MiraiCP API文档</div>
   </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -41,16 +61,6 @@
 var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -85,6 +95,7 @@ $(document).ready(function(){initNavTree('class_mirai_code.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="class_mirai_code-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">MiraiCode类 参考</div>  </div>
@@ -98,53 +109,601 @@ $(document).ready(function(){initNavTree('class_mirai_code.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a05f947c86d38440157efc9ce849cca20"><td class="memItemLeft" align="right" valign="top"><a id="a05f947c86d38440157efc9ce849cca20"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a05f947c86d38440157efc9ce849cca20">toString</a> ()</td></tr>
-<tr class="memdesc:a05f947c86d38440157efc9ce849cca20"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出当前内容 <br /></td></tr>
+<tr class="memitem:a05f947c86d38440157efc9ce849cca20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a05f947c86d38440157efc9ce849cca20">toString</a> ()</td></tr>
+<tr class="memdesc:a05f947c86d38440157efc9ce849cca20"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出当前内容  <a href="class_mirai_code.html#a05f947c86d38440157efc9ce849cca20">更多...</a><br /></td></tr>
 <tr class="separator:a05f947c86d38440157efc9ce849cca20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9279ff512d981c04de4117c8b7737818"><td class="memItemLeft" align="right" valign="top"><a id="a9279ff512d981c04de4117c8b7737818"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a9279ff512d981c04de4117c8b7737818">toMiraiCode</a> ()</td></tr>
-<tr class="memdesc:a9279ff512d981c04de4117c8b7737818"><td class="mdescLeft">&#160;</td><td class="mdescRight">和toString作用一样 <br /></td></tr>
+<tr class="memitem:a9279ff512d981c04de4117c8b7737818"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a9279ff512d981c04de4117c8b7737818">toMiraiCode</a> ()</td></tr>
+<tr class="memdesc:a9279ff512d981c04de4117c8b7737818"><td class="mdescLeft">&#160;</td><td class="mdescRight">和toString作用一样  <a href="class_mirai_code.html#a9279ff512d981c04de4117c8b7737818">更多...</a><br /></td></tr>
 <tr class="separator:a9279ff512d981c04de4117c8b7737818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a0bc66a6fa10cda5b195047e2496a7"><td class="memItemLeft" align="right" valign="top"><a id="a03a0bc66a6fa10cda5b195047e2496a7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">MiraiCode</a> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *a)</td></tr>
-<tr class="memdesc:a03a0bc66a6fa10cda5b195047e2496a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">从MiraiCodeable类型初始化一个miraicode字符串 <br /></td></tr>
+<tr class="memitem:a03a0bc66a6fa10cda5b195047e2496a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">MiraiCode</a> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *a)</td></tr>
+<tr class="memdesc:a03a0bc66a6fa10cda5b195047e2496a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">从MiraiCodeable类型初始化一个miraicode字符串  <a href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">更多...</a><br /></td></tr>
 <tr class="separator:a03a0bc66a6fa10cda5b195047e2496a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1947977cd8641057d61a7094263809a1"><td class="memItemLeft" align="right" valign="top"><a id="a1947977cd8641057d61a7094263809a1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a1947977cd8641057d61a7094263809a1">MiraiCode</a> (std::string a)</td></tr>
-<tr class="memdesc:a1947977cd8641057d61a7094263809a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">从文本初始化一个miraicode字符串 <br /></td></tr>
+<tr class="memitem:a1947977cd8641057d61a7094263809a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a1947977cd8641057d61a7094263809a1">MiraiCode</a> (<a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> a)</td></tr>
+<tr class="memdesc:a1947977cd8641057d61a7094263809a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">从文本初始化一个miraicode字符串  <a href="class_mirai_code.html#a1947977cd8641057d61a7094263809a1">更多...</a><br /></td></tr>
 <tr class="separator:a1947977cd8641057d61a7094263809a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af50c8e268885cb5a30639cdfd93ab69a"><td class="memItemLeft" align="right" valign="top"><a id="af50c8e268885cb5a30639cdfd93ab69a"></a>
-<a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *a)</td></tr>
+<tr class="memitem:af50c8e268885cb5a30639cdfd93ab69a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#af50c8e268885cb5a30639cdfd93ab69a">operator+</a> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *a)</td></tr>
 <tr class="separator:af50c8e268885cb5a30639cdfd93ab69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad46c00f666302f374a93226b5c45f95d"><td class="memItemLeft" align="right" valign="top"><a id="ad46c00f666302f374a93226b5c45f95d"></a>
-<a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (std::string a)</td></tr>
+<tr class="memitem:ad46c00f666302f374a93226b5c45f95d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#ad46c00f666302f374a93226b5c45f95d">operator+</a> (<a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> a)</td></tr>
 <tr class="separator:ad46c00f666302f374a93226b5c45f95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad855466d9041e36a3e74c20050de286f"><td class="memItemLeft" align="right" valign="top"><a id="ad855466d9041e36a3e74c20050de286f"></a>
-<a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *a)</td></tr>
+<tr class="memitem:ad855466d9041e36a3e74c20050de286f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#ad855466d9041e36a3e74c20050de286f">operator+=</a> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *a)</td></tr>
 <tr class="separator:ad855466d9041e36a3e74c20050de286f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88eae07053c7a244439ac2dc0bede763"><td class="memItemLeft" align="right" valign="top"><a id="a88eae07053c7a244439ac2dc0bede763"></a>
-<a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (std::string a)</td></tr>
+<tr class="memitem:a88eae07053c7a244439ac2dc0bede763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a88eae07053c7a244439ac2dc0bede763">operator+=</a> (<a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> a)</td></tr>
 <tr class="separator:a88eae07053c7a244439ac2dc0bede763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0f3c44dd9a20a6551e5b8eb5eff4cf3"><td class="memItemLeft" align="right" valign="top"><a id="ae0f3c44dd9a20a6551e5b8eb5eff4cf3"></a>
-<a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *a)</td></tr>
+<tr class="memitem:ae0f3c44dd9a20a6551e5b8eb5eff4cf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#ae0f3c44dd9a20a6551e5b8eb5eff4cf3">operator=</a> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *a)</td></tr>
 <tr class="separator:ae0f3c44dd9a20a6551e5b8eb5eff4cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae808b01b772ac73243fdff4fcb3e5846"><td class="memItemLeft" align="right" valign="top"><a id="ae808b01b772ac73243fdff4fcb3e5846"></a>
-<a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (std::string a)</td></tr>
+<tr class="memitem:ae808b01b772ac73243fdff4fcb3e5846"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#ae808b01b772ac73243fdff4fcb3e5846">operator=</a> (<a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> a)</td></tr>
 <tr class="separator:ae808b01b772ac73243fdff4fcb3e5846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75d55984b6eec06704f76f726eeead1d"><td class="memItemLeft" align="right" valign="top"><a id="a75d55984b6eec06704f76f726eeead1d"></a>
-<a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>plus</b> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *a)</td></tr>
+<tr class="memitem:a75d55984b6eec06704f76f726eeead1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a75d55984b6eec06704f76f726eeead1d">plus</a> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *a)</td></tr>
 <tr class="separator:a75d55984b6eec06704f76f726eeead1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51f4267d8b3a56b9e0189047320ceeab"><td class="memItemLeft" align="right" valign="top"><a id="a51f4267d8b3a56b9e0189047320ceeab"></a>
-<a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>plus</b> (std::string a)</td></tr>
+<tr class="memitem:a51f4267d8b3a56b9e0189047320ceeab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a51f4267d8b3a56b9e0189047320ceeab">plus</a> (<a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> a)</td></tr>
 <tr class="separator:a51f4267d8b3a56b9e0189047320ceeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a16df99f020555ec57582a259fc0bca47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mirai_code.html#a16df99f020555ec57582a259fc0bca47">content</a> = &quot;&quot;</td></tr>
+<tr class="separator:a16df99f020555ec57582a259fc0bca47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>miraicode字符串 </p>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#_a67">D:/Git/mirai/MiraiCP/cpp/tools.h</a>.</dd>
-</dl>
-</div><hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Git/mirai/MiraiCP/cpp/<a class="el" href="tools_8h_source.html">tools.h</a></li>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00551">551</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a03a0bc66a6fa10cda5b195047e2496a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a0bc66a6fa10cda5b195047e2496a7">&#9670;&nbsp;</a></span>MiraiCode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MiraiCode::MiraiCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从MiraiCodeable类型初始化一个miraicode字符串 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00566">566</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                                {</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <a class="code" href="class_mirai_code.html#a16df99f020555ec57582a259fc0bca47">content</a> = a-&gt;<a class="code" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044">toMiraiCode</a>();</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    }</div>
+<div class="ttc" id="aclass_mirai_code_html_a16df99f020555ec57582a259fc0bca47"><div class="ttname"><a href="class_mirai_code.html#a16df99f020555ec57582a259fc0bca47">MiraiCode::content</a></div><div class="ttdeci">std::string content</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00553">tools.h:553</a></div></div>
+<div class="ttc" id="aclass_mirai_codeable_html_a5067f9067fd47eb8413c28881084d044"><div class="ttname"><a href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044">MiraiCodeable::toMiraiCode</a></div><div class="ttdeci">virtual std::string toMiraiCode()=0</div></div>
+</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_a03a0bc66a6fa10cda5b195047e2496a7_cgraph.png" border="0" usemap="#aclass_mirai_code_a03a0bc66a6fa10cda5b195047e2496a7_cgraph" alt=""/></div>
+<map name="aclass_mirai_code_a03a0bc66a6fa10cda5b195047e2496a7_cgraph" id="aclass_mirai_code_a03a0bc66a6fa10cda5b195047e2496a7_cgraph">
+<area shape="rect" title="从MiraiCodeable类型初始化一个miraicode字符串" alt="" coords="5,5,152,32"/>
+<area shape="rect" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="200,5,381,32"/>
+</map>
+</div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_a03a0bc66a6fa10cda5b195047e2496a7_icgraph.png" border="0" usemap="#aclass_mirai_code_a03a0bc66a6fa10cda5b195047e2496a7_icgraph" alt=""/></div>
+<map name="aclass_mirai_code_a03a0bc66a6fa10cda5b195047e2496a7_icgraph" id="aclass_mirai_code_a03a0bc66a6fa10cda5b195047e2496a7_icgraph">
+<area shape="rect" title="从MiraiCodeable类型初始化一个miraicode字符串" alt="" coords="204,81,351,108"/>
+<area shape="rect" href="class_mirai_code.html#af50c8e268885cb5a30639cdfd93ab69a" title=" " alt="" coords="9,5,152,32"/>
+<area shape="rect" href="class_mirai_code.html#ad855466d9041e36a3e74c20050de286f" title=" " alt="" coords="5,56,156,83"/>
+<area shape="rect" href="class_mirai_code.html#ae0f3c44dd9a20a6551e5b8eb5eff4cf3" title=" " alt="" coords="9,107,152,133"/>
+<area shape="rect" href="class_mirai_code.html#a75d55984b6eec06704f76f726eeead1d" title=" " alt="" coords="25,157,137,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1947977cd8641057d61a7094263809a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1947977cd8641057d61a7094263809a1">&#9670;&nbsp;</a></span>MiraiCode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MiraiCode::MiraiCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从文本初始化一个miraicode字符串 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00571">571</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;                           {</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <a class="code" href="class_mirai_code.html#a16df99f020555ec57582a259fc0bca47">content</a> = a;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="af50c8e268885cb5a30639cdfd93ab69a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af50c8e268885cb5a30639cdfd93ab69a">&#9670;&nbsp;</a></span>operator+() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mirai_code.html">MiraiCode</a> MiraiCode::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00575">575</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                                          {</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">MiraiCode</a>(<a class="code" href="class_mirai_code.html#a16df99f020555ec57582a259fc0bca47">content</a> + a-&gt;<a class="code" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044">toMiraiCode</a>());</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    }</div>
+<div class="ttc" id="aclass_mirai_code_html_a03a0bc66a6fa10cda5b195047e2496a7"><div class="ttname"><a href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">MiraiCode::MiraiCode</a></div><div class="ttdeci">MiraiCode(MiraiCodeable *a)</div><div class="ttdoc">从MiraiCodeable类型初始化一个miraicode字符串</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00566">tools.h:566</a></div></div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_af50c8e268885cb5a30639cdfd93ab69a_cgraph.png" border="0" usemap="#aclass_mirai_code_af50c8e268885cb5a30639cdfd93ab69a_cgraph" alt=""/></div>
+<map name="aclass_mirai_code_af50c8e268885cb5a30639cdfd93ab69a_cgraph" id="aclass_mirai_code_af50c8e268885cb5a30639cdfd93ab69a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,148,57"/>
+<area shape="rect" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7" title="从MiraiCodeable类型初始化一个miraicode字符串" alt="" coords="196,5,343,32"/>
+<area shape="rect" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="391,31,572,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad46c00f666302f374a93226b5c45f95d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad46c00f666302f374a93226b5c45f95d">&#9670;&nbsp;</a></span>operator+() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mirai_code.html">MiraiCode</a> MiraiCode::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00579">579</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;                                     {</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">MiraiCode</a>(<a class="code" href="class_mirai_code.html#a16df99f020555ec57582a259fc0bca47">content</a> + a);</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    }</div>
+</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_ad46c00f666302f374a93226b5c45f95d_cgraph.png" border="0" usemap="#aclass_mirai_code_ad46c00f666302f374a93226b5c45f95d_cgraph" alt=""/></div>
+<map name="aclass_mirai_code_ad46c00f666302f374a93226b5c45f95d_cgraph" id="aclass_mirai_code_ad46c00f666302f374a93226b5c45f95d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7" title="从MiraiCodeable类型初始化一个miraicode字符串" alt="" coords="196,5,343,32"/>
+<area shape="rect" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="391,5,572,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad855466d9041e36a3e74c20050de286f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad855466d9041e36a3e74c20050de286f">&#9670;&nbsp;</a></span>operator+=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mirai_code.html">MiraiCode</a> MiraiCode::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00583">583</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;                                           {</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">MiraiCode</a>(this-&gt;<a class="code" href="class_mirai_code.html#a16df99f020555ec57582a259fc0bca47">content</a> + a-&gt;<a class="code" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044">toMiraiCode</a>());</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    }</div>
+</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_ad855466d9041e36a3e74c20050de286f_cgraph.png" border="0" usemap="#aclass_mirai_code_ad855466d9041e36a3e74c20050de286f_cgraph" alt=""/></div>
+<map name="aclass_mirai_code_ad855466d9041e36a3e74c20050de286f_cgraph" id="aclass_mirai_code_ad855466d9041e36a3e74c20050de286f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,156,57"/>
+<area shape="rect" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7" title="从MiraiCodeable类型初始化一个miraicode字符串" alt="" coords="204,5,351,32"/>
+<area shape="rect" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="399,31,580,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a88eae07053c7a244439ac2dc0bede763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88eae07053c7a244439ac2dc0bede763">&#9670;&nbsp;</a></span>operator+=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mirai_code.html">MiraiCode</a> MiraiCode::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00587">587</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;                                      {</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">MiraiCode</a>(this-&gt;<a class="code" href="class_mirai_code.html#a16df99f020555ec57582a259fc0bca47">content</a> + a);</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    }</div>
+</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_a88eae07053c7a244439ac2dc0bede763_cgraph.png" border="0" usemap="#aclass_mirai_code_a88eae07053c7a244439ac2dc0bede763_cgraph" alt=""/></div>
+<map name="aclass_mirai_code_a88eae07053c7a244439ac2dc0bede763_cgraph" id="aclass_mirai_code_a88eae07053c7a244439ac2dc0bede763_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7" title="从MiraiCodeable类型初始化一个miraicode字符串" alt="" coords="204,5,351,32"/>
+<area shape="rect" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="399,5,580,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0f3c44dd9a20a6551e5b8eb5eff4cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f3c44dd9a20a6551e5b8eb5eff4cf3">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mirai_code.html">MiraiCode</a> MiraiCode::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00591">591</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;                                          {</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">MiraiCode</a>(a-&gt;<a class="code" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044">toMiraiCode</a>());</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    }</div>
+</div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_ae0f3c44dd9a20a6551e5b8eb5eff4cf3_cgraph.png" border="0" usemap="#aclass_mirai_code_ae0f3c44dd9a20a6551e5b8eb5eff4cf3_cgraph" alt=""/></div>
+<map name="aclass_mirai_code_ae0f3c44dd9a20a6551e5b8eb5eff4cf3_cgraph" id="aclass_mirai_code_ae0f3c44dd9a20a6551e5b8eb5eff4cf3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,148,57"/>
+<area shape="rect" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7" title="从MiraiCodeable类型初始化一个miraicode字符串" alt="" coords="196,5,343,32"/>
+<area shape="rect" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="391,31,572,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae808b01b772ac73243fdff4fcb3e5846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae808b01b772ac73243fdff4fcb3e5846">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mirai_code.html">MiraiCode</a> MiraiCode::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00595">595</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                                     {</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">MiraiCode</a>(a);</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    }</div>
+</div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_ae808b01b772ac73243fdff4fcb3e5846_cgraph.png" border="0" usemap="#aclass_mirai_code_ae808b01b772ac73243fdff4fcb3e5846_cgraph" alt=""/></div>
+<map name="aclass_mirai_code_ae808b01b772ac73243fdff4fcb3e5846_cgraph" id="aclass_mirai_code_ae808b01b772ac73243fdff4fcb3e5846_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7" title="从MiraiCodeable类型初始化一个miraicode字符串" alt="" coords="196,5,343,32"/>
+<area shape="rect" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="391,5,572,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a75d55984b6eec06704f76f726eeead1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d55984b6eec06704f76f726eeead1d">&#9670;&nbsp;</a></span>plus() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mirai_code.html">MiraiCode</a> MiraiCode::plus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00599">599</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                                     {</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">MiraiCode</a>(<a class="code" href="class_mirai_code.html#a16df99f020555ec57582a259fc0bca47">content</a> + a-&gt;<a class="code" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044">toMiraiCode</a>());</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    }</div>
+</div><!-- fragment --><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_a75d55984b6eec06704f76f726eeead1d_cgraph.png" border="0" usemap="#aclass_mirai_code_a75d55984b6eec06704f76f726eeead1d_cgraph" alt=""/></div>
+<map name="aclass_mirai_code_a75d55984b6eec06704f76f726eeead1d_cgraph" id="aclass_mirai_code_a75d55984b6eec06704f76f726eeead1d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,117,57"/>
+<area shape="rect" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7" title="从MiraiCodeable类型初始化一个miraicode字符串" alt="" coords="165,5,312,32"/>
+<area shape="rect" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="360,31,541,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a51f4267d8b3a56b9e0189047320ceeab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51f4267d8b3a56b9e0189047320ceeab">&#9670;&nbsp;</a></span>plus() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mirai_code.html">MiraiCode</a> MiraiCode::plus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00603">603</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                                {</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7">MiraiCode</a>(<a class="code" href="class_mirai_code.html#a16df99f020555ec57582a259fc0bca47">content</a> + a);</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    }</div>
+</div><!-- fragment --><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_a51f4267d8b3a56b9e0189047320ceeab_cgraph.png" border="0" usemap="#aclass_mirai_code_a51f4267d8b3a56b9e0189047320ceeab_cgraph" alt=""/></div>
+<map name="aclass_mirai_code_a51f4267d8b3a56b9e0189047320ceeab_cgraph" id="aclass_mirai_code_a51f4267d8b3a56b9e0189047320ceeab_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,117,32"/>
+<area shape="rect" href="class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7" title="从MiraiCodeable类型初始化一个miraicode字符串" alt="" coords="165,5,312,32"/>
+<area shape="rect" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="360,5,541,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9279ff512d981c04de4117c8b7737818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9279ff512d981c04de4117c8b7737818">&#9670;&nbsp;</a></span>toMiraiCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> MiraiCode::toMiraiCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>和toString作用一样 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00561">561</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;                            {</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_mirai_code.html#a05f947c86d38440157efc9ce849cca20">toString</a>();</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    }</div>
+<div class="ttc" id="aclass_mirai_code_html_a05f947c86d38440157efc9ce849cca20"><div class="ttname"><a href="class_mirai_code.html#a05f947c86d38440157efc9ce849cca20">MiraiCode::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">输出当前内容</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00556">tools.h:556</a></div></div>
+</div><!-- fragment --><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_a9279ff512d981c04de4117c8b7737818_cgraph.png" border="0" usemap="#aclass_mirai_code_a9279ff512d981c04de4117c8b7737818_cgraph" alt=""/></div>
+<map name="aclass_mirai_code_a9279ff512d981c04de4117c8b7737818_cgraph" id="aclass_mirai_code_a9279ff512d981c04de4117c8b7737818_cgraph">
+<area shape="rect" title="和toString作用一样" alt="" coords="5,5,163,32"/>
+<area shape="rect" href="class_mirai_code.html#a05f947c86d38440157efc9ce849cca20" title="输出当前内容" alt="" coords="211,5,344,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a05f947c86d38440157efc9ce849cca20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f947c86d38440157efc9ce849cca20">&#9670;&nbsp;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> MiraiCode::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>输出当前内容 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00556">556</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;                         {</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_mirai_code.html#a16df99f020555ec57582a259fc0bca47">content</a>;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    }</div>
+</div><!-- fragment --><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_mirai_code_a05f947c86d38440157efc9ce849cca20_icgraph.png" border="0" usemap="#aclass_mirai_code_a05f947c86d38440157efc9ce849cca20_icgraph" alt=""/></div>
+<map name="aclass_mirai_code_a05f947c86d38440157efc9ce849cca20_icgraph" id="aclass_mirai_code_a05f947c86d38440157efc9ce849cca20_icgraph">
+<area shape="rect" title="输出当前内容" alt="" coords="219,81,352,108"/>
+<area shape="rect" href="class_friend.html#aa09d60a4befb6901d1f4ee2c1a3e43bf" title="发送miraicode" alt="" coords="11,5,165,32"/>
+<area shape="rect" href="class_member.html#a2a614ae3a22349a9a957549385c4b785" title="发送miraicode" alt="" coords="5,56,171,83"/>
+<area shape="rect" href="class_group.html#ad45e5571cccf2e7e4ad0476bae120a19" title="发送MiraiCode信息" alt="" coords="11,107,165,133"/>
+<area shape="rect" href="class_mirai_code.html#a9279ff512d981c04de4117c8b7737818" title="和toString作用一样" alt="" coords="9,157,167,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a16df99f020555ec57582a259fc0bca47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16df99f020555ec57582a259fc0bca47">&#9670;&nbsp;</a></span>content</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> MiraiCode::content = &quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00553">553</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="tools_8h_source.html">tools.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

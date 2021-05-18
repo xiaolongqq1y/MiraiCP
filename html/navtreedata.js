@@ -25,19 +25,27 @@
 var NAVTREE =
 [
   [ "MiraiCP", "index.html", [
+    [ "模块", "modules.html", "modules" ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
       [ "类继承关系", "hierarchy.html", "hierarchy" ],
       [ "类成员", "functions.html", [
-        [ "全部", "functions.html", null ],
+        [ "全部", "functions.html", "functions_dup" ],
         [ "函数", "functions_func.html", null ],
         [ "变量", "functions_vars.html", null ],
         [ "类型定义", "functions_type.html", null ]
       ] ]
     ] ],
     [ "文件", "files.html", [
-      [ "文件列表", "files.html", "files_dup" ]
+      [ "文件列表", "files.html", "files_dup" ],
+      [ "文件成员", "globals.html", [
+        [ "全部", "globals.html", null ],
+        [ "函数", "globals_func.html", null ],
+        [ "变量", "globals_vars.html", null ],
+        [ "类型定义", "globals_type.html", null ],
+        [ "宏定义", "globals_defs.html", null ]
+      ] ]
     ] ],
     [ "示例", "examples.html", "examples" ]
   ] ]
@@ -45,8 +53,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_0dcode-example.html",
-"class_private_message_event.html#a73df3e24b11ec35b21edab614a5d89c2"
+"_c_make_c_x_x_compiler_id_8cpp.html",
+"class_group_exception.html#afd4c698d4ca89f1bae739aa8ff5728e6",
+"group___light_app_xE9_xA3_x8E_xE6_xA0_xBC.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

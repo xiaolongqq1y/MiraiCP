@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['newfriendrequestevent_226',['NewFriendRequestEvent',['../class_new_friend_request_event.html#a476e7a5b53d9fe96435354cc8f59c361',1,'NewFriendRequestEvent']]],
-  ['nick_227',['nick',['../class_bot.html#af1538b49ce58759e210c41c402ff6680',1,'Bot']]],
-  ['nickornamecard_228',['nickOrNameCard',['../class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066',1,'Contact']]]
+  ['lightapp_454',['LightApp',['../class_light_app.html#aef71a2710e3d7994bc896da6b4e5d6db',1,'LightApp::LightApp(std::string content)'],['../class_light_app.html#ab7d78a40ed7aefa1ebf0316ede0b6ed9',1,'LightApp::LightApp(LightAppStyle1 c)'],['../class_light_app.html#a51553e434d66d1a8df735898a926c03c',1,'LightApp::LightApp(LightAppStyle2 c)'],['../class_light_app.html#a84c1b7b6b028d0465a95661dc25c0df5',1,'LightApp::LightApp(LightAppStyle3 c)']]],
+  ['log0_455',['log0',['../class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2',1,'Logger']]]
 ];

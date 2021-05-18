@@ -1,5 +1,10 @@
 <map id="LowLevelAPI::info0" name="LowLevelAPI::info0">
-<area shape="rect" id="node1" title=" " alt="" coords="163,31,293,57"/>
-<area shape="rect" id="node2" href="$class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73" title="构建好友对象" alt="" coords="9,5,111,32"/>
-<area shape="rect" id="node3" href="$class_bot.html#a3354dc4fbf569d19e11ac04ac8bf0b01" title="刷新bot信息" alt="" coords="5,56,115,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="459,81,589,108"/>
+<area shape="rect" id="node2" href="$class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73" title="构建好友对象" alt="" coords="297,5,400,32"/>
+<area shape="rect" id="node3" href="$class_group.html#add4d15440d039be09abf8f8fc316dc8c" title=" " alt="" coords="299,56,399,83"/>
+<area shape="rect" id="node4" href="$class_member.html#a1313aa1274273237f2dbfaa053a9d23e" title=" " alt="" coords="287,107,411,133"/>
+<area shape="rect" id="node5" href="$class_bot.html#a3354dc4fbf569d19e11ac04ac8bf0b01" title="刷新bot信息" alt="" coords="294,157,403,184"/>
+<area shape="rect" id="node6" href="$class_bot.html#a0d6809b54d75c621eb3cc7022943fd3e" title=" " alt="" coords="153,157,239,184"/>
+<area shape="rect" id="node7" href="$class_bot.html#a94279cd991ebd5665e67246ff7563af0" title="头像下载链接" alt="" coords="5,132,105,159"/>
+<area shape="rect" id="node8" href="$class_bot.html#af1538b49ce58759e210c41c402ff6680" title="昵称" alt="" coords="18,183,93,209"/>
 </map>

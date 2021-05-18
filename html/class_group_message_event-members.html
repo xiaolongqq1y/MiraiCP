@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,6 +35,21 @@
    </div>
    <div id="projectbrief">MiraiCP API文档</div>
   </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -41,16 +61,6 @@
 var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -90,10 +100,10 @@ $(document).ready(function(){initNavTree('class_group_message_event.html',''); i
 
 <p>成员的完整列表，这些成员属于 <a class="el" href="class_group_message_event.html">GroupMessageEvent</a>,包括所有继承而来的类成员</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>bot</b> (定义于 <a class="el" href="class_bot_event.html">BotEvent</a>)</td><td class="entry"><a class="el" href="class_bot_event.html">BotEvent</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>BotEvent</b>(unsigned long long botid) (定义于 <a class="el" href="class_bot_event.html">BotEvent</a>)</td><td class="entry"><a class="el" href="class_bot_event.html">BotEvent</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_bot_event.html#a2a77f086d712d0fc8d2e430e4e2d4b83">bot</a></td><td class="entry"><a class="el" href="class_bot_event.html">BotEvent</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_bot_event.html#ac26c3d59fa5a3546f269549ccbe994a4">BotEvent</a>(unsigned long long botid)</td><td class="entry"><a class="el" href="class_bot_event.html">BotEvent</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_group_message_event.html#acbc031790011ba7b520a21aec2299f08">group</a></td><td class="entry"><a class="el" href="class_group_message_event.html">GroupMessageEvent</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>GroupMessageEvent</b>(unsigned long long int botid, const Group &amp;group, const Member &amp;sender, const std::string &amp;message, const MessageSource &amp;messageSource) (定义于 <a class="el" href="class_group_message_event.html">GroupMessageEvent</a>)</td><td class="entry"><a class="el" href="class_group_message_event.html">GroupMessageEvent</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_group_message_event.html#a935282b560906a8f722b41b26a9bb0ae">GroupMessageEvent</a>(unsigned long long int botid, const Group &amp;group, const Member &amp;sender, const std::string &amp;message, const MessageSource &amp;messageSource)</td><td class="entry"><a class="el" href="class_group_message_event.html">GroupMessageEvent</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_group_message_event.html#ad1544e2d8bdbc27ffbae3b268cf88ed0">message</a></td><td class="entry"><a class="el" href="class_group_message_event.html">GroupMessageEvent</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_group_message_event.html#ac0fbbe7ebc93f69ab521d745ebe04f5d">messageSource</a></td><td class="entry"><a class="el" href="class_group_message_event.html">GroupMessageEvent</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_group_message_event.html#af42c8d253640cbe965406843367bb0f3">sender</a></td><td class="entry"><a class="el" href="class_group_message_event.html">GroupMessageEvent</a></td><td class="entry"></td></tr>

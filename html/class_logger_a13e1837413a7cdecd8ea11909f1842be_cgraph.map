@@ -1,0 +1,6 @@
+<map id="Logger::Info" name="Logger::Info">
+<area shape="rect" id="node1" title="发送普通(info级日志)" alt="" coords="5,31,95,57"/>
+<area shape="rect" id="node2" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="143,31,236,57"/>
+<area shape="rect" id="node3" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="284,5,403,32"/>
+<area shape="rect" id="node4" href="$class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="451,31,568,57"/>
+</map>

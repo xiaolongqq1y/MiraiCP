@@ -1,0 +1,11 @@
+<map id="ForwardMessage::sendTo" name="ForwardMessage::sendTo">
+<area shape="rect" id="node1" title="发送给群或好友或群成员" alt="" coords="5,132,176,159"/>
+<area shape="rect" id="node2" href="$class_contact.html#a869c10fc8e1abeedc10d805576b1450a" title="所属bot" alt="" coords="232,5,335,32"/>
+<area shape="rect" id="node3" href="$class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4" title="当type为3的时候存在，否则为0，可以看作补充id" alt="" coords="225,56,342,83"/>
+<area shape="rect" id="node4" href="$class_contact.html#a220e55b907d54958cd2afb95e65da5a1" title="id在全部情况存在" alt="" coords="241,107,326,133"/>
+<area shape="rect" id="node5" href="$class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="224,157,343,184"/>
+<area shape="rect" id="node8" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="697,157,816,184"/>
+<area shape="rect" id="node9" href="$class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1" title="当前对象类型" alt="" coords="233,259,333,285"/>
+<area shape="rect" id="node6" href="$class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="391,157,508,184"/>
+<area shape="rect" id="node7" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="556,107,649,133"/>
+</map>

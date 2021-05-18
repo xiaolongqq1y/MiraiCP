@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,6 +35,21 @@
    </div>
    <div id="projectbrief">MiraiCP API文档</div>
   </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -41,16 +61,6 @@
 var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -90,20 +100,20 @@ $(document).ready(function(){initNavTree('class_friend.html',''); initResizable(
 
 <p>成员的完整列表，这些成员属于 <a class="el" href="class_friend.html">Friend</a>,包括所有继承而来的类成员</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_avatarUrl</b> (定义于 <a class="el" href="class_contact.html">Contact</a>)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>_botid</b> (定义于 <a class="el" href="class_contact.html">Contact</a>)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_groupid</b> (定义于 <a class="el" href="class_contact.html">Contact</a>)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>_id</b> (定义于 <a class="el" href="class_contact.html">Contact</a>)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_nickOrNameCard</b> (定义于 <a class="el" href="class_contact.html">Contact</a>)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>_type</b> (定义于 <a class="el" href="class_contact.html">Contact</a>)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_contact.html#a92b8feb1a780637b71e06f3f9e954043">_avatarUrl</a></td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">_botid</a></td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_contact.html#ad10855c0071226743dffc553dc913b88">_groupid</a></td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">_id</a></td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">_nickOrNameCard</a></td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">_type</a></td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_contact.html#a10cf00a3c2dfef0bdc29c3f89e508293">avatarUrl</a>()</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a>()</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Contact</b>() (定义于 <a class="el" href="class_contact.html">Contact</a>)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Contact</b>(int type, unsigned long long id, unsigned long long gid, std::string name, unsigned long long botid) (定义于 <a class="el" href="class_contact.html">Contact</a>)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact</a>()</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_contact.html#acff216bf0459571db3304576f563f6cc">Contact</a>(int type, unsigned long long id, unsigned long long gid, std::string name, unsigned long long botid)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2">deserializationFromJson</a>(nlohmann::json root)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_contact.html#a1ae828255543de1ff394bc79e9262cc7">deserializationFromString</a>(const std::string &amp;source)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73">Friend</a>(unsigned long long friendid, unsigned long long botid, JNIEnv *=manager-&gt;getEnv())</td><td class="entry"><a class="el" href="class_friend.html">Friend</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Friend</b>(Contact c) (定义于 <a class="el" href="class_friend.html">Friend</a>)</td><td class="entry"><a class="el" href="class_friend.html">Friend</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_friend.html#a4f453179ab383da2d6a15aff7618fc11">Friend</a>(Contact c)</td><td class="entry"><a class="el" href="class_friend.html">Friend</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4">groupid</a>()</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">id</a>()</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066">nickOrNameCard</a>()</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -111,7 +121,7 @@ $(document).ready(function(){initNavTree('class_friend.html',''); initResizable(
   <tr class="even"><td class="entry"><a class="el" href="class_friend.html#aa09d60a4befb6901d1f4ee2c1a3e43bf">SendMiraiCode</a>(MiraiCode msg)</td><td class="entry"><a class="el" href="class_friend.html">Friend</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_friend.html#a2f376e17df7c86cb0366d94abf932a3d">SendMiraiCode</a>(std::string msg, JNIEnv *=manager-&gt;getEnv())</td><td class="entry"><a class="el" href="class_friend.html">Friend</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_friend.html#a0f32b2c4784f164847c69c6908d5ffc7">SendMsg</a>(std::string msg, JNIEnv *=manager-&gt;getEnv())</td><td class="entry"><a class="el" href="class_friend.html">Friend</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>serialization</b>() (定义于 <a class="el" href="class_contact.html">Contact</a>)</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_contact.html#a6739337b623df49bc51e2fc997bfd6e8">serialization</a>()</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835">serializationToString</a>()</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">type</a>()</td><td class="entry"><a class="el" href="class_contact.html">Contact</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_friend.html#ac271985962999f208d7d3f4b24572ef7">uploadImg</a>(const std::string &amp;filename, JNIEnv *=manager-&gt;getEnv())</td><td class="entry"><a class="el" href="class_friend.html">Friend</a></td><td class="entry"></td></tr>

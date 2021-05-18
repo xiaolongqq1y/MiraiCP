@@ -1,0 +1,26 @@
+digraph "类继承关系图"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="BotEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bot_event.html",tooltip="所以事件处理timeoutevent都是机器人事件，指都有机器人实例"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="BotJoinGroupEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bot_join_group_event.html",tooltip="机器人进入某群"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GroupInviteEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_group_invite_event.html",tooltip="群聊邀请事件类声明"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="GroupMessageEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_group_message_event.html",tooltip="群消息事件声明"];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="GroupTempMessageEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_group_temp_message_event.html",tooltip="群临时会话"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MemberJoinEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_member_join_event.html",tooltip="新群成员加入"];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="MemberLeaveEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_member_leave_event.html",tooltip="群成员离开"];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="NewFriendRequestEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_new_friend_request_event.html",tooltip="好友申请事件声明"];
+  Node0 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PrivateMessageEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_private_message_event.html",tooltip="私聊消息事件类声明"];
+  Node0 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="RecallEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_recall_event.html",tooltip="撤回信息"];
+}

@@ -1,0 +1,10 @@
+<map id="Bot::FriendListToString" name="Bot::FriendListToString">
+<area shape="rect" id="node1" title="好友列表string形式返回，利于保存" alt="" coords="5,81,160,108"/>
+<area shape="rect" id="node2" href="$class_bot.html#a6584044628bd3754e52d1dac2cebe789" title="取好友列表" alt="" coords="219,56,344,83"/>
+<area shape="rect" id="node8" href="$class_tools.html#a937cd10ba7720be62817d6cf078c2a22" title="long long 类型的vector格式化输出" alt="" coords="208,107,355,133"/>
+<area shape="rect" id="node3" href="$class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="417,31,535,57"/>
+<area shape="rect" id="node7" href="$class_tools.html#a7c61d205bdc3f53c96417b26f262da94" title="从string格式化到vector" alt="" coords="403,81,549,108"/>
+<area shape="rect" id="node4" href="$class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="597,31,715,57"/>
+<area shape="rect" id="node5" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="763,5,856,32"/>
+<area shape="rect" id="node6" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="904,31,1023,57"/>
+</map>

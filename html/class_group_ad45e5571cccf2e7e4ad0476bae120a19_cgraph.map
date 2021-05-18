@@ -1,0 +1,6 @@
+<map id="Group::SendMiraiCode" name="Group::SendMiraiCode">
+<area shape="rect" id="node1" title="发送MiraiCode信息" alt="" coords="5,31,159,57"/>
+<area shape="rect" id="node2" href="$class_group.html#ade4058f1885105d85991de006b3cbb00" title="发送MiraiCode信息" alt="" coords="207,5,360,32"/>
+<area shape="rect" id="node4" href="$class_mirai_code.html#a05f947c86d38440157efc9ce849cca20" title="输出当前内容" alt="" coords="217,56,350,83"/>
+<area shape="rect" id="node3" href="$class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="408,5,589,32"/>
+</map>

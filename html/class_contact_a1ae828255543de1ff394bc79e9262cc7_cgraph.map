@@ -1,5 +1,9 @@
 <map id="Contact::deserializationFromString" name="Contact::deserializationFromString">
 <area shape="rect" id="node1" title=" " alt="" coords="5,35,164,76"/>
 <area shape="rect" id="node2" href="$class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2" title="从json节点反序列化" alt="" coords="212,5,371,47"/>
-<area shape="rect" id="node3" href="$class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="243,71,340,98"/>
+<area shape="rect" id="node4" href="$class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="243,71,340,98"/>
+<area shape="rect" id="node3" href="$class_contact.html#ae39444f378e6de7fd6c3e60981949af5" title=" " alt="" coords="419,13,539,39"/>
+<area shape="rect" id="node5" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="432,71,525,98"/>
+<area shape="rect" id="node6" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="587,46,705,73"/>
+<area shape="rect" id="node7" href="$class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="753,71,871,98"/>
 </map>

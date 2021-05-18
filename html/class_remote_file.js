@@ -1,6 +1,7 @@
 var class_remote_file =
 [
     [ "RemoteFile", "class_remote_file.html#a2a606d3e0fddf6251ded708a089dfdb5", null ],
+    [ "deserializeFromString", "class_remote_file.html#a4f9a12c1a71dfea6ba98624fb29d3f2f", null ],
     [ "serializeToString", "class_remote_file.html#a971914cc9e832e785ec9667761bb49a2", null ],
     [ "toMiraiCode", "class_remote_file.html#a1ca55a2e4cead686e9ea5f0e9260dfa0", null ],
     [ "dinfo", "class_remote_file.html#a2a819afb5208ce0d816a073b6d2dbb98", null ],

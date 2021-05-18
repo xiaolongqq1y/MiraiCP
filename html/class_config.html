@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,6 +35,21 @@
    </div>
    <div id="projectbrief">MiraiCP API文档</div>
   </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -41,16 +61,6 @@
 var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -99,104 +109,622 @@ $(document).ready(function(){initNavTree('class_config.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a379658b5044c19b2e2016aae0e326d59"><td class="memItemLeft" align="right" valign="top"><a id="a379658b5044c19b2e2016aae0e326d59"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (JNIEnv *=manager-&gt;getEnv())</td></tr>
+<tr class="memitem:abd0c571c116924871e30444b192b792a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#abd0c571c116924871e30444b192b792a">Config</a> ()</td></tr>
+<tr class="separator:abd0c571c116924871e30444b192b792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379658b5044c19b2e2016aae0e326d59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a379658b5044c19b2e2016aae0e326d59">Init</a> (JNIEnv *=<a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv())</td></tr>
 <tr class="separator:a379658b5044c19b2e2016aae0e326d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543dce59b66475c5108088ee4ce1cdfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a543dce59b66475c5108088ee4ce1cdfc">~Config</a> ()</td></tr>
+<tr class="separator:a543dce59b66475c5108088ee4ce1cdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a4527012e3db22223852e754ae2241e9c"><td class="memItemLeft" align="right" valign="top"><a id="a4527012e3db22223852e754ae2241e9c"></a>
-jclass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a> = NULL</td></tr>
-<tr class="memdesc:a4527012e3db22223852e754ae2241e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">kt中JNI接口类 <br /></td></tr>
+<tr class="memitem:a4527012e3db22223852e754ae2241e9c"><td class="memItemLeft" align="right" valign="top">jclass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a> = NULL</td></tr>
+<tr class="memdesc:a4527012e3db22223852e754ae2241e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">kt中JNI接口类  <a href="class_config.html#a4527012e3db22223852e754ae2241e9c">更多...</a><br /></td></tr>
 <tr class="separator:a4527012e3db22223852e754ae2241e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e26286ce329125869281cd979c94fc5"><td class="memItemLeft" align="right" valign="top"><a id="a7e26286ce329125869281cd979c94fc5"></a>
-jclass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a7e26286ce329125869281cd979c94fc5">initexception</a> = NULL</td></tr>
-<tr class="memdesc:a7e26286ce329125869281cd979c94fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">异常类 <br /></td></tr>
+<tr class="memitem:a7e26286ce329125869281cd979c94fc5"><td class="memItemLeft" align="right" valign="top">jclass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a7e26286ce329125869281cd979c94fc5">initexception</a> = NULL</td></tr>
+<tr class="memdesc:a7e26286ce329125869281cd979c94fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">异常类  <a href="class_config.html#a7e26286ce329125869281cd979c94fc5">更多...</a><br /></td></tr>
 <tr class="separator:a7e26286ce329125869281cd979c94fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e4d5278a105691e18471281e83947d"><td class="memItemLeft" align="right" valign="top"><a id="a35e4d5278a105691e18471281e83947d"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a35e4d5278a105691e18471281e83947d">KRecall</a> = NULL</td></tr>
-<tr class="memdesc:a35e4d5278a105691e18471281e83947d"><td class="mdescLeft">&#160;</td><td class="mdescRight">撤回信息 <br /></td></tr>
+<tr class="memitem:a35e4d5278a105691e18471281e83947d"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a35e4d5278a105691e18471281e83947d">KRecall</a> = NULL</td></tr>
+<tr class="memdesc:a35e4d5278a105691e18471281e83947d"><td class="mdescLeft">&#160;</td><td class="mdescRight">撤回信息  <a href="class_config.html#a35e4d5278a105691e18471281e83947d">更多...</a><br /></td></tr>
 <tr class="separator:a35e4d5278a105691e18471281e83947d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79ec5659e47627677e41247b860d76ee"><td class="memItemLeft" align="right" valign="top"><a id="a79ec5659e47627677e41247b860d76ee"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a79ec5659e47627677e41247b860d76ee">KSend</a> = NULL</td></tr>
-<tr class="memdesc:a79ec5659e47627677e41247b860d76ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送信息 <br /></td></tr>
+<tr class="memitem:a79ec5659e47627677e41247b860d76ee"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a79ec5659e47627677e41247b860d76ee">KSend</a> = NULL</td></tr>
+<tr class="memdesc:a79ec5659e47627677e41247b860d76ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送信息  <a href="class_config.html#a79ec5659e47627677e41247b860d76ee">更多...</a><br /></td></tr>
 <tr class="separator:a79ec5659e47627677e41247b860d76ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a941c92e01cef6da2301b11422f29afd4"><td class="memItemLeft" align="right" valign="top"><a id="a941c92e01cef6da2301b11422f29afd4"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a941c92e01cef6da2301b11422f29afd4">KRefreshInfo</a> = NULL</td></tr>
-<tr class="memdesc:a941c92e01cef6da2301b11422f29afd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询信息接口 <br /></td></tr>
+<tr class="memitem:a941c92e01cef6da2301b11422f29afd4"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a941c92e01cef6da2301b11422f29afd4">KRefreshInfo</a> = NULL</td></tr>
+<tr class="memdesc:a941c92e01cef6da2301b11422f29afd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询信息接口  <a href="class_config.html#a941c92e01cef6da2301b11422f29afd4">更多...</a><br /></td></tr>
 <tr class="separator:a941c92e01cef6da2301b11422f29afd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0697469c6fcaac6dde444e8780b437c5"><td class="memItemLeft" align="right" valign="top"><a id="a0697469c6fcaac6dde444e8780b437c5"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a0697469c6fcaac6dde444e8780b437c5">KUploadImg</a> = NULL</td></tr>
-<tr class="memdesc:a0697469c6fcaac6dde444e8780b437c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">上传图片 <br /></td></tr>
+<tr class="memitem:a0697469c6fcaac6dde444e8780b437c5"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a0697469c6fcaac6dde444e8780b437c5">KUploadImg</a> = NULL</td></tr>
+<tr class="memdesc:a0697469c6fcaac6dde444e8780b437c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">上传图片  <a href="class_config.html#a0697469c6fcaac6dde444e8780b437c5">更多...</a><br /></td></tr>
 <tr class="separator:a0697469c6fcaac6dde444e8780b437c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6828d41c3b1f79565e7fdf756b3c2aac"><td class="memItemLeft" align="right" valign="top"><a id="a6828d41c3b1f79565e7fdf756b3c2aac"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a6828d41c3b1f79565e7fdf756b3c2aac">KQueryBFL</a> = NULL</td></tr>
-<tr class="memdesc:a6828d41c3b1f79565e7fdf756b3c2aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">取好友列表 <br /></td></tr>
+<tr class="memitem:a6828d41c3b1f79565e7fdf756b3c2aac"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a6828d41c3b1f79565e7fdf756b3c2aac">KQueryBFL</a> = NULL</td></tr>
+<tr class="memdesc:a6828d41c3b1f79565e7fdf756b3c2aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">取好友列表  <a href="class_config.html#a6828d41c3b1f79565e7fdf756b3c2aac">更多...</a><br /></td></tr>
 <tr class="separator:a6828d41c3b1f79565e7fdf756b3c2aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88c77bf58af912391d3ab19bc6c66046"><td class="memItemLeft" align="right" valign="top"><a id="a88c77bf58af912391d3ab19bc6c66046"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a88c77bf58af912391d3ab19bc6c66046">KQueryBGL</a> = NULL</td></tr>
-<tr class="memdesc:a88c77bf58af912391d3ab19bc6c66046"><td class="mdescLeft">&#160;</td><td class="mdescRight">取群组列表 <br /></td></tr>
+<tr class="memitem:a88c77bf58af912391d3ab19bc6c66046"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a88c77bf58af912391d3ab19bc6c66046">KQueryBGL</a> = NULL</td></tr>
+<tr class="memdesc:a88c77bf58af912391d3ab19bc6c66046"><td class="mdescLeft">&#160;</td><td class="mdescRight">取群组列表  <a href="class_config.html#a88c77bf58af912391d3ab19bc6c66046">更多...</a><br /></td></tr>
 <tr class="separator:a88c77bf58af912391d3ab19bc6c66046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4c7c1fa8e2f5788e71ae05cd8e095f9"><td class="memItemLeft" align="right" valign="top"><a id="ab4c7c1fa8e2f5788e71ae05cd8e095f9"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#ab4c7c1fa8e2f5788e71ae05cd8e095f9">KSendFile</a> = NULL</td></tr>
-<tr class="memdesc:ab4c7c1fa8e2f5788e71ae05cd8e095f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">上传文件 <br /></td></tr>
+<tr class="memitem:ab4c7c1fa8e2f5788e71ae05cd8e095f9"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#ab4c7c1fa8e2f5788e71ae05cd8e095f9">KSendFile</a> = NULL</td></tr>
+<tr class="memdesc:ab4c7c1fa8e2f5788e71ae05cd8e095f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">上传文件  <a href="class_config.html#ab4c7c1fa8e2f5788e71ae05cd8e095f9">更多...</a><br /></td></tr>
 <tr class="separator:ab4c7c1fa8e2f5788e71ae05cd8e095f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85e0c82aba983f80aa56b1428f8acd54"><td class="memItemLeft" align="right" valign="top"><a id="a85e0c82aba983f80aa56b1428f8acd54"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a85e0c82aba983f80aa56b1428f8acd54">KRemoteFileInfo</a> = NULL</td></tr>
-<tr class="memdesc:a85e0c82aba983f80aa56b1428f8acd54"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询文件信息 <br /></td></tr>
+<tr class="memitem:a85e0c82aba983f80aa56b1428f8acd54"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a85e0c82aba983f80aa56b1428f8acd54">KRemoteFileInfo</a> = NULL</td></tr>
+<tr class="memdesc:a85e0c82aba983f80aa56b1428f8acd54"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询文件信息  <a href="class_config.html#a85e0c82aba983f80aa56b1428f8acd54">更多...</a><br /></td></tr>
 <tr class="separator:a85e0c82aba983f80aa56b1428f8acd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7be31e17b33b721573e0855c1166d665"><td class="memItemLeft" align="right" valign="top"><a id="a7be31e17b33b721573e0855c1166d665"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a7be31e17b33b721573e0855c1166d665">KQueryImgUrl</a> = NULL</td></tr>
-<tr class="memdesc:a7be31e17b33b721573e0855c1166d665"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询图片下载地址 <br /></td></tr>
+<tr class="memitem:a7be31e17b33b721573e0855c1166d665"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a7be31e17b33b721573e0855c1166d665">KQueryImgUrl</a> = NULL</td></tr>
+<tr class="memdesc:a7be31e17b33b721573e0855c1166d665"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询图片下载地址  <a href="class_config.html#a7be31e17b33b721573e0855c1166d665">更多...</a><br /></td></tr>
 <tr class="separator:a7be31e17b33b721573e0855c1166d665"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac614d847a1359b2618c48fa779517e8d"><td class="memItemLeft" align="right" valign="top"><a id="ac614d847a1359b2618c48fa779517e8d"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#ac614d847a1359b2618c48fa779517e8d">KMuteM</a> = NULL</td></tr>
-<tr class="memdesc:ac614d847a1359b2618c48fa779517e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">禁言 <br /></td></tr>
+<tr class="memitem:ac614d847a1359b2618c48fa779517e8d"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#ac614d847a1359b2618c48fa779517e8d">KMuteM</a> = NULL</td></tr>
+<tr class="memdesc:ac614d847a1359b2618c48fa779517e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">禁言  <a href="class_config.html#ac614d847a1359b2618c48fa779517e8d">更多...</a><br /></td></tr>
 <tr class="separator:ac614d847a1359b2618c48fa779517e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7964ef89426d2f8b0c3508024f0b20ca"><td class="memItemLeft" align="right" valign="top"><a id="a7964ef89426d2f8b0c3508024f0b20ca"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a7964ef89426d2f8b0c3508024f0b20ca">KQueryM</a> = NULL</td></tr>
-<tr class="memdesc:a7964ef89426d2f8b0c3508024f0b20ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询权限 <br /></td></tr>
+<tr class="memitem:a7964ef89426d2f8b0c3508024f0b20ca"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a7964ef89426d2f8b0c3508024f0b20ca">KQueryM</a> = NULL</td></tr>
+<tr class="memdesc:a7964ef89426d2f8b0c3508024f0b20ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询权限  <a href="class_config.html#a7964ef89426d2f8b0c3508024f0b20ca">更多...</a><br /></td></tr>
 <tr class="separator:a7964ef89426d2f8b0c3508024f0b20ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d35eb18487783f8ee6e8a53a85a0539"><td class="memItemLeft" align="right" valign="top"><a id="a9d35eb18487783f8ee6e8a53a85a0539"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a9d35eb18487783f8ee6e8a53a85a0539">KKickM</a> = NULL</td></tr>
-<tr class="memdesc:a9d35eb18487783f8ee6e8a53a85a0539"><td class="mdescLeft">&#160;</td><td class="mdescRight">踢出 <br /></td></tr>
+<tr class="memitem:a9d35eb18487783f8ee6e8a53a85a0539"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a9d35eb18487783f8ee6e8a53a85a0539">KKickM</a> = NULL</td></tr>
+<tr class="memdesc:a9d35eb18487783f8ee6e8a53a85a0539"><td class="mdescLeft">&#160;</td><td class="mdescRight">踢出  <a href="class_config.html#a9d35eb18487783f8ee6e8a53a85a0539">更多...</a><br /></td></tr>
 <tr class="separator:a9d35eb18487783f8ee6e8a53a85a0539"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affbb043f1d3eb8e3587a1b8fc1a6682e"><td class="memItemLeft" align="right" valign="top"><a id="affbb043f1d3eb8e3587a1b8fc1a6682e"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#affbb043f1d3eb8e3587a1b8fc1a6682e">KQueryOwner</a> = NULL</td></tr>
-<tr class="memdesc:affbb043f1d3eb8e3587a1b8fc1a6682e"><td class="mdescLeft">&#160;</td><td class="mdescRight">取群主 <br /></td></tr>
+<tr class="memitem:affbb043f1d3eb8e3587a1b8fc1a6682e"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#affbb043f1d3eb8e3587a1b8fc1a6682e">KQueryOwner</a> = NULL</td></tr>
+<tr class="memdesc:affbb043f1d3eb8e3587a1b8fc1a6682e"><td class="mdescLeft">&#160;</td><td class="mdescRight">取群主  <a href="class_config.html#affbb043f1d3eb8e3587a1b8fc1a6682e">更多...</a><br /></td></tr>
 <tr class="separator:affbb043f1d3eb8e3587a1b8fc1a6682e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef82ed33c4ce4b85792172dcacb552f0"><td class="memItemLeft" align="right" valign="top"><a id="aef82ed33c4ce4b85792172dcacb552f0"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#aef82ed33c4ce4b85792172dcacb552f0">KMuteGroup</a> = NULL</td></tr>
-<tr class="memdesc:aef82ed33c4ce4b85792172dcacb552f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">全员禁言 <br /></td></tr>
+<tr class="memitem:aef82ed33c4ce4b85792172dcacb552f0"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#aef82ed33c4ce4b85792172dcacb552f0">KMuteGroup</a> = NULL</td></tr>
+<tr class="memdesc:aef82ed33c4ce4b85792172dcacb552f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">全员禁言  <a href="class_config.html#aef82ed33c4ce4b85792172dcacb552f0">更多...</a><br /></td></tr>
 <tr class="separator:aef82ed33c4ce4b85792172dcacb552f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7ebb0f5ecce9db4141fbf7d1005a023"><td class="memItemLeft" align="right" valign="top"><a id="ae7ebb0f5ecce9db4141fbf7d1005a023"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#ae7ebb0f5ecce9db4141fbf7d1005a023">KQueryML</a> = NULL</td></tr>
-<tr class="memdesc:ae7ebb0f5ecce9db4141fbf7d1005a023"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询群成员列表 <br /></td></tr>
+<tr class="memitem:ae7ebb0f5ecce9db4141fbf7d1005a023"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#ae7ebb0f5ecce9db4141fbf7d1005a023">KQueryML</a> = NULL</td></tr>
+<tr class="memdesc:ae7ebb0f5ecce9db4141fbf7d1005a023"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询群成员列表  <a href="class_config.html#ae7ebb0f5ecce9db4141fbf7d1005a023">更多...</a><br /></td></tr>
 <tr class="separator:ae7ebb0f5ecce9db4141fbf7d1005a023"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a722889565f844a0f533eb1eb7bfe74bf"><td class="memItemLeft" align="right" valign="top"><a id="a722889565f844a0f533eb1eb7bfe74bf"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a722889565f844a0f533eb1eb7bfe74bf">KSchedule</a> = NULL</td></tr>
-<tr class="memdesc:a722889565f844a0f533eb1eb7bfe74bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">定时任务 <br /></td></tr>
+<tr class="memitem:a722889565f844a0f533eb1eb7bfe74bf"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a722889565f844a0f533eb1eb7bfe74bf">KSchedule</a> = NULL</td></tr>
+<tr class="memdesc:a722889565f844a0f533eb1eb7bfe74bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">定时任务  <a href="class_config.html#a722889565f844a0f533eb1eb7bfe74bf">更多...</a><br /></td></tr>
 <tr class="separator:a722889565f844a0f533eb1eb7bfe74bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefc337c0124f3ed88a175a3a6b17e620"><td class="memItemLeft" align="right" valign="top"><a id="aefc337c0124f3ed88a175a3a6b17e620"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#aefc337c0124f3ed88a175a3a6b17e620">KBuildforward</a> = NULL</td></tr>
-<tr class="memdesc:aefc337c0124f3ed88a175a3a6b17e620"><td class="mdescLeft">&#160;</td><td class="mdescRight">构建转发信息 <br /></td></tr>
+<tr class="memitem:aefc337c0124f3ed88a175a3a6b17e620"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#aefc337c0124f3ed88a175a3a6b17e620">KBuildforward</a> = NULL</td></tr>
+<tr class="memdesc:aefc337c0124f3ed88a175a3a6b17e620"><td class="mdescLeft">&#160;</td><td class="mdescRight">构建转发信息  <a href="class_config.html#aefc337c0124f3ed88a175a3a6b17e620">更多...</a><br /></td></tr>
 <tr class="separator:aefc337c0124f3ed88a175a3a6b17e620"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9c81894cd0eff7edcea916b296ee97f"><td class="memItemLeft" align="right" valign="top"><a id="ac9c81894cd0eff7edcea916b296ee97f"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#ac9c81894cd0eff7edcea916b296ee97f">KNfroperation</a> = NULL</td></tr>
-<tr class="memdesc:ac9c81894cd0eff7edcea916b296ee97f"><td class="mdescLeft">&#160;</td><td class="mdescRight">好友申请事件 <br /></td></tr>
+<tr class="memitem:ac9c81894cd0eff7edcea916b296ee97f"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#ac9c81894cd0eff7edcea916b296ee97f">KNfroperation</a> = NULL</td></tr>
+<tr class="memdesc:ac9c81894cd0eff7edcea916b296ee97f"><td class="mdescLeft">&#160;</td><td class="mdescRight">好友申请事件  <a href="class_config.html#ac9c81894cd0eff7edcea916b296ee97f">更多...</a><br /></td></tr>
 <tr class="separator:ac9c81894cd0eff7edcea916b296ee97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ba4760b8ea690b6e69faff11d6b1ef5"><td class="memItemLeft" align="right" valign="top"><a id="a9ba4760b8ea690b6e69faff11d6b1ef5"></a>
-jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a9ba4760b8ea690b6e69faff11d6b1ef5">KGioperation</a> = NULL</td></tr>
-<tr class="memdesc:a9ba4760b8ea690b6e69faff11d6b1ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">群聊邀请事件 <br /></td></tr>
+<tr class="memitem:a9ba4760b8ea690b6e69faff11d6b1ef5"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a9ba4760b8ea690b6e69faff11d6b1ef5">KGioperation</a> = NULL</td></tr>
+<tr class="memdesc:a9ba4760b8ea690b6e69faff11d6b1ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">群聊邀请事件  <a href="class_config.html#a9ba4760b8ea690b6e69faff11d6b1ef5">更多...</a><br /></td></tr>
 <tr class="separator:a9ba4760b8ea690b6e69faff11d6b1ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>配置类声明, 主要存放各种jmethodid, MiraiCP内部使用, 不需要更改或其他操作 </p>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#_a12">D:/Git/mirai/MiraiCP/cpp/tools.h</a>.</dd>
-</dl>
-</div><hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Git/mirai/MiraiCP/cpp/<a class="el" href="tools_8h_source.html">tools.h</a></li>
-<li>D:/Git/mirai/MiraiCP/cpp/tools.cpp</li>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00132">132</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abd0c571c116924871e30444b192b792a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0c571c116924871e30444b192b792a">&#9670;&nbsp;</a></span>Config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Config::Config </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00177">177</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{};</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a543dce59b66475c5108088ee4ce1cdfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a543dce59b66475c5108088ee4ce1cdfc">&#9670;&nbsp;</a></span>~Config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Config::~Config </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8cpp_source.html">tools.cpp</a> 第 <a class="el" href="tools_8cpp_source.html#l00146">146</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="pch_8cpp.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;<a class="code" href="classthread_manager.html#a75639792816fe3f8af8a5a3fde89e4af">getEnv</a>()-&gt;DeleteGlobalRef(this-&gt;<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<div class="ttc" id="aclass_config_html_a4527012e3db22223852e754ae2241e9c"><div class="ttname"><a href="class_config.html#a4527012e3db22223852e754ae2241e9c">Config::CPP_lib</a></div><div class="ttdeci">jclass CPP_lib</div><div class="ttdoc">kt中JNI接口类</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00135">tools.h:135</a></div></div>
+<div class="ttc" id="aclassthread_manager_html_a75639792816fe3f8af8a5a3fde89e4af"><div class="ttname"><a href="classthread_manager.html#a75639792816fe3f8af8a5a3fde89e4af">threadManager::getEnv</a></div><div class="ttdeci">JNIEnv * getEnv()</div><div class="ttdoc">取env,如果不存在重新获取</div><div class="ttdef"><b>Definition:</b> <a href="tools_8cpp_source.html#l00056">tools.cpp:56</a></div></div>
+<div class="ttc" id="apch_8cpp_html_a4b4a306a9aed3f0d9ac6f2009f941c9f"><div class="ttname"><a href="pch_8cpp.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a></div><div class="ttdeci">threadManager * manager</div><div class="ttdoc">线程管理实例</div><div class="ttdef"><b>Definition:</b> <a href="pch_8cpp_source.html#l00015">pch.cpp:15</a></div></div>
+</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_config_a543dce59b66475c5108088ee4ce1cdfc_cgraph.png" border="0" usemap="#aclass_config_a543dce59b66475c5108088ee4ce1cdfc_cgraph" alt=""/></div>
+<map name="aclass_config_a543dce59b66475c5108088ee4ce1cdfc_cgraph" id="aclass_config_a543dce59b66475c5108088ee4ce1cdfc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,116,57"/>
+<area shape="rect" href="classthread_manager.html#a75639792816fe3f8af8a5a3fde89e4af" title="取env,如果不存在重新获取" alt="" coords="164,31,319,57"/>
+<area shape="rect" href="classthread_manager.html#a3401a8976c99d293ef1b8b8c7a1db9d1" title="获取线程id." alt="" coords="579,5,761,32"/>
+<area shape="rect" href="classthread_manager.html#a648b29dc90c990d1915ca1a92eb210e6" title="判断该线程id是否包含在线程池里" alt="" coords="367,31,531,57"/>
+<area shape="rect" href="classthread_manager.html#a8210ba94ee5c9bfe1318319500576c85" title=" " alt="" coords="369,81,529,108"/>
+<area shape="rect" href="class_logger.html#a13e1837413a7cdecd8ea11909f1842be" title="发送普通(info级日志)" alt="" coords="625,81,715,108"/>
+<area shape="rect" href="class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="809,81,903,108"/>
+<area shape="rect" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="951,56,1069,83"/>
+<area shape="rect" href="class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="1117,81,1235,108"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a379658b5044c19b2e2016aae0e326d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379658b5044c19b2e2016aae0e326d59">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Config::Init </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em> = <code><a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8cpp_source.html">tools.cpp</a> 第 <a class="el" href="tools_8cpp_source.html#l00113">113</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                             {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// int x = (int)env-&gt;EnsureLocalCapacity((jint)22);</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    this-&gt;<a class="code" href="class_config.html#a7e26286ce329125869281cd979c94fc5">initexception</a> = <span class="keyword">reinterpret_cast&lt;</span>jclass<span class="keyword">&gt;</span>(env-&gt;NewGlobalRef(</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        env-&gt;FindClass(<span class="stringliteral">&quot;java/lang/NoSuchMethodException&quot;</span>)));</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    this-&gt;<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a> = <span class="keyword">reinterpret_cast&lt;</span>jclass<span class="keyword">&gt;</span>(env-&gt;NewGlobalRef(env-&gt;FindClass(<span class="stringliteral">&quot;tech/eritquearcus/miraicp/CPP_lib&quot;</span>)));</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_init_exception.html">InitException</a>(<span class="stringliteral">&quot;初始化错误&quot;</span>, 1);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    this-&gt;<a class="code" href="class_config.html#a79ec5659e47627677e41247b860d76ee">KSend</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KSend&quot;</span>, <span class="stringliteral">&quot;(Ljava/lang/String;Z)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    this-&gt;<a class="code" href="class_config.html#a35e4d5278a105691e18471281e83947d">KRecall</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KRecall&quot;</span>, <span class="stringliteral">&quot;(Ljava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    this-&gt;<a class="code" href="class_config.html#a7be31e17b33b721573e0855c1166d665">KQueryImgUrl</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KQueryImgUrl&quot;</span>, <span class="stringliteral">&quot;(Ljava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    this-&gt;<a class="code" href="class_config.html#a941c92e01cef6da2301b11422f29afd4">KRefreshInfo</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KRefreshInfo&quot;</span>, <span class="stringliteral">&quot;(Ljava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    this-&gt;<a class="code" href="class_config.html#a0697469c6fcaac6dde444e8780b437c5">KUploadImg</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KUploadImg&quot;</span>,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="stringliteral">&quot;(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    this-&gt;<a class="code" href="class_config.html#ab4c7c1fa8e2f5788e71ae05cd8e095f9">KSendFile</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KSendFile&quot;</span>,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="stringliteral">&quot;(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    this-&gt;<a class="code" href="class_config.html#a85e0c82aba983f80aa56b1428f8acd54">KRemoteFileInfo</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KRemoteFileInfo&quot;</span>,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="stringliteral">&quot;(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    this-&gt;<a class="code" href="class_config.html#a722889565f844a0f533eb1eb7bfe74bf">KSchedule</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KSchedule&quot;</span>, <span class="stringliteral">&quot;(JLjava/lang/String;)V&quot;</span>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    this-&gt;<a class="code" href="class_config.html#ac614d847a1359b2618c48fa779517e8d">KMuteM</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KMuteM&quot;</span>, <span class="stringliteral">&quot;(ILjava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    this-&gt;<a class="code" href="class_config.html#a7964ef89426d2f8b0c3508024f0b20ca">KQueryM</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KQueryM&quot;</span>, <span class="stringliteral">&quot;(Ljava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    this-&gt;<a class="code" href="class_config.html#a9d35eb18487783f8ee6e8a53a85a0539">KKickM</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KKickM&quot;</span>,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="stringliteral">&quot;(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    this-&gt;<a class="code" href="class_config.html#aef82ed33c4ce4b85792172dcacb552f0">KMuteGroup</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KMuteGroup&quot;</span>, <span class="stringliteral">&quot;(ZLjava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    this-&gt;<a class="code" href="class_config.html#ae7ebb0f5ecce9db4141fbf7d1005a023">KQueryML</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KQueryML&quot;</span>, <span class="stringliteral">&quot;(Ljava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    this-&gt;<a class="code" href="class_config.html#a6828d41c3b1f79565e7fdf756b3c2aac">KQueryBFL</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KQueryBFL&quot;</span>, <span class="stringliteral">&quot;(J)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    this-&gt;<a class="code" href="class_config.html#a88c77bf58af912391d3ab19bc6c66046">KQueryBGL</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KQueryBGL&quot;</span>, <span class="stringliteral">&quot;(J)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    this-&gt;<a class="code" href="class_config.html#affbb043f1d3eb8e3587a1b8fc1a6682e">KQueryOwner</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KQueryOwner&quot;</span>, <span class="stringliteral">&quot;(Ljava/lang/String;)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    this-&gt;<a class="code" href="class_config.html#aefc337c0124f3ed88a175a3a6b17e620">KBuildforward</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KBuildforward&quot;</span>, <span class="stringliteral">&quot;(Ljava/lang/String;J)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    this-&gt;<a class="code" href="class_config.html#ac9c81894cd0eff7edcea916b296ee97f">KNfroperation</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KNfroperation&quot;</span>, <span class="stringliteral">&quot;(Ljava/lang/String;Z)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    this-&gt;<a class="code" href="class_config.html#a9ba4760b8ea690b6e69faff11d6b1ef5">KGioperation</a> = env-&gt;GetStaticMethodID(<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <span class="stringliteral">&quot;KGioperation&quot;</span>, <span class="stringliteral">&quot;(Ljava/lang/String;Z)Ljava/lang/String;&quot;</span>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
+<div class="ttc" id="aclass_config_html_a0697469c6fcaac6dde444e8780b437c5"><div class="ttname"><a href="class_config.html#a0697469c6fcaac6dde444e8780b437c5">Config::KUploadImg</a></div><div class="ttdeci">jmethodID KUploadImg</div><div class="ttdoc">上传图片</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00145">tools.h:145</a></div></div>
+<div class="ttc" id="aclass_config_html_a35e4d5278a105691e18471281e83947d"><div class="ttname"><a href="class_config.html#a35e4d5278a105691e18471281e83947d">Config::KRecall</a></div><div class="ttdeci">jmethodID KRecall</div><div class="ttdoc">撤回信息</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00139">tools.h:139</a></div></div>
+<div class="ttc" id="aclass_config_html_a6828d41c3b1f79565e7fdf756b3c2aac"><div class="ttname"><a href="class_config.html#a6828d41c3b1f79565e7fdf756b3c2aac">Config::KQueryBFL</a></div><div class="ttdeci">jmethodID KQueryBFL</div><div class="ttdoc">取好友列表</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00147">tools.h:147</a></div></div>
+<div class="ttc" id="aclass_config_html_a722889565f844a0f533eb1eb7bfe74bf"><div class="ttname"><a href="class_config.html#a722889565f844a0f533eb1eb7bfe74bf">Config::KSchedule</a></div><div class="ttdeci">jmethodID KSchedule</div><div class="ttdoc">定时任务</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00169">tools.h:169</a></div></div>
+<div class="ttc" id="aclass_config_html_a7964ef89426d2f8b0c3508024f0b20ca"><div class="ttname"><a href="class_config.html#a7964ef89426d2f8b0c3508024f0b20ca">Config::KQueryM</a></div><div class="ttdeci">jmethodID KQueryM</div><div class="ttdoc">查询权限</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00159">tools.h:159</a></div></div>
+<div class="ttc" id="aclass_config_html_a79ec5659e47627677e41247b860d76ee"><div class="ttname"><a href="class_config.html#a79ec5659e47627677e41247b860d76ee">Config::KSend</a></div><div class="ttdeci">jmethodID KSend</div><div class="ttdoc">发送信息</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00141">tools.h:141</a></div></div>
+<div class="ttc" id="aclass_config_html_a7be31e17b33b721573e0855c1166d665"><div class="ttname"><a href="class_config.html#a7be31e17b33b721573e0855c1166d665">Config::KQueryImgUrl</a></div><div class="ttdeci">jmethodID KQueryImgUrl</div><div class="ttdoc">查询图片下载地址</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00155">tools.h:155</a></div></div>
+<div class="ttc" id="aclass_config_html_a7e26286ce329125869281cd979c94fc5"><div class="ttname"><a href="class_config.html#a7e26286ce329125869281cd979c94fc5">Config::initexception</a></div><div class="ttdeci">jclass initexception</div><div class="ttdoc">异常类</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00137">tools.h:137</a></div></div>
+<div class="ttc" id="aclass_config_html_a85e0c82aba983f80aa56b1428f8acd54"><div class="ttname"><a href="class_config.html#a85e0c82aba983f80aa56b1428f8acd54">Config::KRemoteFileInfo</a></div><div class="ttdeci">jmethodID KRemoteFileInfo</div><div class="ttdoc">查询文件信息</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00153">tools.h:153</a></div></div>
+<div class="ttc" id="aclass_config_html_a88c77bf58af912391d3ab19bc6c66046"><div class="ttname"><a href="class_config.html#a88c77bf58af912391d3ab19bc6c66046">Config::KQueryBGL</a></div><div class="ttdeci">jmethodID KQueryBGL</div><div class="ttdoc">取群组列表</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00149">tools.h:149</a></div></div>
+<div class="ttc" id="aclass_config_html_a941c92e01cef6da2301b11422f29afd4"><div class="ttname"><a href="class_config.html#a941c92e01cef6da2301b11422f29afd4">Config::KRefreshInfo</a></div><div class="ttdeci">jmethodID KRefreshInfo</div><div class="ttdoc">查询信息接口</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00143">tools.h:143</a></div></div>
+<div class="ttc" id="aclass_config_html_a9ba4760b8ea690b6e69faff11d6b1ef5"><div class="ttname"><a href="class_config.html#a9ba4760b8ea690b6e69faff11d6b1ef5">Config::KGioperation</a></div><div class="ttdeci">jmethodID KGioperation</div><div class="ttdoc">群聊邀请事件</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00175">tools.h:175</a></div></div>
+<div class="ttc" id="aclass_config_html_a9d35eb18487783f8ee6e8a53a85a0539"><div class="ttname"><a href="class_config.html#a9d35eb18487783f8ee6e8a53a85a0539">Config::KKickM</a></div><div class="ttdeci">jmethodID KKickM</div><div class="ttdoc">踢出</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00161">tools.h:161</a></div></div>
+<div class="ttc" id="aclass_config_html_ab4c7c1fa8e2f5788e71ae05cd8e095f9"><div class="ttname"><a href="class_config.html#ab4c7c1fa8e2f5788e71ae05cd8e095f9">Config::KSendFile</a></div><div class="ttdeci">jmethodID KSendFile</div><div class="ttdoc">上传文件</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00151">tools.h:151</a></div></div>
+<div class="ttc" id="aclass_config_html_ac614d847a1359b2618c48fa779517e8d"><div class="ttname"><a href="class_config.html#ac614d847a1359b2618c48fa779517e8d">Config::KMuteM</a></div><div class="ttdeci">jmethodID KMuteM</div><div class="ttdoc">禁言</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00157">tools.h:157</a></div></div>
+<div class="ttc" id="aclass_config_html_ac9c81894cd0eff7edcea916b296ee97f"><div class="ttname"><a href="class_config.html#ac9c81894cd0eff7edcea916b296ee97f">Config::KNfroperation</a></div><div class="ttdeci">jmethodID KNfroperation</div><div class="ttdoc">好友申请事件</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00173">tools.h:173</a></div></div>
+<div class="ttc" id="aclass_config_html_ae7ebb0f5ecce9db4141fbf7d1005a023"><div class="ttname"><a href="class_config.html#ae7ebb0f5ecce9db4141fbf7d1005a023">Config::KQueryML</a></div><div class="ttdeci">jmethodID KQueryML</div><div class="ttdoc">查询群成员列表</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00167">tools.h:167</a></div></div>
+<div class="ttc" id="aclass_config_html_aef82ed33c4ce4b85792172dcacb552f0"><div class="ttname"><a href="class_config.html#aef82ed33c4ce4b85792172dcacb552f0">Config::KMuteGroup</a></div><div class="ttdeci">jmethodID KMuteGroup</div><div class="ttdoc">全员禁言</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00165">tools.h:165</a></div></div>
+<div class="ttc" id="aclass_config_html_aefc337c0124f3ed88a175a3a6b17e620"><div class="ttname"><a href="class_config.html#aefc337c0124f3ed88a175a3a6b17e620">Config::KBuildforward</a></div><div class="ttdeci">jmethodID KBuildforward</div><div class="ttdoc">构建转发信息</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00171">tools.h:171</a></div></div>
+<div class="ttc" id="aclass_config_html_affbb043f1d3eb8e3587a1b8fc1a6682e"><div class="ttname"><a href="class_config.html#affbb043f1d3eb8e3587a1b8fc1a6682e">Config::KQueryOwner</a></div><div class="ttdeci">jmethodID KQueryOwner</div><div class="ttdoc">取群主</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00163">tools.h:163</a></div></div>
+<div class="ttc" id="aclass_init_exception_html"><div class="ttname"><a href="class_init_exception.html">InitException</a></div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00258">tools.h:258</a></div></div>
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_config_a379658b5044c19b2e2016aae0e326d59_icgraph.png" border="0" usemap="#aclass_config_a379658b5044c19b2e2016aae0e326d59_icgraph" alt=""/></div>
+<map name="aclass_config_a379658b5044c19b2e2016aae0e326d59_icgraph" id="aclass_config_a379658b5044c19b2e2016aae0e326d59_icgraph">
+<area shape="rect" title=" " alt="" coords="225,13,308,39"/>
+<area shape="rect" href="pch_8cpp.html#a86032e8c2d72757b8da2e5b19ca5756b" title=" " alt="" coords="5,5,177,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a4527012e3db22223852e754ae2241e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4527012e3db22223852e754ae2241e9c">&#9670;&nbsp;</a></span>CPP_lib</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jclass Config::CPP_lib = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>kt中JNI接口类 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00135">135</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7e26286ce329125869281cd979c94fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e26286ce329125869281cd979c94fc5">&#9670;&nbsp;</a></span>initexception</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jclass Config::initexception = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异常类 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00137">137</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aefc337c0124f3ed88a175a3a6b17e620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc337c0124f3ed88a175a3a6b17e620">&#9670;&nbsp;</a></span>KBuildforward</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KBuildforward = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构建转发信息 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00171">171</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9ba4760b8ea690b6e69faff11d6b1ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba4760b8ea690b6e69faff11d6b1ef5">&#9670;&nbsp;</a></span>KGioperation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KGioperation = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>群聊邀请事件 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00175">175</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9d35eb18487783f8ee6e8a53a85a0539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d35eb18487783f8ee6e8a53a85a0539">&#9670;&nbsp;</a></span>KKickM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KKickM = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>踢出 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00161">161</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aef82ed33c4ce4b85792172dcacb552f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef82ed33c4ce4b85792172dcacb552f0">&#9670;&nbsp;</a></span>KMuteGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KMuteGroup = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>全员禁言 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00165">165</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac614d847a1359b2618c48fa779517e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac614d847a1359b2618c48fa779517e8d">&#9670;&nbsp;</a></span>KMuteM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KMuteM = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>禁言 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00157">157</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac9c81894cd0eff7edcea916b296ee97f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9c81894cd0eff7edcea916b296ee97f">&#9670;&nbsp;</a></span>KNfroperation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KNfroperation = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>好友申请事件 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00173">173</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6828d41c3b1f79565e7fdf756b3c2aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6828d41c3b1f79565e7fdf756b3c2aac">&#9670;&nbsp;</a></span>KQueryBFL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KQueryBFL = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取好友列表 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00147">147</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a88c77bf58af912391d3ab19bc6c66046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c77bf58af912391d3ab19bc6c66046">&#9670;&nbsp;</a></span>KQueryBGL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KQueryBGL = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取群组列表 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00149">149</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7be31e17b33b721573e0855c1166d665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be31e17b33b721573e0855c1166d665">&#9670;&nbsp;</a></span>KQueryImgUrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KQueryImgUrl = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询图片下载地址 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00155">155</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7964ef89426d2f8b0c3508024f0b20ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7964ef89426d2f8b0c3508024f0b20ca">&#9670;&nbsp;</a></span>KQueryM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KQueryM = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询权限 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00159">159</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae7ebb0f5ecce9db4141fbf7d1005a023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ebb0f5ecce9db4141fbf7d1005a023">&#9670;&nbsp;</a></span>KQueryML</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KQueryML = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询群成员列表 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00167">167</a> 行定义.</p>
+
+</div>
+</div>
+<a id="affbb043f1d3eb8e3587a1b8fc1a6682e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affbb043f1d3eb8e3587a1b8fc1a6682e">&#9670;&nbsp;</a></span>KQueryOwner</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KQueryOwner = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取群主 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00163">163</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a35e4d5278a105691e18471281e83947d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35e4d5278a105691e18471281e83947d">&#9670;&nbsp;</a></span>KRecall</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KRecall = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>撤回信息 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00139">139</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a941c92e01cef6da2301b11422f29afd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a941c92e01cef6da2301b11422f29afd4">&#9670;&nbsp;</a></span>KRefreshInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KRefreshInfo = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询信息接口 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00143">143</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a85e0c82aba983f80aa56b1428f8acd54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85e0c82aba983f80aa56b1428f8acd54">&#9670;&nbsp;</a></span>KRemoteFileInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KRemoteFileInfo = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询文件信息 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00153">153</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a722889565f844a0f533eb1eb7bfe74bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722889565f844a0f533eb1eb7bfe74bf">&#9670;&nbsp;</a></span>KSchedule</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KSchedule = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定时任务 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00169">169</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a79ec5659e47627677e41247b860d76ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79ec5659e47627677e41247b860d76ee">&#9670;&nbsp;</a></span>KSend</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KSend = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送信息 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00141">141</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab4c7c1fa8e2f5788e71ae05cd8e095f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c7c1fa8e2f5788e71ae05cd8e095f9">&#9670;&nbsp;</a></span>KSendFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KSendFile = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>上传文件 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00151">151</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0697469c6fcaac6dde444e8780b437c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0697469c6fcaac6dde444e8780b437c5">&#9670;&nbsp;</a></span>KUploadImg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Config::KUploadImg = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>上传图片 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00145">145</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="tools_8h_source.html">tools.h</a></li>
+<li><a class="el" href="tools_8cpp_source.html">tools.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

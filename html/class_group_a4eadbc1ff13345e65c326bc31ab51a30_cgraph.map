@@ -1,0 +1,11 @@
+<map id="Group::getFile" name="Group::getFile">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,109,159"/>
+<area shape="rect" id="node2" href="$class_remote_file.html#a4f9a12c1a71dfea6ba98624fb29d3f2f" title=" " alt="" coords="157,41,345,82"/>
+<area shape="rect" id="node5" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="771,107,889,133"/>
+<area shape="rect" id="node8" href="$class_contact.html#a220e55b907d54958cd2afb95e65da5a1" title="id在全部情况存在" alt="" coords="209,157,294,184"/>
+<area shape="rect" id="node9" href="$class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="604,195,723,221"/>
+<area shape="rect" id="node3" href="$class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="426,5,523,32"/>
+<area shape="rect" id="node7" href="$class_remote_file.html#a2a606d3e0fddf6251ded708a089dfdb5" title="构造远程(群)文件" alt="" coords="393,56,556,83"/>
+<area shape="rect" id="node4" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="617,56,710,83"/>
+<area shape="rect" id="node6" href="$class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="937,107,1055,133"/>
+</map>

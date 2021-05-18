@@ -14,6 +14,7 @@ var annotated_dup =
     [ "ForwardNode", "class_forward_node.html", "class_forward_node" ],
     [ "Friend", "class_friend.html", "class_friend" ],
     [ "FriendException", "class_friend_exception.html", "class_friend_exception" ],
+    [ "Group", "class_group.html", "class_group" ],
     [ "GroupException", "class_group_exception.html", "class_group_exception" ],
     [ "GroupInviteEvent", "class_group_invite_event.html", "class_group_invite_event" ],
     [ "GroupMessageEvent", "class_group_message_event.html", "class_group_message_event" ],
@@ -43,6 +44,6 @@ var annotated_dup =
     [ "RemoteFileException", "class_remote_file_exception.html", "class_remote_file_exception" ],
     [ "SchedulingEvent", "class_scheduling_event.html", "class_scheduling_event" ],
     [ "threadManager", "classthread_manager.html", "classthread_manager" ],
-    [ "Tools", "class_tools.html", null ],
+    [ "Tools", "class_tools.html", "class_tools" ],
     [ "UploadException", "class_upload_exception.html", "class_upload_exception" ]
 ];

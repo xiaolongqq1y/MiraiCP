@@ -1,4 +1,25 @@
 <map id="Contact::groupid" name="Contact::groupid">
-<area shape="rect" id="node1" title="当type为3的时候存在，否则为0，可以看作补充id" alt="" coords="224,5,341,32"/>
-<area shape="rect" id="node2" href="$class_forward_message.html#a3dccf0e2db76db7767507a1e71e9b788" title="发送给群或好友或群成员" alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node1" title="当type为3的时候存在，否则为0，可以看作补充id" alt="" coords="1123,81,1240,108"/>
+<area shape="rect" id="node2" href="$class_forward_message.html#a7eb7a43071253c735cbdf1edc17f2274" title=" " alt="" coords="847,5,1075,32"/>
+<area shape="rect" id="node3" href="$class_member.html#a1313aa1274273237f2dbfaa053a9d23e" title=" " alt="" coords="231,35,355,61"/>
+<area shape="rect" id="node4" href="$class_forward_message.html#a3dccf0e2db76db7767507a1e71e9b788" title="发送给群或好友或群成员" alt="" coords="875,161,1046,188"/>
+<area shape="rect" id="node5" href="$class_contact.html#a6739337b623df49bc51e2fc997bfd6e8" title=" " alt="" coords="889,111,1033,137"/>
+<area shape="rect" id="node6" href="$class_low_level_a_p_i.html#ac6e830ba53c3477de726793a26357256" title="抽象封装底层发送信息接口" alt="" coords="650,339,789,365"/>
+<area shape="rect" id="node16" href="$class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835" title=" " alt="" coords="640,107,799,149"/>
+<area shape="rect" id="node7" href="$class_friend.html#a2f376e17df7c86cb0366d94abf932a3d" title="发送miraicode" alt="" coords="423,237,578,264"/>
+<area shape="rect" id="node8" href="$class_member.html#af9970405f6e4f3861ca8d03bf45846e7" title="发送miraicode" alt="" coords="418,288,583,315"/>
+<area shape="rect" id="node9" href="$class_group.html#a7322d8f63002ef4939d3a71c3f9d0f97" title="发送MiraiCode信息" alt="" coords="424,339,577,365"/>
+<area shape="rect" id="node10" href="$class_friend.html#a0f32b2c4784f164847c69c6908d5ffc7" title="发送纯文本信息" alt="" coords="440,389,561,416"/>
+<area shape="rect" id="node14" href="$class_member.html#a20b2f9a17d4e2e4f07dbb707f95177e3" title="发送文本信息，不进行miraicode解析" alt="" coords="435,491,567,517"/>
+<area shape="rect" id="node15" href="$class_group.html#a32ec58c091a30f8113ca941e800882f3" title="发送信息" alt="" coords="441,440,561,467"/>
+<area shape="rect" id="node11" href="$_procession_8cpp.html#a2f5a0b296fa851091b92244aa5da103a" title=" " alt="" coords="270,389,317,416"/>
+<area shape="rect" id="node12" href="$_procession_8cpp.html#af6b40412027c7beb9eb51bbfed51aff6" title=" " alt="" coords="255,440,331,467"/>
+<area shape="rect" id="node13" href="$pch_8cpp.html#a86032e8c2d72757b8da2e5b19ca5756b" title=" " alt="" coords="5,433,177,474"/>
+<area shape="rect" id="node17" href="$class_low_level_a_p_i.html#ad285de08b2fb584b482db3e0144c1196" title="取该联系人的一些信息" alt="" coords="409,111,592,137"/>
+<area shape="rect" id="node20" href="$class_low_level_a_p_i.html#a34e8b356a0298a68876c21b64373d5af" title="上传图片" alt="" coords="416,187,585,213"/>
+<area shape="rect" id="node18" href="$class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73" title="构建好友对象" alt="" coords="242,85,345,112"/>
+<area shape="rect" id="node19" href="$class_group.html#add4d15440d039be09abf8f8fc316dc8c" title=" " alt="" coords="243,136,343,163"/>
+<area shape="rect" id="node21" href="$class_friend.html#ac271985962999f208d7d3f4b24572ef7" title="上传本地图片，务必要用绝对路径. 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到好友. 最大支持图片大小为30MB." alt="" coords="231,187,356,213"/>
+<area shape="rect" id="node22" href="$class_member.html#aba78f8099187033776154e6a3e60b881" title="上传本地图片，务必要用绝对路径 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到群" alt="" coords="225,237,361,264"/>
+<area shape="rect" id="node23" href="$class_group.html#a5d5ee1411e024a25c3576daf019f99f5" title="上传本地图片，务必要用绝对路径 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到群" alt="" coords="231,288,355,315"/>
 </map>

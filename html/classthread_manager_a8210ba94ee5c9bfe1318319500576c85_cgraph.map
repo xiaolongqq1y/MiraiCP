@@ -1,0 +1,8 @@
+<map id="threadManager::newEnv" name="threadManager::newEnv">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,165,57"/>
+<area shape="rect" id="node2" href="$classthread_manager.html#a3401a8976c99d293ef1b8b8c7a1db9d1" title="获取线程id." alt="" coords="213,5,396,32"/>
+<area shape="rect" id="node3" href="$class_logger.html#a13e1837413a7cdecd8ea11909f1842be" title="发送普通(info级日志)" alt="" coords="260,56,349,83"/>
+<area shape="rect" id="node4" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="444,56,537,83"/>
+<area shape="rect" id="node5" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="585,31,704,57"/>
+<area shape="rect" id="node6" href="$class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="752,56,869,83"/>
+</map>

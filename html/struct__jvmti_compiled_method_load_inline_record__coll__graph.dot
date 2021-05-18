@@ -1,0 +1,12 @@
+digraph "_jvmtiCompiledMethodLoadInlineRecord"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="_jvmtiCompiledMethodLoad\lInlineRecord",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" header" ,fontname="Helvetica"];
+  Node2 [label="_jvmtiCompiledMethodLoad\lRecordHeader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__jvmti_compiled_method_load_record_header.html",tooltip=" "];
+  Node2 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pcinfo" ,fontname="Helvetica"];
+  Node3 [label="_PCStackInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct___p_c_stack_info.html",tooltip=" "];
+}

@@ -1,9 +1,16 @@
 var searchData=
 [
-  ['deserializationfromjson_13',['deserializationFromJson',['../class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2',1,'Contact']]],
-  ['deserializationfromstring_14',['deserializationFromString',['../class_contact.html#a1ae828255543de1ff394bc79e9262cc7',1,'Contact']]],
-  ['deserializefromstring_15',['deserializeFromString',['../class_message_source.html#a593939fc75a52d99f210da0482a85443',1,'MessageSource']]],
-  ['detach_16',['detach',['../classthread_manager.html#a807b673ce4d4199cf0bfdfff5521d2c0',1,'threadManager']]],
-  ['dinfo_17',['dinfo',['../structdinfo.html',1,'dinfo'],['../class_remote_file.html#a2a819afb5208ce0d816a073b6d2dbb98',1,'RemoteFile::dinfo()']]],
-  ['downloadtime_18',['downloadtime',['../structfinfo.html#a6257f5202f67d71af216e8328d6ee28f',1,'finfo']]]
+  ['bhead_19',['BHead',['../class_event.html#a8c086e80ef6058cb386055572d466c85',1,'Event']]],
+  ['bj_20',['BJ',['../tools_8h.html#a98a30b1b597813b443b562083d8ca69e',1,'tools.h']]],
+  ['bjnode_21',['BJNode',['../class_event_1_1_b_j_node.html',1,'Event']]],
+  ['bot_22',['Bot',['../class_bot.html',1,'']]],
+  ['bot_23',['bot',['../class_bot_event.html#a2a77f086d712d0fc8d2e430e4e2d4b83',1,'BotEvent']]],
+  ['bot_24',['Bot',['../class_bot.html#a98733a6bf8724f78a402b97480955d67',1,'Bot']]],
+  ['botevent_25',['BotEvent',['../class_bot_event.html',1,'BotEvent'],['../class_bot_event.html#ac26c3d59fa5a3546f269549ccbe994a4',1,'BotEvent::BotEvent()']]],
+  ['botexception_26',['BotException',['../class_bot_exception.html',1,'BotException'],['../class_bot_exception.html#a5ab7d520de1b8cb679aa2b84af810c24',1,'BotException::BotException()']]],
+  ['botid_27',['botid',['../class_contact.html#a869c10fc8e1abeedc10d805576b1450a',1,'Contact']]],
+  ['botjoingroupevent_28',['BotJoinGroupEvent',['../class_bot_join_group_event.html',1,'BotJoinGroupEvent'],['../class_bot_join_group_event.html#a152067b678802d1c2124ffc31d8a523d',1,'BotJoinGroupEvent::BotJoinGroupEvent()']]],
+  ['broadcast_29',['broadcast',['../class_event.html#a2e51d104dd14766942e6e126b9086466',1,'Event::broadcast(GroupMessageEvent g)'],['../class_event.html#a31bb06ed9dca0835599bf2a63345c483',1,'Event::broadcast(PrivateMessageEvent p)'],['../class_event.html#ab3c829efebb84750fe97b1718679ca9c',1,'Event::broadcast(GroupInviteEvent g)'],['../class_event.html#ac0a08d29afd15543c803d8b66b882945',1,'Event::broadcast(NewFriendRequestEvent g)'],['../class_event.html#a2238261596237fbfe190e9f35d775bc6',1,'Event::broadcast(MemberJoinEvent g)'],['../class_event.html#ab41264e1a59a8db82ebcc2d7f79aa861',1,'Event::broadcast(MemberLeaveEvent g)'],['../class_event.html#a9be5a8c018742d45f5a51b6154763b0b',1,'Event::broadcast(RecallEvent r)'],['../class_event.html#ab191036bba782e15dd9f65f4734c0c7e',1,'Event::broadcast(SchedulingEvent g)'],['../class_event.html#a23b5f0a09f8f1444a85947bef801979b',1,'Event::broadcast(BotJoinGroupEvent b)'],['../class_event.html#a27a73f7b92d9a1f28c662c35dce9a7f4',1,'Event::broadcast(GroupTempMessageEvent g)']]],
+  ['btail_30',['BTail',['../class_event.html#aa1162a522b52150377d50241c749a269',1,'Event']]],
+  ['buttons_31',['buttons',['../group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga7c9d2e092d1c6af7df134b5f2995a227',1,'LightAppStyle1']]]
 ];

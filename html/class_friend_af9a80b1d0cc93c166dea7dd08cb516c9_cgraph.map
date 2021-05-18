@@ -1,0 +1,4 @@
+<map id="Friend::SendMiraiCode" name="Friend::SendMiraiCode">
+<area shape="rect" id="node1" title="发送miraicode" alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node2" href="$class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="208,5,389,32"/>
+</map>

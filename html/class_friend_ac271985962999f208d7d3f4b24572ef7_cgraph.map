@@ -1,6 +1,16 @@
 <map id="Friend::uploadImg" name="Friend::uploadImg">
-<area shape="rect" id="node1" title="上传本地图片，务必要用绝对路径. 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到好友. 最大支持图片大小为30MB." alt="" coords="5,31,131,57"/>
-<area shape="rect" id="node2" href="$class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="215,5,312,32"/>
-<area shape="rect" id="node3" href="$class_low_level_a_p_i.html#a34e8b356a0298a68876c21b64373d5af" title="上传图片" alt="" coords="179,56,348,83"/>
-<area shape="rect" id="node4" href="$class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835" title=" " alt="" coords="396,49,555,90"/>
+<area shape="rect" id="node1" title="上传本地图片，务必要用绝对路径. 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到好友. 最大支持图片大小为30MB." alt="" coords="5,48,131,75"/>
+<area shape="rect" id="node2" href="$class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="179,23,276,49"/>
+<area shape="rect" id="node6" href="$class_low_level_a_p_i.html#a34e8b356a0298a68876c21b64373d5af" title="上传图片" alt="" coords="324,73,493,100"/>
+<area shape="rect" id="node3" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="362,23,455,49"/>
+<area shape="rect" id="node4" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="561,23,680,49"/>
+<area shape="rect" id="node5" href="$class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="761,23,879,49"/>
+<area shape="rect" id="node7" href="$class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="561,73,680,100"/>
+<area shape="rect" id="node8" href="$class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835" title=" " alt="" coords="541,125,700,166"/>
+<area shape="rect" id="node9" href="$class_contact.html#a6739337b623df49bc51e2fc997bfd6e8" title=" " alt="" coords="748,132,892,159"/>
+<area shape="rect" id="node10" href="$class_contact.html#a869c10fc8e1abeedc10d805576b1450a" title="所属bot" alt="" coords="976,31,1079,57"/>
+<area shape="rect" id="node11" href="$class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4" title="当type为3的时候存在，否则为0，可以看作补充id" alt="" coords="969,81,1086,108"/>
+<area shape="rect" id="node12" href="$class_contact.html#a220e55b907d54958cd2afb95e65da5a1" title="id在全部情况存在" alt="" coords="985,132,1070,159"/>
+<area shape="rect" id="node13" href="$class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066" title="群名称，群成员群名片，或好友昵称" alt="" coords="940,183,1115,209"/>
+<area shape="rect" id="node14" href="$class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1" title="当前对象类型" alt="" coords="977,233,1077,260"/>
 </map>

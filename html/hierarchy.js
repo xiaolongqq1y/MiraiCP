@@ -15,6 +15,7 @@ var hierarchy =
     [ "Config", "class_config.html", null ],
     [ "Contact", "class_contact.html", [
       [ "Friend", "class_friend.html", null ],
+      [ "Group", "class_group.html", null ],
       [ "Member", "class_member.html", null ]
     ] ],
     [ "dinfo", "structdinfo.html", null ],
@@ -50,8 +51,22 @@ var hierarchy =
       [ "LightApp", "class_light_app.html", null ],
       [ "RemoteFile", "class_remote_file.html", null ]
     ] ],
+    [ "Event::Node", "class_event_1_1_node.html", [
+      [ "Event::BJNode", "class_event_1_1_b_j_node.html", null ],
+      [ "Event::GINode", "class_event_1_1_g_i_node.html", null ],
+      [ "Event::GMENode", "class_event_1_1_g_m_e_node.html", null ],
+      [ "Event::GTMENode", "class_event_1_1_g_t_m_e_node.html", null ],
+      [ "Event::MJNode", "class_event_1_1_m_j_node.html", null ],
+      [ "Event::MLNode", "class_event_1_1_m_l_node.html", null ],
+      [ "Event::NFRENode", "class_event_1_1_n_f_r_e_node.html", null ],
+      [ "Event::PMENode", "class_event_1_1_p_m_e_node.html", null ],
+      [ "Event::RNode", "class_event_1_1_r_node.html", null ],
+      [ "Event::SNode", "class_event_1_1_s_node.html", null ]
+    ] ],
     [ "Event::NodeHandle", "class_event_1_1_node_handle.html", null ],
     [ "SchedulingEvent", "class_scheduling_event.html", null ],
+    [ "Group::short_info", "struct_group_1_1short__info.html", null ],
+    [ "threadManager::t", "structthread_manager_1_1t.html", null ],
     [ "threadManager", "classthread_manager.html", null ],
     [ "Tools", "class_tools.html", null ]
 ];

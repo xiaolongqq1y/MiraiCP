@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,6 +35,21 @@
    </div>
    <div id="projectbrief">MiraiCP API文档</div>
   </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -41,16 +61,6 @@
 var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -92,32 +102,33 @@ $(document).ready(function(){initNavTree('class_light_app.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 
-<p>小程序  
- <a href="class_light_app.html#details">更多...</a></p>
-
 <p><code>#include &lt;<a class="el" href="tools_8h_source.html">tools.h</a>&gt;</code></p>
-<div class="dynheader">
-类 LightApp 继承关系图:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 类 LightApp 继承关系图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_light_app__inherit__graph.png" border="0" usemap="#a_light_app_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_light_app_inherit__map" id="a_light_app_inherit__map">
-<area shape="rect" title="小程序" alt="" coords="21,80,94,107"/>
+<area shape="rect" title=" " alt="" coords="21,80,94,107"/>
 <area shape="rect" href="class_mirai_codeable.html" title="MiraiCode父类, 指可以被转换成miraicode的类型" alt="" coords="5,5,109,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
-<div class="dynheader">
-LightApp 的协作图:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> LightApp 的协作图:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_light_app__coll__graph.png" border="0" usemap="#a_light_app_coll__map" alt="Collaboration graph"/></div>
 <map name="a_light_app_coll__map" id="a_light_app_coll__map">
-<area shape="rect" title="小程序" alt="" coords="21,80,94,107"/>
+<area shape="rect" title=" " alt="" coords="21,80,94,107"/>
 <area shape="rect" href="class_mirai_codeable.html" title="MiraiCode父类, 指可以被转换成miraicode的类型" alt="" coords="5,5,109,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:aef71a2710e3d7994bc896da6b4e5d6db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_app.html#aef71a2710e3d7994bc896da6b4e5d6db">LightApp</a> (std::string content)</td></tr>
+<tr class="memitem:aef71a2710e3d7994bc896da6b4e5d6db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_app.html#aef71a2710e3d7994bc896da6b4e5d6db">LightApp</a> (<a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> <a class="el" href="class_light_app.html#a4bce6da412b7c2773e880ec9458ef4cd">content</a>)</td></tr>
 <tr class="memdesc:aef71a2710e3d7994bc896da6b4e5d6db"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用纯文本构造，推荐使用其他结构体方法构造  <a href="class_light_app.html#aef71a2710e3d7994bc896da6b4e5d6db">更多...</a><br /></td></tr>
 <tr class="separator:aef71a2710e3d7994bc896da6b4e5d6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7d78a40ed7aefa1ebf0316ede0b6ed9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_app.html#ab7d78a40ed7aefa1ebf0316ede0b6ed9">LightApp</a> (<a class="el" href="struct_light_app_style1.html">LightAppStyle1</a> c)</td></tr>
@@ -126,20 +137,19 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a51553e434d66d1a8df735898a926c03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c1b7b6b028d0465a95661dc25c0df5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_app.html#a84c1b7b6b028d0465a95661dc25c0df5">LightApp</a> (<a class="el" href="struct_light_app_style3.html">LightAppStyle3</a> c)</td></tr>
 <tr class="separator:a84c1b7b6b028d0465a95661dc25c0df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f294b6092bdac3a0602ca19fb937fcc"><td class="memItemLeft" align="right" valign="top"><a id="a2f294b6092bdac3a0602ca19fb937fcc"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>toMiraiCode</b> ()</td></tr>
+<tr class="memitem:a2f294b6092bdac3a0602ca19fb937fcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_app.html#a2f294b6092bdac3a0602ca19fb937fcc">toMiraiCode</a> ()</td></tr>
 <tr class="separator:a2f294b6092bdac3a0602ca19fb937fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a4bce6da412b7c2773e880ec9458ef4cd"><td class="memItemLeft" align="right" valign="top"><a id="a4bce6da412b7c2773e880ec9458ef4cd"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>content</b> = &quot;&quot;</td></tr>
+<tr class="memitem:a4bce6da412b7c2773e880ec9458ef4cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_app.html#a4bce6da412b7c2773e880ec9458ef4cd">content</a> = &quot;&quot;</td></tr>
 <tr class="separator:a4bce6da412b7c2773e880ec9458ef4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>小程序 </p>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#_a72">D:/Git/mirai/MiraiCP/cpp/tools.h</a>.</dd>
+<div class="textblock"><dl class="section examples"><dt>示例</dt><dd><a class="el" href="_xE9_x80_x9A_xE8_xBF_x87_xE5_xB8_xB8_xE9_x87_x8F_xE6_x9E_x84_xE5_xBB_xBA_xE5_xB9_xB6_xE5_x8F_x9197556366cd2dcce0d134ee2e4115b702.html#_a8">通过常量构建并发送小程序卡片</a> , 以及 <a class="el" href="_xE9_x80_x9A_xE8_xBF_x87_xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x84_xE5_xBB_xBA_xE5_xB9_xB6_xE5_x8F_x91e59b5208ad4bd692e3eb31a60a7af792.html#_a5">通过文本构建并发送小程序卡片</a>.</dd>
 </dl>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00668">668</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="aef71a2710e3d7994bc896da6b4e5d6db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef71a2710e3d7994bc896da6b4e5d6db">&#9670;&nbsp;</a></span>LightApp() <span class="overload">[1/4]</span></h2>
@@ -153,7 +163,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>content</b> = 
         <tr>
           <td class="memname">LightApp::LightApp </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td>
           <td class="paramname"><em>content</em></td><td>)</td>
           <td></td>
         </tr>
@@ -172,9 +182,13 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>content</b> = 
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#a73">D:/Git/mirai/MiraiCP/cpp/tools.h</a>.</dd>
-</dl>
 
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00674">674</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                                {</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        this-&gt;<a class="code" href="class_light_app.html#a4bce6da412b7c2773e880ec9458ef4cd">content</a> = <a class="code" href="class_light_app.html#a4bce6da412b7c2773e880ec9458ef4cd">content</a>;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    }</div>
+<div class="ttc" id="aclass_light_app_html_a4bce6da412b7c2773e880ec9458ef4cd"><div class="ttname"><a href="class_light_app.html#a4bce6da412b7c2773e880ec9458ef4cd">LightApp::content</a></div><div class="ttdeci">std::string content</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00670">tools.h:670</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab7d78a40ed7aefa1ebf0316ede0b6ed9"></a>
@@ -206,8 +220,26 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>content</b> = 
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="struct_light_app_style1.html">LightAppStyle1</a> in <a class="el" href="constants_8h_source.html">constants.h</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="struct_light_app_style1.html">LightAppStyle1</a> in <a class="el" href="constants_8h.html">constants.h</a> </dd></dl>
 
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00681">681</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;                               {</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        this-&gt;<a class="code" href="class_light_app.html#a4bce6da412b7c2773e880ec9458ef4cd">content</a> =</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            <span class="stringliteral">&quot;{\&quot;app\&quot;:\&quot;com.tencent.miniapp\&quot;,\&quot;desc\&quot;:\&quot;\&quot;,\&quot;view\&quot;:\&quot;notification\&quot;,\&quot;ver\&quot;:\&quot;0.0.0.1\&quot;,\&quot;prompt\&quot;:\&quot;[应用]\&quot;,\&quot;appID\&quot;:\&quot;\&quot;,\&quot;sourceName\&quot;:\&quot;\&quot;,\&quot;actionData\&quot;:\&quot;\&quot;,\&quot;actionData_A\&quot;:\&quot;\&quot;,\&quot;sourceUrl\&quot;:\&quot;\&quot;,\&quot;meta\&quot;:{\&quot;notification\&quot;:{\&quot;appInfo\&quot;:&quot;</span></div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;            <span class="stringliteral">&quot;{\&quot;appName\&quot;:\&quot;&quot;</span> + c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga04a014bff758f5351a974174ee48cc3f">appName</a> + <span class="stringliteral">&quot;\&quot;,\&quot;appType\&quot;:4,\&quot;appid\&quot;:1109659848,&quot;</span></div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;            <span class="stringliteral">&quot;\&quot;iconUrl\&quot;:\&quot;&quot;</span> + c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga98f26202027cdb5e553bce8490596207">icon</a> + <span class="stringliteral">&quot;\&quot;},&quot;</span></div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;            <span class="stringliteral">&quot;\&quot;data\&quot;:[&quot;</span> + c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gab0ee4877ae27c8ea113c2afb83f0bd9d">titles</a> + <span class="stringliteral">&quot;],&quot;</span></div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;            <span class="stringliteral">&quot;\&quot;title\&quot;:\&quot;&quot;</span> +</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;            c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gae84778e9e5c413a096aac3582ff60209">title</a> + <span class="stringliteral">&quot;\&quot;,\&quot;button\&quot;:&quot;</span></div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;            <span class="stringliteral">&quot;[&quot;</span> + c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga7c9d2e092d1c6af7df134b5f2995a227">buttons</a> + <span class="stringliteral">&quot;],&quot;</span></div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;            <span class="stringliteral">&quot;\&quot;emphasis_keyword\&quot;:\&quot;\&quot;}},\&quot;text\&quot;:\&quot;\&quot;,\&quot;sourceAd\&quot;:\&quot;\&quot;}&quot;</span>;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    }</div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_ga04a014bff758f5351a974174ee48cc3f"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga04a014bff758f5351a974174ee48cc3f">LightAppStyle1::appName</a></div><div class="ttdeci">std::string appName</div><div class="ttdoc">大标题</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00062">constants.h:62</a></div></div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_ga7c9d2e092d1c6af7df134b5f2995a227"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga7c9d2e092d1c6af7df134b5f2995a227">LightAppStyle1::buttons</a></div><div class="ttdeci">std::string buttons</div><div class="ttdoc">下面的按钮，但是不能按，用逗号分割多个</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00059">constants.h:59</a></div></div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_ga98f26202027cdb5e553bce8490596207"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga98f26202027cdb5e553bce8490596207">LightAppStyle1::icon</a></div><div class="ttdeci">std::string icon</div><div class="ttdoc">小图标地址</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00054">constants.h:54</a></div></div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_gab0ee4877ae27c8ea113c2afb83f0bd9d"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gab0ee4877ae27c8ea113c2afb83f0bd9d">LightAppStyle1::titles</a></div><div class="ttdeci">std::string titles</div><div class="ttdoc">小标题，用逗号分割多个</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00056">constants.h:56</a></div></div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_gae84778e9e5c413a096aac3582ff60209"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gae84778e9e5c413a096aac3582ff60209">LightAppStyle1::title</a></div><div class="ttdeci">std::string title</div><div class="ttdoc">小标题的标题</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00064">constants.h:64</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a51553e434d66d1a8df735898a926c03c"></a>
@@ -239,8 +271,26 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>content</b> = 
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="struct_light_app_style1.html">LightAppStyle1</a> in <a class="el" href="constants_8h_source.html">constants.h</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="struct_light_app_style1.html">LightAppStyle1</a> in <a class="el" href="constants_8h.html">constants.h</a> </dd></dl>
 
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00696">696</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                               {</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        this-&gt;<a class="code" href="class_light_app.html#a4bce6da412b7c2773e880ec9458ef4cd">content</a> = <span class="stringliteral">&quot;{\&quot;config\&quot;:&quot;</span></div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;            <span class="stringliteral">&quot;{\&quot;height\&quot;:0,\&quot;forward\&quot;:1,\&quot;ctime\&quot;:0,\&quot;width\&quot;:0,\&quot;type\&quot;:\&quot;normal\&quot;,\&quot;token\&quot;:\&quot;\&quot;,\&quot;autoSize\&quot;:0},&quot;</span></div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            <span class="stringliteral">&quot;\&quot;prompt\&quot;:\&quot;[QQ小程序]\&quot;,\&quot;app\&quot;:\&quot;com.tencent.miniapp_01\&quot;,\&quot;ver\&quot;:\&quot;1.0.0.103\&quot;,\&quot;view\&quot;:\&quot;view_8C8E89B49BE609866298ADDFF2DBABA4\&quot;,&quot;</span></div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;            <span class="stringliteral">&quot;\&quot;meta\&quot;:{\&quot;detail_1\&quot;:{\&quot;appid\&quot;:\&quot;1110081493\&quot;,\&quot;preview\&quot;:\&quot;&quot;</span> + c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga3d6ca10bcc65929157f8699405e89057">preview</a> +</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;            <span class="stringliteral">&quot;\&quot;,\&quot;shareTemplateData\&quot;:{},&quot;</span></div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;            <span class="stringliteral">&quot;\&quot;gamePointsUrl\&quot;:\&quot;\&quot;,\&quot;gamePoints\&quot;:\&quot;\&quot;,\&quot;url\&quot;:\&quot;m.q.qq.com\&quot;,\&quot;scene\&quot;:0,\&quot;desc\&quot;:\&quot;&quot;</span> +</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;            c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga96a81bdd875a370b301367c3b373ed91">title2</a> + <span class="stringliteral">&quot;\&quot;,\&quot;title\&quot;:\&quot;&quot;</span> + c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga1da69c3b09a70cbfae907800d21b19b2">title</a> + <span class="stringliteral">&quot;\&quot;,&quot;</span></div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;            <span class="stringliteral">&quot;\&quot;host\&quot;:{\&quot;uin\&quot;:0,\&quot;nick\&quot;:\&quot;\&quot;},&quot;</span></div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;            <span class="stringliteral">&quot;\&quot;shareTemplateId\&quot;:\&quot;8C8E89B49BE609866298ADDFF2DBABA4\&quot;,\&quot;icon\&quot;:\&quot;&quot;</span> +</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;            c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gaee9237a38791fb065684b2d01577a466">icon</a> + <span class="stringliteral">&quot;\&quot;,\&quot;showLittleTail\&quot;:\&quot;\&quot;}},\&quot;desc\&quot;:\&quot;\&quot;}&quot;</span>;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    }</div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_ga1da69c3b09a70cbfae907800d21b19b2"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga1da69c3b09a70cbfae907800d21b19b2">LightAppStyle2::title</a></div><div class="ttdeci">std::string title</div><div class="ttdoc">小图片右侧小标题</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00074">constants.h:74</a></div></div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_ga3d6ca10bcc65929157f8699405e89057"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga3d6ca10bcc65929157f8699405e89057">LightAppStyle2::preview</a></div><div class="ttdeci">std::string preview</div><div class="ttdoc">预览图大图</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00072">constants.h:72</a></div></div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_ga96a81bdd875a370b301367c3b373ed91"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga96a81bdd875a370b301367c3b373ed91">LightAppStyle2::title2</a></div><div class="ttdeci">std::string title2</div><div class="ttdoc">图片上标题</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00076">constants.h:76</a></div></div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_gaee9237a38791fb065684b2d01577a466"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gaee9237a38791fb065684b2d01577a466">LightAppStyle2::icon</a></div><div class="ttdeci">std::string icon</div><div class="ttdoc">小图标</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00070">constants.h:70</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a84c1b7b6b028d0465a95661dc25c0df5"></a>
@@ -272,12 +322,91 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>content</b> = 
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="struct_light_app_style1.html">LightAppStyle1</a> in <a class="el" href="constants_8h_source.html">constants.h</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="struct_light_app_style1.html">LightAppStyle1</a> in <a class="el" href="constants_8h.html">constants.h</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00712">712</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                               {</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;        this-&gt;<a class="code" href="class_light_app.html#a4bce6da412b7c2773e880ec9458ef4cd">content</a> =</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;            <span class="stringliteral">&quot;{\&quot;config\&quot;:{\&quot;height\&quot;:0,\&quot;forward\&quot;:1,\&quot;ctime\&quot;:0,\&quot;width\&quot;:0,\&quot;type\&quot;:\&quot;normal\&quot;,\&quot;token\&quot;:\&quot;\&quot;,\&quot;autoSize\&quot;:0},&quot;</span></div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;            <span class="stringliteral">&quot;\&quot;prompt\&quot;:\&quot;[QQ小程序]\&quot;,\&quot;app\&quot;:\&quot;com.tencent.miniapp_01\&quot;,\&quot;ver\&quot;:\&quot;0.0.0.1\&quot;,\&quot;view\&quot;:\&quot;view_8C8E89B49BE609866298ADDFF2DBABA4\&quot;,&quot;</span></div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;            <span class="stringliteral">&quot;\&quot;meta\&quot;:{\&quot;detail_1\&quot;:{\&quot;appid\&quot;:\&quot;1109937557\&quot;,\&quot;preview\&quot;:\&quot;&quot;</span> + c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gacb7dbcecffd588dddc86faf485ad96a5">preview</a> +</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;            <span class="stringliteral">&quot;\&quot;,\&quot;shareTemplateData\&quot;:{},\&quot;gamePointsUrl\&quot;:\&quot;\&quot;,\&quot;gamePoints\&quot;:\&quot;\&quot;,\&quot;url\&quot;:\&quot;m.q.qq.com\&quot;,\&quot;scene\&quot;:0,\&quot;desc\&quot;:\&quot;&quot;</span> +</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;            c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gaeeff118dfa90dda4c721ba53bafc1579">title</a> + <span class="stringliteral">&quot;\&quot;,\&quot;title\&quot;:\&quot;&quot;</span> + c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gabdcd330cb236fd6a187720110b28b318">description</a> + <span class="stringliteral">&quot;\&quot;,&quot;</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;            <span class="stringliteral">&quot;\&quot;host\&quot;:{\&quot;uin\&quot;:0,\&quot;nick\&quot;:\&quot;\&quot;},\&quot;shareTemplateId\&quot;:\&quot;8C8E89B49BE609866298ADDFF2DBABA4\&quot;,\&quot;icon\&quot;:\&quot;&quot;</span> +</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;            c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga3068835dace3fbc2e65ce59f3b991b9c">icon</a> + <span class="stringliteral">&quot;\&quot;,\&quot;qqdocurl\&quot;:\&quot;&quot;</span> + c.<a class="code" href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga1d3842cfd6f235f314de28bf9251fe64">url</a> + <span class="stringliteral">&quot;\&quot;,\&quot;showLittleTail\&quot;:\&quot;\&quot;}},\&quot;desc\&quot;:\&quot;\&quot;}&quot;</span>;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    }</div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_ga1d3842cfd6f235f314de28bf9251fe64"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga1d3842cfd6f235f314de28bf9251fe64">LightAppStyle3::url</a></div><div class="ttdeci">std::string url</div><div class="ttdoc">点击跳转链接</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00082">constants.h:82</a></div></div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_ga3068835dace3fbc2e65ce59f3b991b9c"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga3068835dace3fbc2e65ce59f3b991b9c">LightAppStyle3::icon</a></div><div class="ttdeci">std::string icon</div><div class="ttdoc">图标</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00084">constants.h:84</a></div></div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_gabdcd330cb236fd6a187720110b28b318"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gabdcd330cb236fd6a187720110b28b318">LightAppStyle3::description</a></div><div class="ttdeci">std::string description</div><div class="ttdoc">图片旁描述</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00090">constants.h:90</a></div></div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_gacb7dbcecffd588dddc86faf485ad96a5"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gacb7dbcecffd588dddc86faf485ad96a5">LightAppStyle3::preview</a></div><div class="ttdeci">std::string preview</div><div class="ttdoc">预览图</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00086">constants.h:86</a></div></div>
+<div class="ttc" id="agroup___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC_html_gaeeff118dfa90dda4c721ba53bafc1579"><div class="ttname"><a href="group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#gaeeff118dfa90dda4c721ba53bafc1579">LightAppStyle3::title</a></div><div class="ttdeci">std::string title</div><div class="ttdoc">大标题</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00088">constants.h:88</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a2f294b6092bdac3a0602ca19fb937fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f294b6092bdac3a0602ca19fb937fcc">&#9670;&nbsp;</a></span>toMiraiCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> LightApp::toMiraiCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044">MiraiCodeable</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00723">723</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;                            {</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[mirai:app:&quot;</span> + <a class="code" href="class_tools.html#a73a5bbcbdd583d014bf3f8e5db3a89eb">Tools::replace</a>(<a class="code" href="class_tools.html#a73a5bbcbdd583d014bf3f8e5db3a89eb">Tools::replace</a>(<a class="code" href="class_light_app.html#a4bce6da412b7c2773e880ec9458ef4cd">content</a>, <span class="stringliteral">&quot;[&quot;</span>, <span class="stringliteral">&quot;\\[&quot;</span>), <span class="stringliteral">&quot;]&quot;</span>, <span class="stringliteral">&quot;\\]&quot;</span>) + <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    }</div>
+<div class="ttc" id="aclass_tools_html_a73a5bbcbdd583d014bf3f8e5db3a89eb"><div class="ttname"><a href="class_tools.html#a73a5bbcbdd583d014bf3f8e5db3a89eb">Tools::replace</a></div><div class="ttdeci">static std::string replace(std::string str, const std::string &amp;from, const std::string &amp;to)</div><div class="ttdoc">替换全部在一个字符串中.</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00226">tools.h:226</a></div></div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_light_app_a2f294b6092bdac3a0602ca19fb937fcc_cgraph.png" border="0" usemap="#aclass_light_app_a2f294b6092bdac3a0602ca19fb937fcc_cgraph" alt=""/></div>
+<map name="aclass_light_app_a2f294b6092bdac3a0602ca19fb937fcc_cgraph" id="aclass_light_app_a2f294b6092bdac3a0602ca19fb937fcc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" href="class_tools.html#a73a5bbcbdd583d014bf3f8e5db3a89eb" title="替换全部在一个字符串中." alt="" coords="204,5,307,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a4bce6da412b7c2773e880ec9458ef4cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bce6da412b7c2773e880ec9458ef4cd">&#9670;&nbsp;</a></span>content</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> LightApp::content = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00670">670</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Git/mirai/MiraiCP/cpp/<a class="el" href="tools_8h_source.html">tools.h</a></li>
+<li><a class="el" href="tools_8h_source.html">tools.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

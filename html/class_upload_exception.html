@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,6 +35,21 @@
    </div>
    <div id="projectbrief">MiraiCP API文档</div>
   </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -41,16 +61,6 @@
 var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -85,6 +95,7 @@ $(document).ready(function(){initNavTree('class_upload_exception.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="class_upload_exception-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">UploadException类 参考</div>  </div>
@@ -92,9 +103,11 @@ $(document).ready(function(){initNavTree('class_upload_exception.html',''); init
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="tools_8h_source.html">tools.h</a>&gt;</code></p>
-<div class="dynheader">
-类 UploadException 继承关系图:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 类 UploadException 继承关系图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_upload_exception__inherit__graph.png" border="0" usemap="#a_upload_exception_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_upload_exception_inherit__map" id="a_upload_exception_inherit__map">
 <area shape="rect" title=" " alt="" coords="9,155,129,181"/>
@@ -102,9 +115,11 @@ $(document).ready(function(){initNavTree('class_upload_exception.html',''); init
 <area shape="rect" title=" " alt="" coords="17,5,121,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
-<div class="dynheader">
-UploadException 的协作图:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> UploadException 的协作图:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_upload_exception__coll__graph.png" border="0" usemap="#a_upload_exception_coll__map" alt="Collaboration graph"/></div>
 <map name="a_upload_exception_coll__map" id="a_upload_exception_coll__map">
 <area shape="rect" title=" " alt="" coords="9,155,129,181"/>
@@ -115,24 +130,170 @@ UploadException 的协作图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a30511802b558b865bac3a7a118a44193"><td class="memItemLeft" align="right" valign="top"><a id="a30511802b558b865bac3a7a118a44193"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UploadException</b> (std::string text)</td></tr>
+<tr class="memitem:a30511802b558b865bac3a7a118a44193"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_upload_exception.html#a30511802b558b865bac3a7a118a44193">UploadException</a> (<a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> text)</td></tr>
 <tr class="separator:a30511802b558b865bac3a7a118a44193"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac860caa219fb769a64225f4c2d088b9d"><td class="memItemLeft" align="right" valign="top"><a id="ac860caa219fb769a64225f4c2d088b9d"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_upload_exception.html#ac860caa219fb769a64225f4c2d088b9d">what</a> ()</td></tr>
-<tr class="memdesc:ac860caa219fb769a64225f4c2d088b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">异常信息 <br /></td></tr>
+<tr class="memitem:ac860caa219fb769a64225f4c2d088b9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_upload_exception.html#ac860caa219fb769a64225f4c2d088b9d">what</a> ()</td></tr>
+<tr class="memdesc:ac860caa219fb769a64225f4c2d088b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">异常信息  <a href="class_upload_exception.html#ac860caa219fb769a64225f4c2d088b9d">更多...</a><br /></td></tr>
 <tr class="separator:ac860caa219fb769a64225f4c2d088b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2717697bd3a12fc76040131fe0780bdb"><td class="memItemLeft" align="right" valign="top"><a id="a2717697bd3a12fc76040131fe0780bdb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_upload_exception.html#a2717697bd3a12fc76040131fe0780bdb">raise</a> ()</td></tr>
-<tr class="memdesc:a2717697bd3a12fc76040131fe0780bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">raise 抛出方法 <br /></td></tr>
+<tr class="memitem:a2717697bd3a12fc76040131fe0780bdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_upload_exception.html#a2717697bd3a12fc76040131fe0780bdb">raise</a> ()</td></tr>
+<tr class="memdesc:a2717697bd3a12fc76040131fe0780bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">raise 抛出方法  <a href="class_upload_exception.html#a2717697bd3a12fc76040131fe0780bdb">更多...</a><br /></td></tr>
 <tr class="separator:a2717697bd3a12fc76040131fe0780bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a7b4a5c0a2e2984c37e1c9e788f55063f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_upload_exception.html#a7b4a5c0a2e2984c37e1c9e788f55063f">description</a></td></tr>
+<tr class="separator:a7b4a5c0a2e2984c37e1c9e788f55063f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>文件读取异常. </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="class_mirai_c_p_exception.html" title="总异常抽象类">MiraiCPException</a> </dd></dl>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#_a42">D:/Git/mirai/MiraiCP/cpp/tools.h</a>.</dd>
-</dl>
-</div><hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Git/mirai/MiraiCP/cpp/<a class="el" href="tools_8h_source.html">tools.h</a></li>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00282">282</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a30511802b558b865bac3a7a118a44193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30511802b558b865bac3a7a118a44193">&#9670;&nbsp;</a></span>UploadException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UploadException::UploadException </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00284">284</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                    {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        this-&gt;<a class="code" href="class_upload_exception.html#a7b4a5c0a2e2984c37e1c9e788f55063f">description</a> = <span class="stringliteral">&quot;上传(图片/文件)异常&quot;</span> + text;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div>
+<div class="ttc" id="aclass_upload_exception_html_a7b4a5c0a2e2984c37e1c9e788f55063f"><div class="ttname"><a href="class_upload_exception.html#a7b4a5c0a2e2984c37e1c9e788f55063f">UploadException::description</a></div><div class="ttdeci">std::string description</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00299">tools.h:299</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a2717697bd3a12fc76040131fe0780bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2717697bd3a12fc76040131fe0780bdb">&#9670;&nbsp;</a></span>raise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UploadException::raise </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>raise 抛出方法 </p>
+
+<p>实现了 <a class="el" href="class_mirai_c_p_exception.html#a6bf4207dc82e7410e136e352176a5ec9">MiraiCPException</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00293">293</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                 {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <a class="code" href="tools_8h.html#a0009c186c3629201f6c24eded36605f4">logger</a>-&gt;<a class="code" href="class_logger.html#abb690146dbd2c6fb7e603caf123096dd">Error</a>(this-&gt;<a class="code" href="class_upload_exception.html#a7b4a5c0a2e2984c37e1c9e788f55063f">description</a>);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="comment">//manager-&gt;getEnv()-&gt;ThrowNew(config-&gt;initexception, (this-&gt;description).c_str());</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
+<div class="ttc" id="aclass_logger_html_abb690146dbd2c6fb7e603caf123096dd"><div class="ttname"><a href="class_logger.html#abb690146dbd2c6fb7e603caf123096dd">Logger::Error</a></div><div class="ttdeci">void Error(const std::string &amp;, JNIEnv *=manager-&gt;getEnv())</div><div class="ttdoc">发送错误(error级日志)</div><div class="ttdef"><b>Definition:</b> <a href="tools_8cpp_source.html#l00096">tools.cpp:96</a></div></div>
+<div class="ttc" id="atools_8h_html_a0009c186c3629201f6c24eded36605f4"><div class="ttname"><a href="tools_8h.html#a0009c186c3629201f6c24eded36605f4">logger</a></div><div class="ttdeci">Logger * logger</div><div class="ttdoc">声明全局日志对象</div><div class="ttdef"><b>Definition:</b> <a href="pch_8cpp_source.html#l00010">pch.cpp:10</a></div></div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_upload_exception_a2717697bd3a12fc76040131fe0780bdb_cgraph.png" border="0" usemap="#aclass_upload_exception_a2717697bd3a12fc76040131fe0780bdb_cgraph" alt=""/></div>
+<map name="aclass_upload_exception_a2717697bd3a12fc76040131fe0780bdb_cgraph" id="aclass_upload_exception_a2717697bd3a12fc76040131fe0780bdb_cgraph">
+<area shape="rect" title="raise 抛出方法" alt="" coords="5,31,161,57"/>
+<area shape="rect" href="class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="209,31,307,57"/>
+<area shape="rect" href="class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="355,31,448,57"/>
+<area shape="rect" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="496,5,615,32"/>
+<area shape="rect" href="class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="663,31,780,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac860caa219fb769a64225f4c2d088b9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac860caa219fb769a64225f4c2d088b9d">&#9670;&nbsp;</a></span>what()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> UploadException::what </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>异常信息 </p>
+
+<p>实现了 <a class="el" href="class_mirai_c_p_exception.html#a5b0e3cd0989dd814bba45db073c2f513">MiraiCPException</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00289">289</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                     {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_upload_exception.html#a7b4a5c0a2e2984c37e1c9e788f55063f">description</a>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a7b4a5c0a2e2984c37e1c9e788f55063f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4a5c0a2e2984c37e1c9e788f55063f">&#9670;&nbsp;</a></span>description</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> UploadException::description</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00299">299</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="tools_8h_source.html">tools.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

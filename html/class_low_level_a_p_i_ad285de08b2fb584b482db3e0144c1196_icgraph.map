@@ -1,4 +1,6 @@
 <map id="LowLevelAPI::getInfoSource" name="LowLevelAPI::getInfoSource">
-<area shape="rect" id="node1" title="取该联系人的一些信息" alt="" coords="156,5,339,32"/>
-<area shape="rect" id="node2" href="$class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73" title="构建好友对象" alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node1" title="取该联系人的一些信息" alt="" coords="177,56,360,83"/>
+<area shape="rect" id="node2" href="$class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73" title="构建好友对象" alt="" coords="16,5,119,32"/>
+<area shape="rect" id="node3" href="$class_group.html#add4d15440d039be09abf8f8fc316dc8c" title=" " alt="" coords="17,56,117,83"/>
+<area shape="rect" id="node4" href="$class_member.html#a1313aa1274273237f2dbfaa053a9d23e" title=" " alt="" coords="5,107,129,133"/>
 </map>

@@ -4,6 +4,8 @@ var class_contact =
     [ "Contact", "class_contact.html#acff216bf0459571db3304576f563f6cc", null ],
     [ "avatarUrl", "class_contact.html#a10cf00a3c2dfef0bdc29c3f89e508293", null ],
     [ "botid", "class_contact.html#a869c10fc8e1abeedc10d805576b1450a", null ],
+    [ "deserializationFromJson", "class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2", null ],
+    [ "deserializationFromString", "class_contact.html#a1ae828255543de1ff394bc79e9262cc7", null ],
     [ "groupid", "class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4", null ],
     [ "id", "class_contact.html#a220e55b907d54958cd2afb95e65da5a1", null ],
     [ "nickOrNameCard", "class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066", null ],

@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,6 +35,21 @@
    </div>
    <div id="projectbrief">MiraiCP API文档</div>
   </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -41,16 +61,6 @@
 var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -96,9 +106,11 @@ $(document).ready(function(){initNavTree('class_bot_event.html',''); initResizab
  <a href="class_bot_event.html#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="tools_8h_source.html">tools.h</a>&gt;</code></p>
-<div class="dynheader">
-类 BotEvent 继承关系图:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 类 BotEvent 继承关系图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_bot_event__inherit__graph.png" border="0" usemap="#a_bot_event_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_bot_event_inherit__map" id="a_bot_event_inherit__map">
 <area shape="rect" title="所以事件处理timeoutevent都是机器人事件，指都有机器人实例" alt="" coords="5,208,80,235"/>
@@ -113,9 +125,11 @@ $(document).ready(function(){initNavTree('class_bot_event.html',''); initResizab
 <area shape="rect" href="class_recall_event.html" title="撤回信息" alt="" coords="170,411,261,437"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
-<div class="dynheader">
-BotEvent 的协作图:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> BotEvent 的协作图:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_bot_event__coll__graph.png" border="0" usemap="#a_bot_event_coll__map" alt="Collaboration graph"/></div>
 <map name="a_bot_event_coll__map" id="a_bot_event_coll__map">
 <area shape="rect" title="所以事件处理timeoutevent都是机器人事件，指都有机器人实例" alt="" coords="5,95,80,121"/>
@@ -125,22 +139,72 @@ BotEvent 的协作图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:ac26c3d59fa5a3546f269549ccbe994a4"><td class="memItemLeft" align="right" valign="top"><a id="ac26c3d59fa5a3546f269549ccbe994a4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BotEvent</b> (unsigned long long botid)</td></tr>
+<tr class="memitem:ac26c3d59fa5a3546f269549ccbe994a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bot_event.html#ac26c3d59fa5a3546f269549ccbe994a4">BotEvent</a> (unsigned long long botid)</td></tr>
 <tr class="separator:ac26c3d59fa5a3546f269549ccbe994a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a2a77f086d712d0fc8d2e430e4e2d4b83"><td class="memItemLeft" align="right" valign="top"><a id="a2a77f086d712d0fc8d2e430e4e2d4b83"></a>
-<a class="el" href="class_bot.html">Bot</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bot</b></td></tr>
+<tr class="memitem:a2a77f086d712d0fc8d2e430e4e2d4b83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bot.html">Bot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bot_event.html#a2a77f086d712d0fc8d2e430e4e2d4b83">bot</a></td></tr>
 <tr class="separator:a2a77f086d712d0fc8d2e430e4e2d4b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>所以事件处理timeoutevent都是机器人事件，指都有机器人实例 </p>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#_a163">D:/Git/mirai/MiraiCP/cpp/tools.h</a>.</dd>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l01384">1384</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ac26c3d59fa5a3546f269549ccbe994a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac26c3d59fa5a3546f269549ccbe994a4">&#9670;&nbsp;</a></span>BotEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BotEvent::BotEvent </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>botid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l01388">1388</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;                                       : <a class="code" href="class_bot_event.html#a2a77f086d712d0fc8d2e430e4e2d4b83">bot</a>(<a class="code" href="class_bot.html">Bot</a>(botid)) {</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;    }</div>
+<div class="ttc" id="aclass_bot_event_html_a2a77f086d712d0fc8d2e430e4e2d4b83"><div class="ttname"><a href="class_bot_event.html#a2a77f086d712d0fc8d2e430e4e2d4b83">BotEvent::bot</a></div><div class="ttdeci">Bot bot</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l01386">tools.h:1386</a></div></div>
+<div class="ttc" id="aclass_bot_html"><div class="ttname"><a href="class_bot.html">Bot</a></div><div class="ttdoc">当前bot账号信息</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l01042">tools.h:1042</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a2a77f086d712d0fc8d2e430e4e2d4b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a77f086d712d0fc8d2e430e4e2d4b83">&#9670;&nbsp;</a></span>bot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_bot.html">Bot</a> BotEvent::bot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_xE8_xB8_xA2_xE5_x87_xBA_xE7_xBE_xA4_xE6_x88_x90_xE5_x91_x98-example.html#a6">踢出群成员</a>.</dd>
 </dl>
-</div><hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Git/mirai/MiraiCP/cpp/<a class="el" href="tools_8h_source.html">tools.h</a></li>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l01386">1386</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="tools_8h_source.html">tools.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

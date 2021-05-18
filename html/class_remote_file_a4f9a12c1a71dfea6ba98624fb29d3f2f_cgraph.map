@@ -1,0 +1,8 @@
+<map id="RemoteFile::deserializeFromString" name="RemoteFile::deserializeFromString">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,193,90"/>
+<area shape="rect" id="node2" href="$class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="274,31,371,57"/>
+<area shape="rect" id="node6" href="$class_remote_file.html#a2a606d3e0fddf6251ded708a089dfdb5" title="构造远程(群)文件" alt="" coords="241,81,404,108"/>
+<area shape="rect" id="node3" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="452,31,545,57"/>
+<area shape="rect" id="node4" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="593,5,712,32"/>
+<area shape="rect" id="node5" href="$class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="760,31,877,57"/>
+</map>

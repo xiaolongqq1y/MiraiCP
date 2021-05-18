@@ -1,0 +1,14 @@
+<map id="MessageSource::MessageSource" name="MessageSource::MessageSource">
+<area shape="rect" id="node1" title=" " alt="" coords="803,173,1021,199"/>
+<area shape="rect" id="node2" href="$class_message_source.html#a593939fc75a52d99f210da0482a85443" title="从json字符串反序列化到MessageSource对象" alt="" coords="568,165,755,207"/>
+<area shape="rect" id="node3" href="$pch_8cpp.html#a5a6a6a055d2edb20a003b0e706b36538" title=" " alt="" coords="349,5,520,47"/>
+<area shape="rect" id="node4" href="$class_friend.html#a2f376e17df7c86cb0366d94abf932a3d" title="发送miraicode" alt="" coords="357,71,512,98"/>
+<area shape="rect" id="node5" href="$class_member.html#af9970405f6e4f3861ca8d03bf45846e7" title="发送miraicode" alt="" coords="352,122,517,149"/>
+<area shape="rect" id="node6" href="$class_group.html#a7322d8f63002ef4939d3a71c3f9d0f97" title="发送MiraiCode信息" alt="" coords="358,173,511,199"/>
+<area shape="rect" id="node7" href="$class_friend.html#a0f32b2c4784f164847c69c6908d5ffc7" title="发送纯文本信息" alt="" coords="374,223,495,250"/>
+<area shape="rect" id="node11" href="$class_member.html#a20b2f9a17d4e2e4f07dbb707f95177e3" title="发送文本信息，不进行miraicode解析" alt="" coords="369,274,501,301"/>
+<area shape="rect" id="node12" href="$class_group.html#a32ec58c091a30f8113ca941e800882f3" title="发送信息" alt="" coords="375,325,495,351"/>
+<area shape="rect" id="node8" href="$_procession_8cpp.html#a2f5a0b296fa851091b92244aa5da103a" title=" " alt="" coords="240,223,287,250"/>
+<area shape="rect" id="node9" href="$_procession_8cpp.html#af6b40412027c7beb9eb51bbfed51aff6" title=" " alt="" coords="225,299,301,326"/>
+<area shape="rect" id="node10" href="$pch_8cpp.html#a86032e8c2d72757b8da2e5b19ca5756b" title=" " alt="" coords="5,292,177,333"/>
+</map>

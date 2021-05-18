@@ -1,0 +1,10 @@
+<map id="Bot::nick" name="Bot::nick">
+<area shape="rect" id="node1" title="昵称" alt="" coords="5,56,80,83"/>
+<area shape="rect" id="node2" href="$class_bot.html#a0d6809b54d75c621eb3cc7022943fd3e" title=" " alt="" coords="128,56,213,83"/>
+<area shape="rect" id="node3" href="$class_bot.html#a3354dc4fbf569d19e11ac04ac8bf0b01" title="刷新bot信息" alt="" coords="261,56,371,83"/>
+<area shape="rect" id="node4" href="$class_low_level_a_p_i.html#a9bb2f0a4e7c0cb7eee2e100b791d38d7" title=" " alt="" coords="419,5,549,32"/>
+<area shape="rect" id="node5" href="$class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="425,56,543,83"/>
+<area shape="rect" id="node8" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="904,56,1023,83"/>
+<area shape="rect" id="node6" href="$class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="597,56,715,83"/>
+<area shape="rect" id="node7" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="763,5,856,32"/>
+</map>

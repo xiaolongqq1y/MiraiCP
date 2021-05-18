@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,6 +35,21 @@
    </div>
    <div id="projectbrief">MiraiCP API文档</div>
   </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -41,16 +61,6 @@
 var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -86,6 +96,7 @@ $(document).ready(function(){initNavTree('class_member.html',''); initResizable(
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="class_member-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">Member类 参考</div>  </div>
@@ -96,18 +107,22 @@ $(document).ready(function(){initNavTree('class_member.html',''); initResizable(
  <a href="class_member.html#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="tools_8h_source.html">tools.h</a>&gt;</code></p>
-<div class="dynheader">
-类 Member 继承关系图:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 类 Member 继承关系图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_member__inherit__graph.png" border="0" usemap="#a_member_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_member_inherit__map" id="a_member_inherit__map">
 <area shape="rect" title="群成员类声明" alt="" coords="5,80,75,107"/>
 <area shape="rect" href="class_contact.html" title="group, friend, member的父类" alt="" coords="7,5,73,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
-<div class="dynheader">
-Member 的协作图:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Member 的协作图:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_member__coll__graph.png" border="0" usemap="#a_member_coll__map" alt="Collaboration graph"/></div>
 <map name="a_member_coll__map" id="a_member_coll__map">
 <area shape="rect" title="群成员类声明" alt="" coords="5,80,75,107"/>
@@ -117,40 +132,35 @@ Member 的协作图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a1313aa1274273237f2dbfaa053a9d23e"><td class="memItemLeft" align="right" valign="top"><a id="a1313aa1274273237f2dbfaa053a9d23e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Member</b> (unsigned long long qqid, unsigned long long <a class="el" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4">groupid</a>, unsigned long long <a class="el" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a>, JNIEnv *=manager-&gt;getEnv())</td></tr>
+<tr class="memitem:a1313aa1274273237f2dbfaa053a9d23e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a1313aa1274273237f2dbfaa053a9d23e">Member</a> (unsigned long long qqid, unsigned long long <a class="el" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4">groupid</a>, unsigned long long <a class="el" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a>, JNIEnv *=<a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv())</td></tr>
 <tr class="separator:a1313aa1274273237f2dbfaa053a9d23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba78f8099187033776154e6a3e60b881"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#aba78f8099187033776154e6a3e60b881">uploadImg</a> (const std::string &amp;filename, JNIEnv *=manager-&gt;getEnv())</td></tr>
+<tr class="memitem:aba78f8099187033776154e6a3e60b881"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#aba78f8099187033776154e6a3e60b881">uploadImg</a> (const <a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> &amp;filename, JNIEnv *=<a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv())</td></tr>
 <tr class="memdesc:aba78f8099187033776154e6a3e60b881"><td class="mdescLeft">&#160;</td><td class="mdescRight">上传本地图片，务必要用绝对路径 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到群  <a href="class_member.html#aba78f8099187033776154e6a3e60b881">更多...</a><br /></td></tr>
 <tr class="separator:aba78f8099187033776154e6a3e60b881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51e0e2424f6662912d44fbdb6b18c83a"><td class="memItemLeft" align="right" valign="top"><a id="a51e0e2424f6662912d44fbdb6b18c83a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Member</b> (<a class="el" href="class_contact.html">Contact</a> c)</td></tr>
+<tr class="memitem:a51e0e2424f6662912d44fbdb6b18c83a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a51e0e2424f6662912d44fbdb6b18c83a">Member</a> (<a class="el" href="class_contact.html">Contact</a> c)</td></tr>
 <tr class="separator:a51e0e2424f6662912d44fbdb6b18c83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37b4986d11cd5c950d92dbc5d9296684"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a37b4986d11cd5c950d92dbc5d9296684">getPermission</a> (JNIEnv *=manager-&gt;getEnv())</td></tr>
+<tr class="memitem:a37b4986d11cd5c950d92dbc5d9296684"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a37b4986d11cd5c950d92dbc5d9296684">getPermission</a> (JNIEnv *=<a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv())</td></tr>
 <tr class="separator:a37b4986d11cd5c950d92dbc5d9296684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b4b9cbf9705a28f41fcb96164b149a9"><td class="memItemLeft" align="right" valign="top"><a id="a7b4b9cbf9705a28f41fcb96164b149a9"></a>
-<a class="el" href="class_message_source.html">MessageSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a7b4b9cbf9705a28f41fcb96164b149a9">SendMiraiCode</a> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *msg)</td></tr>
-<tr class="memdesc:a7b4b9cbf9705a28f41fcb96164b149a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送miraicode <br /></td></tr>
+<tr class="memitem:a7b4b9cbf9705a28f41fcb96164b149a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_message_source.html">MessageSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a7b4b9cbf9705a28f41fcb96164b149a9">SendMiraiCode</a> (<a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *msg)</td></tr>
+<tr class="memdesc:a7b4b9cbf9705a28f41fcb96164b149a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送miraicode  <a href="class_member.html#a7b4b9cbf9705a28f41fcb96164b149a9">更多...</a><br /></td></tr>
 <tr class="separator:a7b4b9cbf9705a28f41fcb96164b149a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a614ae3a22349a9a957549385c4b785"><td class="memItemLeft" align="right" valign="top"><a id="a2a614ae3a22349a9a957549385c4b785"></a>
-<a class="el" href="class_message_source.html">MessageSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a2a614ae3a22349a9a957549385c4b785">SendMiraiCode</a> (<a class="el" href="class_mirai_code.html">MiraiCode</a> msg)</td></tr>
-<tr class="memdesc:a2a614ae3a22349a9a957549385c4b785"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送miraicode <br /></td></tr>
+<tr class="memitem:a2a614ae3a22349a9a957549385c4b785"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_message_source.html">MessageSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a2a614ae3a22349a9a957549385c4b785">SendMiraiCode</a> (<a class="el" href="class_mirai_code.html">MiraiCode</a> msg)</td></tr>
+<tr class="memdesc:a2a614ae3a22349a9a957549385c4b785"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送miraicode  <a href="class_member.html#a2a614ae3a22349a9a957549385c4b785">更多...</a><br /></td></tr>
 <tr class="separator:a2a614ae3a22349a9a957549385c4b785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9970405f6e4f3861ca8d03bf45846e7"><td class="memItemLeft" align="right" valign="top"><a id="af9970405f6e4f3861ca8d03bf45846e7"></a>
-<a class="el" href="class_message_source.html">MessageSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#af9970405f6e4f3861ca8d03bf45846e7">SendMiraiCode</a> (std::string msg, JNIEnv *=manager-&gt;getEnv())</td></tr>
-<tr class="memdesc:af9970405f6e4f3861ca8d03bf45846e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送miraicode <br /></td></tr>
+<tr class="memitem:af9970405f6e4f3861ca8d03bf45846e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_message_source.html">MessageSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#af9970405f6e4f3861ca8d03bf45846e7">SendMiraiCode</a> (<a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> msg, JNIEnv *=<a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv())</td></tr>
+<tr class="memdesc:af9970405f6e4f3861ca8d03bf45846e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送miraicode  <a href="class_member.html#af9970405f6e4f3861ca8d03bf45846e7">更多...</a><br /></td></tr>
 <tr class="separator:af9970405f6e4f3861ca8d03bf45846e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20b2f9a17d4e2e4f07dbb707f95177e3"><td class="memItemLeft" align="right" valign="top"><a id="a20b2f9a17d4e2e4f07dbb707f95177e3"></a>
-<a class="el" href="class_message_source.html">MessageSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a20b2f9a17d4e2e4f07dbb707f95177e3">SendMsg</a> (std::string msg, JNIEnv *=manager-&gt;getEnv())</td></tr>
-<tr class="memdesc:a20b2f9a17d4e2e4f07dbb707f95177e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送文本信息，不进行miraicode解析 <br /></td></tr>
+<tr class="memitem:a20b2f9a17d4e2e4f07dbb707f95177e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_message_source.html">MessageSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a20b2f9a17d4e2e4f07dbb707f95177e3">SendMsg</a> (<a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> msg, JNIEnv *=<a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv())</td></tr>
+<tr class="memdesc:a20b2f9a17d4e2e4f07dbb707f95177e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送文本信息，不进行miraicode解析  <a href="class_member.html#a20b2f9a17d4e2e4f07dbb707f95177e3">更多...</a><br /></td></tr>
 <tr class="separator:a20b2f9a17d4e2e4f07dbb707f95177e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58a543e956ab5c1d77f29a2c15e675cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a58a543e956ab5c1d77f29a2c15e675cb">Mute</a> (int time, JNIEnv *=manager-&gt;getEnv())</td></tr>
+<tr class="memitem:a58a543e956ab5c1d77f29a2c15e675cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a58a543e956ab5c1d77f29a2c15e675cb">Mute</a> (int time, JNIEnv *=<a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv())</td></tr>
 <tr class="separator:a58a543e956ab5c1d77f29a2c15e675cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae23c4a4ff625eb0c29f27a0c66a76aee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#ae23c4a4ff625eb0c29f27a0c66a76aee">Kick</a> (const std::string &amp;reason, JNIEnv *=manager-&gt;getEnv())</td></tr>
+<tr class="memitem:ae23c4a4ff625eb0c29f27a0c66a76aee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#ae23c4a4ff625eb0c29f27a0c66a76aee">Kick</a> (const <a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> &amp;reason, JNIEnv *=<a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv())</td></tr>
 <tr class="separator:ae23c4a4ff625eb0c29f27a0c66a76aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_contact"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_contact')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_contact.html">Contact</a></td></tr>
-<tr class="memitem:acff216bf0459571db3304576f563f6cc inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top"><a id="acff216bf0459571db3304576f563f6cc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Contact</b> (int <a class="el" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">type</a>, unsigned long long <a class="el" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">id</a>, unsigned long long gid, std::string name, unsigned long long <a class="el" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a>)</td></tr>
+<tr class="memitem:ae39444f378e6de7fd6c3e60981949af5 inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact</a> ()</td></tr>
+<tr class="separator:ae39444f378e6de7fd6c3e60981949af5 inherit pub_methods_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff216bf0459571db3304576f563f6cc inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#acff216bf0459571db3304576f563f6cc">Contact</a> (int <a class="el" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">type</a>, unsigned long long <a class="el" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">id</a>, unsigned long long gid, <a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> name, unsigned long long <a class="el" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a>)</td></tr>
 <tr class="separator:acff216bf0459571db3304576f563f6cc inherit pub_methods_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a182b686fa824fe5c9a3a5181f873e2a1 inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">type</a> ()</td></tr>
 <tr class="memdesc:a182b686fa824fe5c9a3a5181f873e2a1 inherit pub_methods_class_contact"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前对象类型  <a href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">更多...</a><br /></td></tr>
@@ -161,22 +171,18 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a07e7ddca539bf8e5ac2d2ad00d8b7ba4 inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4">groupid</a> ()</td></tr>
 <tr class="memdesc:a07e7ddca539bf8e5ac2d2ad00d8b7ba4 inherit pub_methods_class_contact"><td class="mdescLeft">&#160;</td><td class="mdescRight">当type为3的时候存在，否则为0，可以看作补充id  <a href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4">更多...</a><br /></td></tr>
 <tr class="separator:a07e7ddca539bf8e5ac2d2ad00d8b7ba4 inherit pub_methods_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f78c5f66d0b71ad06267c6a3b492066 inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top"><a id="a3f78c5f66d0b71ad06267c6a3b492066"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066">nickOrNameCard</a> ()</td></tr>
-<tr class="memdesc:a3f78c5f66d0b71ad06267c6a3b492066 inherit pub_methods_class_contact"><td class="mdescLeft">&#160;</td><td class="mdescRight">群名称，群成员群名片，或好友昵称 <br /></td></tr>
+<tr class="memitem:a3f78c5f66d0b71ad06267c6a3b492066 inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066">nickOrNameCard</a> ()</td></tr>
+<tr class="memdesc:a3f78c5f66d0b71ad06267c6a3b492066 inherit pub_methods_class_contact"><td class="mdescLeft">&#160;</td><td class="mdescRight">群名称，群成员群名片，或好友昵称  <a href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066">更多...</a><br /></td></tr>
 <tr class="separator:a3f78c5f66d0b71ad06267c6a3b492066 inherit pub_methods_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10cf00a3c2dfef0bdc29c3f89e508293 inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top"><a id="a10cf00a3c2dfef0bdc29c3f89e508293"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a10cf00a3c2dfef0bdc29c3f89e508293">avatarUrl</a> ()</td></tr>
-<tr class="memdesc:a10cf00a3c2dfef0bdc29c3f89e508293 inherit pub_methods_class_contact"><td class="mdescLeft">&#160;</td><td class="mdescRight">头像url地址 <br /></td></tr>
+<tr class="memitem:a10cf00a3c2dfef0bdc29c3f89e508293 inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a10cf00a3c2dfef0bdc29c3f89e508293">avatarUrl</a> ()</td></tr>
+<tr class="memdesc:a10cf00a3c2dfef0bdc29c3f89e508293 inherit pub_methods_class_contact"><td class="mdescLeft">&#160;</td><td class="mdescRight">头像url地址  <a href="class_contact.html#a10cf00a3c2dfef0bdc29c3f89e508293">更多...</a><br /></td></tr>
 <tr class="separator:a10cf00a3c2dfef0bdc29c3f89e508293 inherit pub_methods_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a869c10fc8e1abeedc10d805576b1450a inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top"><a id="a869c10fc8e1abeedc10d805576b1450a"></a>
-unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a> ()</td></tr>
-<tr class="memdesc:a869c10fc8e1abeedc10d805576b1450a inherit pub_methods_class_contact"><td class="mdescLeft">&#160;</td><td class="mdescRight">所属bot <br /></td></tr>
+<tr class="memitem:a869c10fc8e1abeedc10d805576b1450a inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a> ()</td></tr>
+<tr class="memdesc:a869c10fc8e1abeedc10d805576b1450a inherit pub_methods_class_contact"><td class="mdescLeft">&#160;</td><td class="mdescRight">所属bot  <a href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">更多...</a><br /></td></tr>
 <tr class="separator:a869c10fc8e1abeedc10d805576b1450a inherit pub_methods_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6739337b623df49bc51e2fc997bfd6e8 inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top"><a id="a6739337b623df49bc51e2fc997bfd6e8"></a>
-nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><b>serialization</b> ()</td></tr>
+<tr class="memitem:a6739337b623df49bc51e2fc997bfd6e8 inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tools_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d">nlohmann::json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a6739337b623df49bc51e2fc997bfd6e8">serialization</a> ()</td></tr>
 <tr class="separator:a6739337b623df49bc51e2fc997bfd6e8 inherit pub_methods_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190dd1c2ecfccf67edc3d2b1cff87835 inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835">serializationToString</a> ()</td></tr>
+<tr class="memitem:a190dd1c2ecfccf67edc3d2b1cff87835 inherit pub_methods_class_contact"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835">serializationToString</a> ()</td></tr>
 <tr class="separator:a190dd1c2ecfccf67edc3d2b1cff87835 inherit pub_methods_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -185,39 +191,190 @@ Public 属性</h2></td></tr>
 <tr class="memdesc:a34070a5524ede3ecb35c6ea7dba21f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">权限等级  <a href="class_member.html#a34070a5524ede3ecb35c6ea7dba21f9f">更多...</a><br /></td></tr>
 <tr class="separator:a34070a5524ede3ecb35c6ea7dba21f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a619ee4a517e8e4c707d6c130e20b0051"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a619ee4a517e8e4c707d6c130e20b0051">Mute_id</a> = NULL</td></tr>
+<tr class="separator:a619ee4a517e8e4c707d6c130e20b0051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2ce7ca96323c2073d8ada4e93711f6"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#aca2ce7ca96323c2073d8ada4e93711f6">Query_permission</a> = NULL</td></tr>
+<tr class="separator:aca2ce7ca96323c2073d8ada4e93711f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1d041eecd575f4e3c02ea82765db36"><td class="memItemLeft" align="right" valign="top">jmethodID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_member.html#a3c1d041eecd575f4e3c02ea82765db36">KickM</a> = NULL</td></tr>
+<tr class="separator:a3c1d041eecd575f4e3c02ea82765db36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 额外继承的成员函数</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_contact"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_contact')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="class_contact.html">Contact</a></td></tr>
-<tr class="memitem:aafc428cdb4c1920864bf747ad7dce9f2 inherit pub_static_methods_class_contact"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_contact.html">Contact</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2">deserializationFromJson</a> (nlohmann::json root)</td></tr>
+<tr class="memitem:aafc428cdb4c1920864bf747ad7dce9f2 inherit pub_static_methods_class_contact"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_contact.html">Contact</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2">deserializationFromJson</a> (<a class="el" href="tools_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d">nlohmann::json</a> root)</td></tr>
 <tr class="memdesc:aafc428cdb4c1920864bf747ad7dce9f2 inherit pub_static_methods_class_contact"><td class="mdescLeft">&#160;</td><td class="mdescRight">从json节点反序列化  <a href="class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2">更多...</a><br /></td></tr>
 <tr class="separator:aafc428cdb4c1920864bf747ad7dce9f2 inherit pub_static_methods_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae828255543de1ff394bc79e9262cc7 inherit pub_static_methods_class_contact"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_contact.html">Contact</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a1ae828255543de1ff394bc79e9262cc7">deserializationFromString</a> (const std::string &amp;source)</td></tr>
+<tr class="memitem:a1ae828255543de1ff394bc79e9262cc7 inherit pub_static_methods_class_contact"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_contact.html">Contact</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a1ae828255543de1ff394bc79e9262cc7">deserializationFromString</a> (const <a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> &amp;source)</td></tr>
 <tr class="separator:a1ae828255543de1ff394bc79e9262cc7 inherit pub_static_methods_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_contact"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_contact')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_contact.html">Contact</a></td></tr>
-<tr class="memitem:a7841db9af58406a50d53d0ad6f7fa374 inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top"><a id="a7841db9af58406a50d53d0ad6f7fa374"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>_type</b> = 0</td></tr>
+<tr class="memitem:a7841db9af58406a50d53d0ad6f7fa374 inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">_type</a> = 0</td></tr>
 <tr class="separator:a7841db9af58406a50d53d0ad6f7fa374 inherit pro_attribs_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12ab960a72b55b8e7562d04d0b4bd6e0 inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top"><a id="a12ab960a72b55b8e7562d04d0b4bd6e0"></a>
-unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>_id</b></td></tr>
+<tr class="memitem:a12ab960a72b55b8e7562d04d0b4bd6e0 inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">_id</a></td></tr>
 <tr class="separator:a12ab960a72b55b8e7562d04d0b4bd6e0 inherit pro_attribs_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad10855c0071226743dffc553dc913b88 inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top"><a id="ad10855c0071226743dffc553dc913b88"></a>
-unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>_groupid</b></td></tr>
+<tr class="memitem:ad10855c0071226743dffc553dc913b88 inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#ad10855c0071226743dffc553dc913b88">_groupid</a></td></tr>
 <tr class="separator:ad10855c0071226743dffc553dc913b88 inherit pro_attribs_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8c0a3a8718a84d9766d528df278ad4b inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top"><a id="ae8c0a3a8718a84d9766d528df278ad4b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_nickOrNameCard</b></td></tr>
+<tr class="memitem:ae8c0a3a8718a84d9766d528df278ad4b inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">_nickOrNameCard</a></td></tr>
 <tr class="separator:ae8c0a3a8718a84d9766d528df278ad4b inherit pro_attribs_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92b8feb1a780637b71e06f3f9e954043 inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top"><a id="a92b8feb1a780637b71e06f3f9e954043"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_avatarUrl</b></td></tr>
+<tr class="memitem:a92b8feb1a780637b71e06f3f9e954043 inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a92b8feb1a780637b71e06f3f9e954043">_avatarUrl</a></td></tr>
 <tr class="separator:a92b8feb1a780637b71e06f3f9e954043 inherit pro_attribs_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88b041d798fb05e1347c51d149c12a21 inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top"><a id="a88b041d798fb05e1347c51d149c12a21"></a>
-unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>_botid</b></td></tr>
+<tr class="memitem:a88b041d798fb05e1347c51d149c12a21 inherit pro_attribs_class_contact"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">_botid</a></td></tr>
 <tr class="separator:a88b041d798fb05e1347c51d149c12a21 inherit pro_attribs_class_contact"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>群成员类声明 </p>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#_a155">D:/Git/mirai/MiraiCP/cpp/tools.h</a> , 以及 <a class="el" href="_xE5_x9C_xA8_xE4_xBA_x8B_xE4_xBB_xB6_xE4_xB8_xAD_xE6_x9E_x84_xE5_xBB_xBA-example.html#_a0">在事件中构建</a>.</dd>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_xE5_x9C_xA8_xE4_xBA_x8B_xE4_xBB_xB6_xE4_xB8_xAD_xE6_x9E_x84_xE5_xBB_xBA_member_xE5_xAF_xB9_xE8_xB1_xA1-example.html#_a0">在事件中构建Member对象</a> , 以及 <a class="el" href="_xE8_xB8_xA2_xE5_x87_xBA_xE7_xBE_xA4_xE6_x88_x90_xE5_x91_x98-example.html#_a3">踢出群成员</a>.</dd>
 </dl>
-</div><h2 class="groupheader">成员函数说明</h2>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l01162">1162</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a1313aa1274273237f2dbfaa053a9d23e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1313aa1274273237f2dbfaa053a9d23e">&#9670;&nbsp;</a></span>Member() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Member::Member </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>qqid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>groupid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>botid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em> = <code><a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8cpp_source.html">tools.cpp</a> 第 <a class="el" href="tools_8cpp_source.html#l00370">370</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                                                                                                       : <a class="code" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact</a>() {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">_type</a> = 3;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">_id</a> = <a class="code" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">id</a>;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    this-&gt;<a class="code" href="class_member.html#a619ee4a517e8e4c707d6c130e20b0051">Mute_id</a> = <a class="code" href="pch_8cpp.html#a6a44a77efe9d36d03240f900d00dad80">config</a>-&gt;<a class="code" href="class_config.html#ac614d847a1359b2618c48fa779517e8d">KMuteM</a>;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    this-&gt;<a class="code" href="class_contact.html#ad10855c0071226743dffc553dc913b88">_groupid</a> = <a class="code" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4">groupid</a>;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    this-&gt;<a class="code" href="class_member.html#aca2ce7ca96323c2073d8ada4e93711f6">Query_permission</a> = <a class="code" href="pch_8cpp.html#a6a44a77efe9d36d03240f900d00dad80">config</a>-&gt;<a class="code" href="class_config.html#a7964ef89426d2f8b0c3508024f0b20ca">KQueryM</a>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    this-&gt;<a class="code" href="class_member.html#a3c1d041eecd575f4e3c02ea82765db36">KickM</a> = <a class="code" href="pch_8cpp.html#a6a44a77efe9d36d03240f900d00dad80">config</a>-&gt;<a class="code" href="class_config.html#a9d35eb18487783f8ee6e8a53a85a0539">KKickM</a>;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">_botid</a> = <a class="code" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a>;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <a class="code" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> temp = <a class="code" href="class_low_level_a_p_i.html#ad285de08b2fb584b482db3e0144c1196">LowLevelAPI::getInfoSource</a>(<span class="keyword">this</span>, env);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordflow">if</span> (temp == <span class="stringliteral">&quot;E1&quot;</span>)</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(1);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">if</span> (temp == <span class="stringliteral">&quot;E2&quot;</span>)</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(2);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <a class="code" href="struct_low_level_a_p_i_1_1info.html">LowLevelAPI::info</a> tmp = <a class="code" href="class_low_level_a_p_i.html#a9bb2f0a4e7c0cb7eee2e100b791d38d7">LowLevelAPI::info0</a>(temp);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    this-&gt;<a class="code" href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">_nickOrNameCard</a> = tmp.<a class="code" href="struct_low_level_a_p_i_1_1info.html#abd26762cdc8f111121ca88c347737a9f">nickornamecard</a>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a92b8feb1a780637b71e06f3f9e954043">_avatarUrl</a> = tmp.<a class="code" href="struct_low_level_a_p_i_1_1info.html#ac1e61e8ac239d8266472d2e53614dbef">avatarUrl</a>;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    this-&gt;<a class="code" href="class_member.html#a34070a5524ede3ecb35c6ea7dba21f9f">permission</a> = <a class="code" href="class_member.html#a37b4986d11cd5c950d92dbc5d9296684">getPermission</a>();</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordflow">if</span> (temp == <span class="stringliteral">&quot;E1&quot;</span>) {</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(1);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">if</span> (temp == <span class="stringliteral">&quot;E2&quot;</span>) {</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(2);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;}</div>
+<div class="ttc" id="aclass_config_html_a7964ef89426d2f8b0c3508024f0b20ca"><div class="ttname"><a href="class_config.html#a7964ef89426d2f8b0c3508024f0b20ca">Config::KQueryM</a></div><div class="ttdeci">jmethodID KQueryM</div><div class="ttdoc">查询权限</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00159">tools.h:159</a></div></div>
+<div class="ttc" id="aclass_config_html_a9d35eb18487783f8ee6e8a53a85a0539"><div class="ttname"><a href="class_config.html#a9d35eb18487783f8ee6e8a53a85a0539">Config::KKickM</a></div><div class="ttdeci">jmethodID KKickM</div><div class="ttdoc">踢出</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00161">tools.h:161</a></div></div>
+<div class="ttc" id="aclass_config_html_ac614d847a1359b2618c48fa779517e8d"><div class="ttname"><a href="class_config.html#ac614d847a1359b2618c48fa779517e8d">Config::KMuteM</a></div><div class="ttdeci">jmethodID KMuteM</div><div class="ttdoc">禁言</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00157">tools.h:157</a></div></div>
+<div class="ttc" id="aclass_contact_html_a07e7ddca539bf8e5ac2d2ad00d8b7ba4"><div class="ttname"><a href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4">Contact::groupid</a></div><div class="ttdeci">unsigned long long groupid()</div><div class="ttdoc">当type为3的时候存在，否则为0，可以看作补充id</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00811">tools.h:811</a></div></div>
+<div class="ttc" id="aclass_contact_html_a12ab960a72b55b8e7562d04d0b4bd6e0"><div class="ttname"><a href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">Contact::_id</a></div><div class="ttdeci">unsigned long long _id</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00772">tools.h:772</a></div></div>
+<div class="ttc" id="aclass_contact_html_a220e55b907d54958cd2afb95e65da5a1"><div class="ttname"><a href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">Contact::id</a></div><div class="ttdeci">unsigned long long id()</div><div class="ttdoc">id在全部情况存在</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00804">tools.h:804</a></div></div>
+<div class="ttc" id="aclass_contact_html_a7841db9af58406a50d53d0ad6f7fa374"><div class="ttname"><a href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">Contact::_type</a></div><div class="ttdeci">int _type</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00771">tools.h:771</a></div></div>
+<div class="ttc" id="aclass_contact_html_a869c10fc8e1abeedc10d805576b1450a"><div class="ttname"><a href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">Contact::botid</a></div><div class="ttdeci">unsigned long long botid()</div><div class="ttdoc">所属bot</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00820">tools.h:820</a></div></div>
+<div class="ttc" id="aclass_contact_html_a88b041d798fb05e1347c51d149c12a21"><div class="ttname"><a href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">Contact::_botid</a></div><div class="ttdeci">unsigned long long _botid</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00776">tools.h:776</a></div></div>
+<div class="ttc" id="aclass_contact_html_a92b8feb1a780637b71e06f3f9e954043"><div class="ttname"><a href="class_contact.html#a92b8feb1a780637b71e06f3f9e954043">Contact::_avatarUrl</a></div><div class="ttdeci">std::string _avatarUrl</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00775">tools.h:775</a></div></div>
+<div class="ttc" id="aclass_contact_html_ad10855c0071226743dffc553dc913b88"><div class="ttname"><a href="class_contact.html#ad10855c0071226743dffc553dc913b88">Contact::_groupid</a></div><div class="ttdeci">unsigned long long _groupid</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00773">tools.h:773</a></div></div>
+<div class="ttc" id="aclass_contact_html_ae39444f378e6de7fd6c3e60981949af5"><div class="ttname"><a href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact::Contact</a></div><div class="ttdeci">Contact()</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00778">tools.h:778</a></div></div>
+<div class="ttc" id="aclass_contact_html_ae8c0a3a8718a84d9766d528df278ad4b"><div class="ttname"><a href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">Contact::_nickOrNameCard</a></div><div class="ttdeci">std::string _nickOrNameCard</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00774">tools.h:774</a></div></div>
+<div class="ttc" id="aclass_low_level_a_p_i_html_a9bb2f0a4e7c0cb7eee2e100b791d38d7"><div class="ttname"><a href="class_low_level_a_p_i.html#a9bb2f0a4e7c0cb7eee2e100b791d38d7">LowLevelAPI::info0</a></div><div class="ttdeci">static info info0(std::string source)</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00979">tools.h:979</a></div></div>
+<div class="ttc" id="aclass_low_level_a_p_i_html_ad285de08b2fb584b482db3e0144c1196"><div class="ttname"><a href="class_low_level_a_p_i.html#ad285de08b2fb584b482db3e0144c1196">LowLevelAPI::getInfoSource</a></div><div class="ttdeci">static std::string getInfoSource(Contact *c, JNIEnv *env=manager-&gt;getEnv())</div><div class="ttdoc">取该联系人的一些信息</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00951">tools.h:951</a></div></div>
+<div class="ttc" id="aclass_member_exception_html"><div class="ttname"><a href="class_member_exception.html">MemberException</a></div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00381">tools.h:381</a></div></div>
+<div class="ttc" id="aclass_member_html_a34070a5524ede3ecb35c6ea7dba21f9f"><div class="ttname"><a href="class_member.html#a34070a5524ede3ecb35c6ea7dba21f9f">Member::permission</a></div><div class="ttdeci">unsigned int permission</div><div class="ttdoc">权限等级</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l01173">tools.h:1173</a></div></div>
+<div class="ttc" id="aclass_member_html_a37b4986d11cd5c950d92dbc5d9296684"><div class="ttname"><a href="class_member.html#a37b4986d11cd5c950d92dbc5d9296684">Member::getPermission</a></div><div class="ttdeci">unsigned int getPermission(JNIEnv *=manager-&gt;getEnv())</div><div class="ttdef"><b>Definition:</b> <a href="tools_8cpp_source.html#l00395">tools.cpp:395</a></div></div>
+<div class="ttc" id="aclass_member_html_a3c1d041eecd575f4e3c02ea82765db36"><div class="ttname"><a href="class_member.html#a3c1d041eecd575f4e3c02ea82765db36">Member::KickM</a></div><div class="ttdeci">jmethodID KickM</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l01166">tools.h:1166</a></div></div>
+<div class="ttc" id="aclass_member_html_a619ee4a517e8e4c707d6c130e20b0051"><div class="ttname"><a href="class_member.html#a619ee4a517e8e4c707d6c130e20b0051">Member::Mute_id</a></div><div class="ttdeci">jmethodID Mute_id</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l01164">tools.h:1164</a></div></div>
+<div class="ttc" id="aclass_member_html_aca2ce7ca96323c2073d8ada4e93711f6"><div class="ttname"><a href="class_member.html#aca2ce7ca96323c2073d8ada4e93711f6">Member::Query_permission</a></div><div class="ttdeci">jmethodID Query_permission</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l01165">tools.h:1165</a></div></div>
+<div class="ttc" id="apch_8cpp_html_a6a44a77efe9d36d03240f900d00dad80"><div class="ttname"><a href="pch_8cpp.html#a6a44a77efe9d36d03240f900d00dad80">config</a></div><div class="ttdeci">Config * config</div><div class="ttdoc">全局配置指针</div><div class="ttdef"><b>Definition:</b> <a href="pch_8cpp_source.html#l00014">pch.cpp:14</a></div></div>
+<div class="ttc" id="apch_8cpp_html_aca454f84dd198a937af6499dd758aa3d"><div class="ttname"><a href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">string</a></div><div class="ttdeci">std::string string</div><div class="ttdef"><b>Definition:</b> <a href="pch_8cpp_source.html#l00003">pch.cpp:3</a></div></div>
+<div class="ttc" id="astruct_low_level_a_p_i_1_1info_html"><div class="ttname"><a href="struct_low_level_a_p_i_1_1info.html">LowLevelAPI::info</a></div><div class="ttdoc">每个对象的必有信息</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00972">tools.h:972</a></div></div>
+<div class="ttc" id="astruct_low_level_a_p_i_1_1info_html_abd26762cdc8f111121ca88c347737a9f"><div class="ttname"><a href="struct_low_level_a_p_i_1_1info.html#abd26762cdc8f111121ca88c347737a9f">LowLevelAPI::info::nickornamecard</a></div><div class="ttdeci">std::string nickornamecard</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00973">tools.h:973</a></div></div>
+<div class="ttc" id="astruct_low_level_a_p_i_1_1info_html_ac1e61e8ac239d8266472d2e53614dbef"><div class="ttname"><a href="struct_low_level_a_p_i_1_1info.html#ac1e61e8ac239d8266472d2e53614dbef">LowLevelAPI::info::avatarUrl</a></div><div class="ttdeci">std::string avatarUrl</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00974">tools.h:974</a></div></div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_member_a1313aa1274273237f2dbfaa053a9d23e_cgraph.png" border="0" usemap="#aclass_member_a1313aa1274273237f2dbfaa053a9d23e_cgraph" alt=""/></div>
+<map name="aclass_member_a1313aa1274273237f2dbfaa053a9d23e_cgraph" id="aclass_member_a1313aa1274273237f2dbfaa053a9d23e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,233,129,260"/>
+<area shape="rect" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a" title="所属bot" alt="" coords="843,5,945,32"/>
+<area shape="rect" href="class_low_level_a_p_i.html#ad285de08b2fb584b482db3e0144c1196" title="取该联系人的一些信息" alt="" coords="177,259,360,285"/>
+<area shape="rect" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4" title="当type为3的时候存在，否则为0，可以看作补充id" alt="" coords="835,56,953,83"/>
+<area shape="rect" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1" title="id在全部情况存在" alt="" coords="851,208,937,235"/>
+<area shape="rect" href="class_member.html#a37b4986d11cd5c950d92dbc5d9296684" title=" " alt="" coords="189,309,349,336"/>
+<area shape="rect" href="class_low_level_a_p_i.html#a9bb2f0a4e7c0cb7eee2e100b791d38d7" title=" " alt="" coords="203,360,334,387"/>
+<area shape="rect" href="class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="428,309,547,336"/>
+<area shape="rect" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="1029,335,1148,361"/>
+<area shape="rect" href="class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835" title=" " alt="" coords="408,125,567,166"/>
+<area shape="rect" href="class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="628,309,745,336"/>
+<area shape="rect" href="class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="847,309,941,336"/>
+<area shape="rect" href="class_contact.html#a6739337b623df49bc51e2fc997bfd6e8" title=" " alt="" coords="615,128,759,155"/>
+<area shape="rect" href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066" title="群名称，群成员群名片，或好友昵称" alt="" coords="807,107,981,133"/>
+<area shape="rect" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1" title="当前对象类型" alt="" coords="844,157,944,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a51e0e2424f6662912d44fbdb6b18c83a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e0e2424f6662912d44fbdb6b18c83a">&#9670;&nbsp;</a></span>Member() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Member::Member </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_contact.html">Contact</a>&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l01195">1195</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;: <a class="code" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact</a>(c) {};</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
 <a id="a37b4986d11cd5c950d92dbc5d9296684"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37b4986d11cd5c950d92dbc5d9296684">&#9670;&nbsp;</a></span>getPermission()</h2>
 
@@ -228,14 +385,55 @@ unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>_botid<
           <td class="memname">unsigned int Member::getPermission </td>
           <td>(</td>
           <td class="paramtype">JNIEnv *&#160;</td>
-          <td class="paramname"><em>env</em> = <code>manager-&gt;getEnv()</code></td><td>)</td>
+          <td class="paramname"><em>env</em> = <code><a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv()</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>获取权限，会在构造时调用，请使用permission缓存变量 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="class_member.html#a34070a5524ede3ecb35c6ea7dba21f9f" title="权限等级">Member::permission</a> </dd></dl>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#a158">D:/Git/mirai/MiraiCP/cpp/tools.h</a>.</dd>
-</dl>
+
+<p class="definition">在文件 <a class="el" href="tools_8cpp_source.html">tools.cpp</a> 第 <a class="el" href="tools_8cpp_source.html#l00395">395</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                                              {</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <a class="code" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> re = <a class="code" href="class_tools.html#aabf8a80dcd00513cb7516e8251109313">Tools::jstring2str</a>((jstring)env-&gt;CallStaticObjectMethod(<a class="code" href="pch_8cpp.html#a6a44a77efe9d36d03240f900d00dad80">config</a>-&gt;<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, <a class="code" href="pch_8cpp.html#a6a44a77efe9d36d03240f900d00dad80">config</a>-&gt;<a class="code" href="class_config.html#a7964ef89426d2f8b0c3508024f0b20ca">KQueryM</a>,</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <a class="code" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc">Tools::str2jstring</a>(</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            this-&gt;serializationToString().c_str(),</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            env)), env);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E1&quot;</span>) {</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(1);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    }</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E2&quot;</span>) {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(2);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordflow">return</span> stoi(re);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;}</div>
+<div class="ttc" id="aclass_config_html_a4527012e3db22223852e754ae2241e9c"><div class="ttname"><a href="class_config.html#a4527012e3db22223852e754ae2241e9c">Config::CPP_lib</a></div><div class="ttdeci">jclass CPP_lib</div><div class="ttdoc">kt中JNI接口类</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00135">tools.h:135</a></div></div>
+<div class="ttc" id="aclass_tools_html_aabf8a80dcd00513cb7516e8251109313"><div class="ttname"><a href="class_tools.html#aabf8a80dcd00513cb7516e8251109313">Tools::jstring2str</a></div><div class="ttdeci">static std::string jstring2str(jstring jstr, JNIEnv *=manager-&gt;getEnv())</div><div class="ttdef"><b>Definition:</b> <a href="tools_8cpp_source.html#l00611">tools.cpp:611</a></div></div>
+<div class="ttc" id="aclass_tools_html_ae0606aeddaa91c91435ec3a4e3a0d0dc"><div class="ttname"><a href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc">Tools::str2jstring</a></div><div class="ttdeci">static jstring str2jstring(const char *pat, JNIEnv *=manager-&gt;getEnv())</div><div class="ttdef"><b>Definition:</b> <a href="tools_8cpp_source.html#l00630">tools.cpp:630</a></div></div>
+</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_member_a37b4986d11cd5c950d92dbc5d9296684_cgraph.png" border="0" usemap="#aclass_member_a37b4986d11cd5c950d92dbc5d9296684_cgraph" alt=""/></div>
+<map name="aclass_member_a37b4986d11cd5c950d92dbc5d9296684_cgraph" id="aclass_member_a37b4986d11cd5c950d92dbc5d9296684_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,165,108"/>
+<area shape="rect" href="class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="213,56,332,83"/>
+<area shape="rect" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="687,56,805,83"/>
+<area shape="rect" href="class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="380,56,497,83"/>
+<area shape="rect" href="class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="545,5,639,32"/>
+</map>
+</div>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_member_a37b4986d11cd5c950d92dbc5d9296684_icgraph.png" border="0" usemap="#aclass_member_a37b4986d11cd5c950d92dbc5d9296684_icgraph" alt=""/></div>
+<map name="aclass_member_a37b4986d11cd5c950d92dbc5d9296684_icgraph" id="aclass_member_a37b4986d11cd5c950d92dbc5d9296684_icgraph">
+<area shape="rect" title=" " alt="" coords="177,5,337,32"/>
+<area shape="rect" href="class_member.html#a1313aa1274273237f2dbfaa053a9d23e" title=" " alt="" coords="5,5,129,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -248,14 +446,14 @@ unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>_botid<
         <tr>
           <td class="memname">void Member::Kick </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> &amp;&#160;</td>
           <td class="paramname"><em>reason</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">JNIEnv *&#160;</td>
-          <td class="paramname"><em>env</em> = <code>manager-&gt;getEnv()</code>&#160;</td>
+          <td class="paramname"><em>env</em> = <code><a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -264,14 +462,42 @@ unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>_botid<
         </tr>
       </table>
 </div><div class="memdoc">
-<p>踢出这个群成员 </p><dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reason</td><td>- 原因 </td></tr>
-  </table>
-  </dd>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_xE8_xB8_xA2_xE5_x87_xBA_xE7_xBE_xA4_xE6_x88_x90_xE5_x91_x98-example.html#a8">踢出群成员</a>.</dd>
 </dl>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#a162">D:/Git/mirai/MiraiCP/cpp/tools.h</a>.</dd>
-</dl>
+
+<p class="definition">在文件 <a class="el" href="tools_8cpp_source.html">tools.cpp</a> 第 <a class="el" href="tools_8cpp_source.html#l00430">430</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                                                      {</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <a class="code" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> re = <a class="code" href="class_tools.html#aabf8a80dcd00513cb7516e8251109313">Tools::jstring2str</a>(</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        (jstring)env-&gt;CallStaticObjectMethod(<a class="code" href="pch_8cpp.html#a6a44a77efe9d36d03240f900d00dad80">config</a>-&gt;<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, this-&gt;KickM, <a class="code" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc">Tools::str2jstring</a>(reason.c_str(), env),</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            <a class="code" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc">Tools::str2jstring</a>(this-&gt;serializationToString().c_str(), env)), env);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;Y&quot;</span>) {</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    }</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E1&quot;</span>) {</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(1);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    }</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E2&quot;</span>) {</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(2);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    }</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E3&quot;</span>) {</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_bot_exception.html">BotException</a>(1);</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    }</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;}</div>
+<div class="ttc" id="aclass_bot_exception_html"><div class="ttname"><a href="class_bot_exception.html">BotException</a></div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00326">tools.h:326</a></div></div>
+</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_member_ae23c4a4ff625eb0c29f27a0c66a76aee_cgraph.png" border="0" usemap="#aclass_member_ae23c4a4ff625eb0c29f27a0c66a76aee_cgraph" alt=""/></div>
+<map name="aclass_member_ae23c4a4ff625eb0c29f27a0c66a76aee_cgraph" id="aclass_member_ae23c4a4ff625eb0c29f27a0c66a76aee_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,108,108"/>
+<area shape="rect" href="class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="156,56,275,83"/>
+<area shape="rect" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="629,56,748,83"/>
+<area shape="rect" href="class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="323,56,440,83"/>
+<area shape="rect" href="class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="488,5,581,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -291,7 +517,7 @@ unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>_botid<
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">JNIEnv *&#160;</td>
-          <td class="paramname"><em>env</em> = <code>manager-&gt;getEnv()</code>&#160;</td>
+          <td class="paramname"><em>env</em> = <code><a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -306,8 +532,281 @@ unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>_botid<
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#a161">D:/Git/mirai/MiraiCP/cpp/tools.h</a>.</dd>
-</dl>
+
+<p class="definition">在文件 <a class="el" href="tools_8cpp_source.html">tools.cpp</a> 第 <a class="el" href="tools_8cpp_source.html#l00409">409</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                                       {</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <a class="code" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> re = <a class="code" href="class_tools.html#aabf8a80dcd00513cb7516e8251109313">Tools::jstring2str</a>(</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        (jstring)env-&gt;CallStaticObjectMethod(<a class="code" href="pch_8cpp.html#a6a44a77efe9d36d03240f900d00dad80">config</a>-&gt;<a class="code" href="class_config.html#a4527012e3db22223852e754ae2241e9c">CPP_lib</a>, this-&gt;Mute_id, (jint)time,</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            <a class="code" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc">Tools::str2jstring</a>(this-&gt;serializationToString().c_str(), env)), env);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;Y&quot;</span>) {</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    }</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E1&quot;</span>) {</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(1);</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    }</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E2&quot;</span>) {</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(2);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    }</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E3&quot;</span>) {</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_bot_exception.html">BotException</a>(1);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E4&quot;</span>) {</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_mute_exception.html">MuteException</a>();</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    }</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;}</div>
+<div class="ttc" id="aclass_mute_exception_html"><div class="ttname"><a href="class_mute_exception.html">MuteException</a></div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00357">tools.h:357</a></div></div>
+</div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_member_a58a543e956ab5c1d77f29a2c15e675cb_cgraph.png" border="0" usemap="#aclass_member_a58a543e956ab5c1d77f29a2c15e675cb_cgraph" alt=""/></div>
+<map name="aclass_member_a58a543e956ab5c1d77f29a2c15e675cb_cgraph" id="aclass_member_a58a543e956ab5c1d77f29a2c15e675cb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,112,108"/>
+<area shape="rect" href="class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="160,56,279,83"/>
+<area shape="rect" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="633,56,752,83"/>
+<area shape="rect" href="class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="327,56,444,83"/>
+<area shape="rect" href="class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="492,5,585,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2a614ae3a22349a9a957549385c4b785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a614ae3a22349a9a957549385c4b785">&#9670;&nbsp;</a></span>SendMiraiCode() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_message_source.html">MessageSource</a> Member::SendMiraiCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mirai_code.html">MiraiCode</a>&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送miraicode </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l01207">1207</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;                                               {</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_member.html#a7b4b9cbf9705a28f41fcb96164b149a9">SendMiraiCode</a>(msg.<a class="code" href="class_mirai_code.html#a05f947c86d38440157efc9ce849cca20">toString</a>());</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;    }</div>
+<div class="ttc" id="aclass_member_html_a7b4b9cbf9705a28f41fcb96164b149a9"><div class="ttname"><a href="class_member.html#a7b4b9cbf9705a28f41fcb96164b149a9">Member::SendMiraiCode</a></div><div class="ttdeci">MessageSource SendMiraiCode(MiraiCodeable *msg)</div><div class="ttdoc">发送miraicode</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l01202">tools.h:1202</a></div></div>
+<div class="ttc" id="aclass_mirai_code_html_a05f947c86d38440157efc9ce849cca20"><div class="ttname"><a href="class_mirai_code.html#a05f947c86d38440157efc9ce849cca20">MiraiCode::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">输出当前内容</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00556">tools.h:556</a></div></div>
+</div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_member_a2a614ae3a22349a9a957549385c4b785_cgraph.png" border="0" usemap="#aclass_member_a2a614ae3a22349a9a957549385c4b785_cgraph" alt=""/></div>
+<map name="aclass_member_a2a614ae3a22349a9a957549385c4b785_cgraph" id="aclass_member_a2a614ae3a22349a9a957549385c4b785_cgraph">
+<area shape="rect" title="发送miraicode" alt="" coords="5,31,171,57"/>
+<area shape="rect" href="class_member.html#a7b4b9cbf9705a28f41fcb96164b149a9" title="发送miraicode" alt="" coords="219,5,384,32"/>
+<area shape="rect" href="class_mirai_code.html#a05f947c86d38440157efc9ce849cca20" title="输出当前内容" alt="" coords="235,56,368,83"/>
+<area shape="rect" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="432,5,613,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7b4b9cbf9705a28f41fcb96164b149a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4b9cbf9705a28f41fcb96164b149a9">&#9670;&nbsp;</a></span>SendMiraiCode() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_message_source.html">MessageSource</a> Member::SendMiraiCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mirai_codeable.html">MiraiCodeable</a> *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送miraicode </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l01202">1202</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;                                                    {</div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_member.html#a7b4b9cbf9705a28f41fcb96164b149a9">SendMiraiCode</a>(msg-&gt;<a class="code" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044">toMiraiCode</a>());</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;    }</div>
+<div class="ttc" id="aclass_mirai_codeable_html_a5067f9067fd47eb8413c28881084d044"><div class="ttname"><a href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044">MiraiCodeable::toMiraiCode</a></div><div class="ttdeci">virtual std::string toMiraiCode()=0</div></div>
+</div><!-- fragment --><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_member_a7b4b9cbf9705a28f41fcb96164b149a9_cgraph.png" border="0" usemap="#aclass_member_a7b4b9cbf9705a28f41fcb96164b149a9_cgraph" alt=""/></div>
+<map name="aclass_member_a7b4b9cbf9705a28f41fcb96164b149a9_cgraph" id="aclass_member_a7b4b9cbf9705a28f41fcb96164b149a9_cgraph">
+<area shape="rect" title="发送miraicode" alt="" coords="5,5,171,32"/>
+<area shape="rect" href="class_mirai_codeable.html#a5067f9067fd47eb8413c28881084d044" title=" " alt="" coords="219,5,400,32"/>
+</map>
+</div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_member_a7b4b9cbf9705a28f41fcb96164b149a9_icgraph.png" border="0" usemap="#aclass_member_a7b4b9cbf9705a28f41fcb96164b149a9_icgraph" alt=""/></div>
+<map name="aclass_member_a7b4b9cbf9705a28f41fcb96164b149a9_icgraph" id="aclass_member_a7b4b9cbf9705a28f41fcb96164b149a9_icgraph">
+<area shape="rect" title="发送miraicode" alt="" coords="219,5,384,32"/>
+<area shape="rect" href="class_member.html#a2a614ae3a22349a9a957549385c4b785" title="发送miraicode" alt="" coords="5,5,171,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af9970405f6e4f3861ca8d03bf45846e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9970405f6e4f3861ca8d03bf45846e7">&#9670;&nbsp;</a></span>SendMiraiCode() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_message_source.html">MessageSource</a> Member::SendMiraiCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em> = <code><a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送miraicode </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8cpp_source.html">tools.cpp</a> 第 <a class="el" href="tools_8cpp_source.html#l00463">463</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                                                              {</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <a class="code" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> re = <a class="code" href="class_low_level_a_p_i.html#ac6e830ba53c3477de726793a26357256">LowLevelAPI::send0</a>(std::move(msg), <span class="keyword">this</span>, <span class="keyword">true</span>, env);</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E1&quot;</span>) {</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(1);</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    }</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E2&quot;</span>) {</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(2);</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    }</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_message_source.html#a593939fc75a52d99f210da0482a85443">MessageSource::deserializeFromString</a>(re);</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;}</div>
+<div class="ttc" id="aclass_low_level_a_p_i_html_ac6e830ba53c3477de726793a26357256"><div class="ttname"><a href="class_low_level_a_p_i.html#ac6e830ba53c3477de726793a26357256">LowLevelAPI::send0</a></div><div class="ttdeci">static std::string send0(std::string content, Contact *c, bool miraicode, JNIEnv *env)</div><div class="ttdoc">抽象封装底层发送信息接口</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00939">tools.h:939</a></div></div>
+<div class="ttc" id="aclass_message_source_html_a593939fc75a52d99f210da0482a85443"><div class="ttname"><a href="class_message_source.html#a593939fc75a52d99f210da0482a85443">MessageSource::deserializeFromString</a></div><div class="ttdeci">static MessageSource deserializeFromString(const std::string &amp;source)</div><div class="ttdoc">从json字符串反序列化到MessageSource对象</div><div class="ttdef"><b>Definition:</b> <a href="tools_8cpp_source.html#l00190">tools.cpp:190</a></div></div>
+</div><!-- fragment --><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_member_af9970405f6e4f3861ca8d03bf45846e7_cgraph.png" border="0" usemap="#aclass_member_af9970405f6e4f3861ca8d03bf45846e7_cgraph" alt=""/></div>
+<map name="aclass_member_af9970405f6e4f3861ca8d03bf45846e7_cgraph" id="aclass_member_af9970405f6e4f3861ca8d03bf45846e7_cgraph">
+<area shape="rect" title="发送miraicode" alt="" coords="5,77,171,104"/>
+<area shape="rect" href="class_message_source.html#a593939fc75a52d99f210da0482a85443" title="从json字符串反序列化到MessageSource对象" alt="" coords="219,41,405,82"/>
+<area shape="rect" href="class_low_level_a_p_i.html#ac6e830ba53c3477de726793a26357256" title="抽象封装底层发送信息接口" alt="" coords="720,107,859,133"/>
+<area shape="rect" href="class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="514,5,611,32"/>
+<area shape="rect" href="class_message_source.html#a19d28a14e61cc59cf8c4ff874d9cf6de" title=" " alt="" coords="453,56,672,83"/>
+<area shape="rect" href="class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="743,5,836,32"/>
+<area shape="rect" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="919,56,1038,83"/>
+<area shape="rect" href="class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="1127,31,1245,57"/>
+<area shape="rect" href="class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="919,107,1038,133"/>
+<area shape="rect" href="class_contact.html#a6739337b623df49bc51e2fc997bfd6e8" title=" " alt="" coords="907,157,1051,184"/>
+<area shape="rect" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a" title="所属bot" alt="" coords="1135,81,1237,108"/>
+<area shape="rect" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4" title="当type为3的时候存在，否则为0，可以看作补充id" alt="" coords="1127,132,1245,159"/>
+<area shape="rect" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1" title="id在全部情况存在" alt="" coords="1143,183,1229,209"/>
+<area shape="rect" href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066" title="群名称，群成员群名片，或好友昵称" alt="" coords="1099,233,1273,260"/>
+<area shape="rect" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1" title="当前对象类型" alt="" coords="1136,284,1236,311"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a20b2f9a17d4e2e4f07dbb707f95177e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b2f9a17d4e2e4f07dbb707f95177e3">&#9670;&nbsp;</a></span>SendMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_message_source.html">MessageSource</a> Member::SendMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a>&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em> = <code><a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送文本信息，不进行miraicode解析 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8cpp_source.html">tools.cpp</a> 第 <a class="el" href="tools_8cpp_source.html#l00474">474</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                                                        {</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <a class="code" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> re = <a class="code" href="class_low_level_a_p_i.html#ac6e830ba53c3477de726793a26357256">LowLevelAPI::send0</a>(std::move(msg), <span class="keyword">this</span>, <span class="keyword">false</span>, env);</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E1&quot;</span>) {</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(1);</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    }</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E2&quot;</span>) {</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(2);</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    }</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_message_source.html#a593939fc75a52d99f210da0482a85443">MessageSource::deserializeFromString</a>(re);</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_member_a20b2f9a17d4e2e4f07dbb707f95177e3_cgraph.png" border="0" usemap="#aclass_member_a20b2f9a17d4e2e4f07dbb707f95177e3_cgraph" alt=""/></div>
+<map name="aclass_member_a20b2f9a17d4e2e4f07dbb707f95177e3_cgraph" id="aclass_member_a20b2f9a17d4e2e4f07dbb707f95177e3_cgraph">
+<area shape="rect" title="发送文本信息，不进行miraicode解析" alt="" coords="5,77,137,104"/>
+<area shape="rect" href="class_message_source.html#a593939fc75a52d99f210da0482a85443" title="从json字符串反序列化到MessageSource对象" alt="" coords="185,41,372,82"/>
+<area shape="rect" href="class_low_level_a_p_i.html#ac6e830ba53c3477de726793a26357256" title="抽象封装底层发送信息接口" alt="" coords="687,107,825,133"/>
+<area shape="rect" href="class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="481,5,578,32"/>
+<area shape="rect" href="class_message_source.html#a19d28a14e61cc59cf8c4ff874d9cf6de" title=" " alt="" coords="420,56,639,83"/>
+<area shape="rect" href="class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="709,5,803,32"/>
+<area shape="rect" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="886,56,1005,83"/>
+<area shape="rect" href="class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="1094,31,1211,57"/>
+<area shape="rect" href="class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="886,107,1005,133"/>
+<area shape="rect" href="class_contact.html#a6739337b623df49bc51e2fc997bfd6e8" title=" " alt="" coords="873,157,1017,184"/>
+<area shape="rect" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a" title="所属bot" alt="" coords="1101,81,1204,108"/>
+<area shape="rect" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4" title="当type为3的时候存在，否则为0，可以看作补充id" alt="" coords="1094,132,1211,159"/>
+<area shape="rect" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1" title="id在全部情况存在" alt="" coords="1110,183,1195,209"/>
+<area shape="rect" href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066" title="群名称，群成员群名片，或好友昵称" alt="" coords="1065,233,1240,260"/>
+<area shape="rect" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1" title="当前对象类型" alt="" coords="1103,284,1203,311"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -320,14 +819,14 @@ unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>_botid<
         <tr>
           <td class="memname"><a class="el" href="class_image.html">Image</a> Member::uploadImg </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">JNIEnv *&#160;</td>
-          <td class="paramname"><em>env</em> = <code>manager-&gt;getEnv()</code>&#160;</td>
+          <td class="paramname"><em>env</em> = <code><a class="el" href="tools_8h.html#a4b4a306a9aed3f0d9ac6f2009f941c9f">manager</a>-&gt;getEnv()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -345,22 +844,99 @@ unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>_botid<
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#a157">D:/Git/mirai/MiraiCP/cpp/tools.h</a>.</dd>
-</dl>
-<div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
+
+<p class="definition">在文件 <a class="el" href="tools_8cpp_source.html">tools.cpp</a> 第 <a class="el" href="tools_8cpp_source.html#l00448">448</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                                                              {</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    std::filesystem::path tmp = std::filesystem::path(filename);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordflow">if</span> (!exists(tmp)) {</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_upload_exception.html">UploadException</a>(<span class="stringliteral">&quot;上传图片不存在,路径:&quot;</span> + filename);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    }</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <a class="code" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> re = <a class="code" href="class_low_level_a_p_i.html#a34e8b356a0298a68876c21b64373d5af">LowLevelAPI::uploadImg0</a>((<span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span>)absolute(tmp).u8string().c_str(), <span class="keyword">this</span>, env);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E1&quot;</span>)</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(1);</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E2&quot;</span>)</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_member_exception.html">MemberException</a>(2);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordflow">if</span> (re == <span class="stringliteral">&quot;E3&quot;</span>)</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_upload_exception.html">UploadException</a>(<span class="stringliteral">&quot;上传图片大小超过30MB,路径:&quot;</span> + filename);</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image.html">Image</a>(re);</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;}</div>
+<div class="ttc" id="aclass_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdoc">图像类声明</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00729">tools.h:729</a></div></div>
+<div class="ttc" id="aclass_low_level_a_p_i_html_a34e8b356a0298a68876c21b64373d5af"><div class="ttname"><a href="class_low_level_a_p_i.html#a34e8b356a0298a68876c21b64373d5af">LowLevelAPI::uploadImg0</a></div><div class="ttdeci">static std::string uploadImg0(std::string path, Contact *c, JNIEnv *env=manager-&gt;getEnv())</div><div class="ttdoc">上传图片</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00964">tools.h:964</a></div></div>
+<div class="ttc" id="aclass_upload_exception_html"><div class="ttname"><a href="class_upload_exception.html">UploadException</a></div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00282">tools.h:282</a></div></div>
+</div><!-- fragment --><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_member_aba78f8099187033776154e6a3e60b881_cgraph.png" border="0" usemap="#aclass_member_aba78f8099187033776154e6a3e60b881_cgraph" alt=""/></div>
 <map name="aclass_member_aba78f8099187033776154e6a3e60b881_cgraph" id="aclass_member_aba78f8099187033776154e6a3e60b881_cgraph">
-<area shape="rect" title="上传本地图片，务必要用绝对路径 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到群" alt="" coords="5,13,141,39"/>
-<area shape="rect" href="class_low_level_a_p_i.html#a34e8b356a0298a68876c21b64373d5af" title="上传图片" alt="" coords="189,13,359,39"/>
-<area shape="rect" href="class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835" title=" " alt="" coords="407,5,565,47"/>
+<area shape="rect" title="上传本地图片，务必要用绝对路径 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到群" alt="" coords="5,107,141,133"/>
+<area shape="rect" href="class_low_level_a_p_i.html#a34e8b356a0298a68876c21b64373d5af" title="上传图片" alt="" coords="189,107,359,133"/>
+<area shape="rect" href="class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="427,56,545,83"/>
+<area shape="rect" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="1028,56,1147,83"/>
+<area shape="rect" href="class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835" title=" " alt="" coords="407,205,565,246"/>
+<area shape="rect" href="class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="627,56,744,83"/>
+<area shape="rect" href="class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="846,5,939,32"/>
+<area shape="rect" href="class_contact.html#a6739337b623df49bc51e2fc997bfd6e8" title=" " alt="" coords="613,236,757,263"/>
+<area shape="rect" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a" title="所属bot" alt="" coords="841,157,944,184"/>
+<area shape="rect" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4" title="当type为3的时候存在，否则为0，可以看作补充id" alt="" coords="834,208,951,235"/>
+<area shape="rect" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1" title="id在全部情况存在" alt="" coords="850,259,935,285"/>
+<area shape="rect" href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066" title="群名称，群成员群名片，或好友昵称" alt="" coords="805,309,980,336"/>
+<area shape="rect" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1" title="当前对象类型" alt="" coords="843,360,943,387"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">类成员变量说明</h2>
+<a id="a3c1d041eecd575f4e3c02ea82765db36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1d041eecd575f4e3c02ea82765db36">&#9670;&nbsp;</a></span>KickM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Member::KickM = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l01166">1166</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a619ee4a517e8e4c707d6c130e20b0051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a619ee4a517e8e4c707d6c130e20b0051">&#9670;&nbsp;</a></span>Mute_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Member::Mute_id = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l01164">1164</a> 行定义.</p>
+
+</div>
+</div>
 <a id="a34070a5524ede3ecb35c6ea7dba21f9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34070a5524ede3ecb35c6ea7dba21f9f">&#9670;&nbsp;</a></span>permission</h2>
 
@@ -380,14 +956,38 @@ unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>_botid<
 <li>MEMBER群成员 为 0 <dl class="section note"><dt>注解</dt><dd>上面那些变量在constants.h中有定义 </dd></dl>
 </li>
 </ul>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_d_1_2_git_2mirai_2_mirai_c_p_2cpp_2tools_8h-example.html#a156">D:/Git/mirai/MiraiCP/cpp/tools.h</a>.</dd>
-</dl>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l01173">1173</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aca2ce7ca96323c2073d8ada4e93711f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca2ce7ca96323c2073d8ada4e93711f6">&#9670;&nbsp;</a></span>Query_permission</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmethodID Member::Query_permission = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l01165">1165</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Git/mirai/MiraiCP/cpp/<a class="el" href="tools_8h_source.html">tools.h</a></li>
-<li>D:/Git/mirai/MiraiCP/cpp/tools.cpp</li>
+<li><a class="el" href="tools_8h_source.html">tools.h</a></li>
+<li><a class="el" href="tools_8cpp_source.html">tools.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

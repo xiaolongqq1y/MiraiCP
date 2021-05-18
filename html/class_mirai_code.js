@@ -11,5 +11,6 @@ var class_mirai_code =
     [ "plus", "class_mirai_code.html#a75d55984b6eec06704f76f726eeead1d", null ],
     [ "plus", "class_mirai_code.html#a51f4267d8b3a56b9e0189047320ceeab", null ],
     [ "toMiraiCode", "class_mirai_code.html#a9279ff512d981c04de4117c8b7737818", null ],
-    [ "toString", "class_mirai_code.html#a05f947c86d38440157efc9ce849cca20", null ]
+    [ "toString", "class_mirai_code.html#a05f947c86d38440157efc9ce849cca20", null ],
+    [ "content", "class_mirai_code.html#a16df99f020555ec57582a259fc0bca47", null ]
 ];

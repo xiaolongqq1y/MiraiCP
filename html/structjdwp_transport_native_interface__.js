@@ -1,0 +1,26 @@
+var structjdwp_transport_native_interface__ =
+[
+    [ "jboolean", "structjdwp_transport_native_interface__.html#ae1e4a11cb0fb3c517aa71416294c45a0", null ],
+    [ "jdwpTransportError", "structjdwp_transport_native_interface__.html#a00da34a85720e588a92b6ae96a664673", null ],
+    [ "jdwpTransportError", "structjdwp_transport_native_interface__.html#abb2dedc0d6241df9a3802fea27104fcb", null ],
+    [ "jdwpTransportError", "structjdwp_transport_native_interface__.html#aa4d886b5c3a6c373b31da440a8e10192", null ],
+    [ "jdwpTransportError", "structjdwp_transport_native_interface__.html#ac23d0962ab4fe5b2d1ad2978eeca7406", null ],
+    [ "jdwpTransportError", "structjdwp_transport_native_interface__.html#a0a88c4356b790512f3a821549945f915", null ],
+    [ "jdwpTransportError", "structjdwp_transport_native_interface__.html#aee494b80930a81b9fdc57384e80ba6e4", null ],
+    [ "jdwpTransportError", "structjdwp_transport_native_interface__.html#a9c4b920a52e7345148a97418693233b5", null ],
+    [ "jdwpTransportError", "structjdwp_transport_native_interface__.html#a106d2026023bf0c52b637b4e35db35a5", null ],
+    [ "jdwpTransportError", "structjdwp_transport_native_interface__.html#ad423e45d1d0daa81cb1aec4a0eb77380", null ],
+    [ "jdwpTransportError", "structjdwp_transport_native_interface__.html#a52e5d98314c932513801920a1c4081b7", null ],
+    [ "accept_timeout", "structjdwp_transport_native_interface__.html#a368608efe8853b1911fea848087de3d9", null ],
+    [ "actual_address", "structjdwp_transport_native_interface__.html#ad3f791e47b4d97de83ec9e0f94701cad", null ],
+    [ "address", "structjdwp_transport_native_interface__.html#a07c26e37a848e5a838b0160166b4c604", null ],
+    [ "attach_timeout", "structjdwp_transport_native_interface__.html#ab33d18a03b070daec068964231005a63", null ],
+    [ "capabilities_ptr", "structjdwp_transport_native_interface__.html#afd1ab7fd6036576be6f0891caa658a08", null ],
+    [ "config", "structjdwp_transport_native_interface__.html#aefb9b66081efd7c7a61b766ab3498388", null ],
+    [ "error", "structjdwp_transport_native_interface__.html#a5e09107de428e68600306d1f42e372a0", null ],
+    [ "handshake_timeout", "structjdwp_transport_native_interface__.html#ac12eac21b82990713554ac9470b3d8f3", null ],
+    [ "handshake_timeout", "structjdwp_transport_native_interface__.html#a8da02d46a88672490d25a4129832aa46", null ],
+    [ "pkt", "structjdwp_transport_native_interface__.html#a450f2e3a26bfee18c4a65b0de59fcabc", null ],
+    [ "pkt", "structjdwp_transport_native_interface__.html#a24dc1cc269a551b79060c03aef3b29ed", null ],
+    [ "reserved1", "structjdwp_transport_native_interface__.html#a4ef144bd1d5ea5c3e047a8968969dfaa", null ]
+];

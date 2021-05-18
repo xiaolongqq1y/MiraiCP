@@ -1,0 +1,7 @@
+<map id="MiraiCode::toString" name="MiraiCode::toString">
+<area shape="rect" id="node1" title="输出当前内容" alt="" coords="219,81,352,108"/>
+<area shape="rect" id="node2" href="$class_friend.html#aa09d60a4befb6901d1f4ee2c1a3e43bf" title="发送miraicode" alt="" coords="11,5,165,32"/>
+<area shape="rect" id="node3" href="$class_member.html#a2a614ae3a22349a9a957549385c4b785" title="发送miraicode" alt="" coords="5,56,171,83"/>
+<area shape="rect" id="node4" href="$class_group.html#ad45e5571cccf2e7e4ad0476bae120a19" title="发送MiraiCode信息" alt="" coords="11,107,165,133"/>
+<area shape="rect" id="node5" href="$class_mirai_code.html#a9279ff512d981c04de4117c8b7737818" title="和toString作用一样" alt="" coords="9,157,167,184"/>
+</map>

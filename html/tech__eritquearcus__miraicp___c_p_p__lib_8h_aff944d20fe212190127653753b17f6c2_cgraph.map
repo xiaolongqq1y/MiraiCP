@@ -1,0 +1,18 @@
+<map id="Java_tech_eritquearcus_miraicp_CPP_1lib_Event" name="Java_tech_eritquearcus_miraicp_CPP_1lib_Event">
+<area shape="rect" id="node1" title=" " alt="" coords="5,225,176,266"/>
+<area shape="rect" id="node2" href="$class_event.html#a2e51d104dd14766942e6e126b9086466" title=" " alt="" coords="258,5,377,32"/>
+<area shape="rect" id="node3" href="$class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2" title="从json节点反序列化" alt="" coords="238,57,397,98"/>
+<area shape="rect" id="node5" href="$class_message_source.html#a593939fc75a52d99f210da0482a85443" title="从json字符串反序列化到MessageSource对象" alt="" coords="224,225,411,266"/>
+<area shape="rect" id="node6" href="$class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="519,177,617,204"/>
+<area shape="rect" id="node8" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="867,291,985,317"/>
+<area shape="rect" id="node11" href="$class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="867,367,985,393"/>
+<area shape="rect" id="node12" href="$class_a_p_i_exception.html#a4daa184b72e7fc0630868f7bd257a75c" title="raise 抛出方法" alt="" coords="249,123,386,149"/>
+<area shape="rect" id="node13" href="$pch_8cpp.html#abc6b375fa85c1b0aba1555d12c2df685" title=" " alt="" coords="733,341,811,368"/>
+<area shape="rect" id="node14" href="$classthread_manager.html#af9c06705302ca26890977cd3a2054d3e" title="设置env给当前线程." alt="" coords="240,443,395,469"/>
+<area shape="rect" id="node4" href="$class_contact.html#ae39444f378e6de7fd6c3e60981949af5" title=" " alt="" coords="508,64,628,91"/>
+<area shape="rect" id="node10" href="$class_message_source.html#a19d28a14e61cc59cf8c4ff874d9cf6de" title=" " alt="" coords="459,232,677,259"/>
+<area shape="rect" id="node7" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="725,240,819,267"/>
+<area shape="rect" id="node9" href="$class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="1033,291,1151,317"/>
+<area shape="rect" id="node15" href="$classthread_manager.html#a3401a8976c99d293ef1b8b8c7a1db9d1" title="获取线程id." alt="" coords="477,443,659,469"/>
+<area shape="rect" id="node16" href="$classthread_manager.html#a648b29dc90c990d1915ca1a92eb210e6" title="判断该线程id是否包含在线程池里" alt="" coords="486,493,650,520"/>
+</map>
