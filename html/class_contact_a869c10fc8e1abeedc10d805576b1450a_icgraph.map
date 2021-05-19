@@ -1,6 +1,6 @@
 <map id="Contact::botid" name="Contact::botid">
 <area shape="rect" id="node1" title="所属bot" alt="" coords="1065,132,1168,159"/>
-<area shape="rect" id="node2" href="$class_contact.html#acff216bf0459571db3304576f563f6cc" title=" " alt="" coords="872,5,992,32"/>
+<area shape="rect" id="node2" href="$class_contact.html#acff216bf0459571db3304576f563f6cc" title="构造contact类型" alt="" coords="872,5,992,32"/>
 <area shape="rect" id="node3" href="$class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73" title="构建好友对象" alt="" coords="242,56,345,83"/>
 <area shape="rect" id="node4" href="$class_group.html#add1e65680741fd67e842bd55d619f871" title="取群主" alt="" coords="872,208,992,235"/>
 <area shape="rect" id="node5" href="$class_member.html#a1313aa1274273237f2dbfaa053a9d23e" title=" " alt="" coords="231,107,355,133"/>

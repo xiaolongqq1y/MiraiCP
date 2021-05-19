@@ -1,6 +1,6 @@
 <map id="Contact::type" name="Contact::type">
 <area shape="rect" id="node1" title="当前对象类型" alt="" coords="1123,157,1223,184"/>
-<area shape="rect" id="node2" href="$class_contact.html#acff216bf0459571db3304576f563f6cc" title=" " alt="" coords="901,81,1021,108"/>
+<area shape="rect" id="node2" href="$class_contact.html#acff216bf0459571db3304576f563f6cc" title="构造contact类型" alt="" coords="901,81,1021,108"/>
 <area shape="rect" id="node3" href="$class_forward_message.html#a7eb7a43071253c735cbdf1edc17f2274" title=" " alt="" coords="847,132,1075,159"/>
 <area shape="rect" id="node4" href="$class_forward_message.html#a3dccf0e2db76db7767507a1e71e9b788" title="发送给群或好友或群成员" alt="" coords="875,183,1046,209"/>
 <area shape="rect" id="node5" href="$class_contact.html#a6739337b623df49bc51e2fc997bfd6e8" title=" " alt="" coords="889,233,1033,260"/>

@@ -1,13 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: ",_abcdefghijklmnopqrstuvw~新群",
+  0: "_abcdefghijklmnopqrstuvw~新群需",
   1: "abcdefghilmnprstu",
   2: "cdfpt",
   3: "abcdefgijklmnopqrstuvw~",
   4: "_abcdefgijklmnopqrstu",
   5: "abgjmnprs",
   6: "w",
-  7: ",l新群"
+  7: "l新群需"
 };
 
 var indexSectionNames =

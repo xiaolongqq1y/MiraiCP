@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_2c_20如好友申请_650',[', 如好友申请',['../group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html',1,'']]]
+  ['lightapp风格_650',['LightApp风格',['../group___light_app_xE9_xA3_x8E_xE6_xA0_xBC.html',1,'']]]
 ];

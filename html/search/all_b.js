@@ -1,10 +1,24 @@
 var searchData=
 [
-  ['java_5ftech_5feritquearcus_5fmiraicp_5fcpp_5f1lib_5fevent_118',['Java_tech_eritquearcus_miraicp_CPP_1lib_Event',['../pch_8cpp.html#a5a6a6a055d2edb20a003b0e706b36538',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Event(JNIEnv *env, jobject, jstring content):&#160;pch.cpp'],['../tech__eritquearcus__miraicp___c_p_p__lib_8h.html#aff944d20fe212190127653753b17f6c2',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Event(JNIEnv *, jobject, jstring):&#160;pch.cpp']]],
-  ['java_5ftech_5feritquearcus_5fmiraicp_5fcpp_5f1lib_5fplugindisable_119',['Java_tech_eritquearcus_miraicp_CPP_1lib_PluginDisable',['../pch_8cpp.html#a26eb81fca96393265b287bbe4bf3ade8',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_PluginDisable(JNIEnv *env, jobject job):&#160;pch.cpp'],['../tech__eritquearcus__miraicp___c_p_p__lib_8h.html#a4180c7b053eaedae4d46b65b1540bb6e',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_PluginDisable(JNIEnv *, jobject):&#160;pch.cpp']]],
-  ['java_5ftech_5feritquearcus_5fmiraicp_5fcpp_5f1lib_5fverify_120',['Java_tech_eritquearcus_miraicp_CPP_1lib_Verify',['../pch_8cpp.html#a86032e8c2d72757b8da2e5b19ca5756b',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Verify(JNIEnv *env, jobject):&#160;pch.cpp'],['../tech__eritquearcus__miraicp___c_p_p__lib_8h.html#a1fb4e6271aaa1d968b8199dcd00dbb45',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Verify(JNIEnv *, jobject):&#160;pch.cpp']]],
-  ['jlongtostring_121',['JLongToString',['../class_tools.html#adcb84f7e2d172133f56b3ec8c84a40fc',1,'Tools']]],
-  ['jniversion_122',['JNIVersion',['../pch_8cpp.html#a2666aed452d2949b354248b80a382943',1,'JNIVersion():&#160;pch.cpp'],['../tools_8h.html#a2666aed452d2949b354248b80a382943',1,'JNIVersion():&#160;pch.cpp']]],
-  ['json_123',['json',['../pch_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d',1,'json():&#160;pch.cpp'],['../tools_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d',1,'json():&#160;tools.cpp']]],
-  ['jstring2str_124',['jstring2str',['../class_tools.html#aabf8a80dcd00513cb7516e8251109313',1,'Tools']]]
+  ['kbuildforward_124',['KBuildforward',['../class_config.html#aefc337c0124f3ed88a175a3a6b17e620',1,'Config']]],
+  ['kgioperation_125',['KGioperation',['../class_config.html#a9ba4760b8ea690b6e69faff11d6b1ef5',1,'Config']]],
+  ['kick_126',['Kick',['../class_member.html#ae23c4a4ff625eb0c29f27a0c66a76aee',1,'Member']]],
+  ['kickm_127',['KickM',['../class_member.html#a3c1d041eecd575f4e3c02ea82765db36',1,'Member']]],
+  ['kkickm_128',['KKickM',['../class_config.html#a9d35eb18487783f8ee6e8a53a85a0539',1,'Config']]],
+  ['kmutegroup_129',['KMuteGroup',['../class_config.html#aef82ed33c4ce4b85792172dcacb552f0',1,'Config']]],
+  ['kmutem_130',['KMuteM',['../class_config.html#ac614d847a1359b2618c48fa779517e8d',1,'Config']]],
+  ['knfroperation_131',['KNfroperation',['../class_config.html#ac9c81894cd0eff7edcea916b296ee97f',1,'Config']]],
+  ['kquerybfl_132',['KQueryBFL',['../class_config.html#a6828d41c3b1f79565e7fdf756b3c2aac',1,'Config']]],
+  ['kquerybgl_133',['KQueryBGL',['../class_config.html#a88c77bf58af912391d3ab19bc6c66046',1,'Config']]],
+  ['kqueryimgurl_134',['KQueryImgUrl',['../class_config.html#a7be31e17b33b721573e0855c1166d665',1,'Config']]],
+  ['kquerym_135',['KQueryM',['../class_config.html#a7964ef89426d2f8b0c3508024f0b20ca',1,'Config']]],
+  ['kqueryml_136',['KQueryML',['../class_config.html#ae7ebb0f5ecce9db4141fbf7d1005a023',1,'Config']]],
+  ['kqueryowner_137',['KQueryOwner',['../class_config.html#affbb043f1d3eb8e3587a1b8fc1a6682e',1,'Config']]],
+  ['krecall_138',['KRecall',['../class_config.html#a35e4d5278a105691e18471281e83947d',1,'Config']]],
+  ['krefreshinfo_139',['KRefreshInfo',['../class_config.html#a941c92e01cef6da2301b11422f29afd4',1,'Config']]],
+  ['kremotefileinfo_140',['KRemoteFileInfo',['../class_config.html#a85e0c82aba983f80aa56b1428f8acd54',1,'Config']]],
+  ['kschedule_141',['KSchedule',['../class_config.html#a722889565f844a0f533eb1eb7bfe74bf',1,'Config']]],
+  ['ksend_142',['KSend',['../class_config.html#a79ec5659e47627677e41247b860d76ee',1,'Config']]],
+  ['ksendfile_143',['KSendFile',['../class_config.html#ab4c7c1fa8e2f5788e71ae05cd8e095f9',1,'Config']]],
+  ['kuploadimg_144',['KUploadImg',['../class_config.html#a0697469c6fcaac6dde444e8780b437c5',1,'Config']]]
 ];

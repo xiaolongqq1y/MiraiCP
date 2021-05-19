@@ -1,5 +1,5 @@
 <map id="Contact::Contact" name="Contact::Contact">
-<area shape="rect" id="node1" title=" " alt="" coords="431,46,551,73"/>
+<area shape="rect" id="node1" title="无参初始化Contact类型" alt="" coords="431,46,551,73"/>
 <area shape="rect" id="node2" href="$class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2" title="从json节点反序列化" alt="" coords="224,39,383,80"/>
 <area shape="rect" id="node3" href="$class_contact.html#a1ae828255543de1ff394bc79e9262cc7" title=" " alt="" coords="11,5,170,47"/>
 <area shape="rect" id="node4" href="$pch_8cpp.html#a5a6a6a055d2edb20a003b0e706b36538" title=" " alt="" coords="5,71,176,112"/>

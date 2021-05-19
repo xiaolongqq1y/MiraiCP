@@ -1,12 +1,16 @@
 var searchData=
 [
-  ['accept_9',['accept',['../class_group_invite_event.html#a8baf6dc678651bd959477dcd87b86df2',1,'GroupInviteEvent::accept(std::string source)'],['../class_group_invite_event.html#a7eca11d2982d510111a733665013e1d7',1,'GroupInviteEvent::accept()'],['../class_new_friend_request_event.html#a2adcb8c617896fc0eaf799f4bacaf0f0',1,'NewFriendRequestEvent::accept(std::string source)'],['../class_new_friend_request_event.html#ac1c8d0828f1b98d9eeb6d95c20406eb7',1,'NewFriendRequestEvent::accept()']]],
-  ['accept_10',['ACCEPT',['../group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga32c9f2ffc2ffa0a0fb0a5f411470b5b1',1,'constants.h']]],
-  ['action_11',['action',['../class_logger.html#a3cc655404f5a2d454085b9047ee21cd0',1,'Logger::action()'],['../struct_logger_1_1handler.html#aee0685129675fde6da3c13d032eb821b',1,'Logger::handler::action()']]],
-  ['apiexception_12',['APIException',['../class_a_p_i_exception.html',1,'APIException'],['../class_a_p_i_exception.html#a43d29e5a434ac9f857f28ef25348bc4b',1,'APIException::APIException()']]],
-  ['appname_13',['appName',['../group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html#ga04a014bff758f5351a974174ee48cc3f',1,'LightAppStyle1']]],
-  ['at_14',['At',['../tools_8h.html#ac60ae692764e2dc3e1e274355c24446d',1,'At(Member a):&#160;tools.h'],['../tools_8h.html#a9ce657ba39e82c767266e2c3a6effba7',1,'At(unsigned long long a):&#160;tools.h']]],
-  ['attach_15',['attach',['../structthread_manager_1_1t.html#a1458e88b6ceb36c119eee591ed5f2347',1,'threadManager::t']]],
-  ['authorid_16',['authorid',['../class_recall_event.html#a6ca09703cf5ca62b54c2f4f08465fd15',1,'RecallEvent']]],
-  ['avatarurl_17',['avatarUrl',['../struct_low_level_a_p_i_1_1info.html#ac1e61e8ac239d8266472d2e53614dbef',1,'LowLevelAPI::info::avatarUrl()'],['../class_contact.html#a10cf00a3c2dfef0bdc29c3f89e508293',1,'Contact::avatarUrl()'],['../class_bot.html#a94279cd991ebd5665e67246ff7563af0',1,'Bot::avatarUrl()']]]
+  ['bhead_17',['BHead',['../class_event.html#a8c086e80ef6058cb386055572d466c85',1,'Event']]],
+  ['bj_18',['BJ',['../tools_8h.html#a98a30b1b597813b443b562083d8ca69e',1,'tools.h']]],
+  ['bjnode_19',['BJNode',['../class_event_1_1_b_j_node.html',1,'Event']]],
+  ['bot_20',['Bot',['../class_bot.html',1,'']]],
+  ['bot_21',['bot',['../class_bot_event.html#a2a77f086d712d0fc8d2e430e4e2d4b83',1,'BotEvent']]],
+  ['bot_22',['Bot',['../class_bot.html#a98733a6bf8724f78a402b97480955d67',1,'Bot']]],
+  ['botevent_23',['BotEvent',['../class_bot_event.html',1,'BotEvent'],['../class_bot_event.html#ac26c3d59fa5a3546f269549ccbe994a4',1,'BotEvent::BotEvent()']]],
+  ['botexception_24',['BotException',['../class_bot_exception.html',1,'BotException'],['../class_bot_exception.html#a5ab7d520de1b8cb679aa2b84af810c24',1,'BotException::BotException()']]],
+  ['botid_25',['botid',['../class_contact.html#a869c10fc8e1abeedc10d805576b1450a',1,'Contact']]],
+  ['botjoingroupevent_26',['BotJoinGroupEvent',['../class_bot_join_group_event.html',1,'BotJoinGroupEvent'],['../class_bot_join_group_event.html#a152067b678802d1c2124ffc31d8a523d',1,'BotJoinGroupEvent::BotJoinGroupEvent()']]],
+  ['broadcast_27',['broadcast',['../class_event.html#a2e51d104dd14766942e6e126b9086466',1,'Event::broadcast(GroupMessageEvent g)'],['../class_event.html#a31bb06ed9dca0835599bf2a63345c483',1,'Event::broadcast(PrivateMessageEvent p)'],['../class_event.html#ab3c829efebb84750fe97b1718679ca9c',1,'Event::broadcast(GroupInviteEvent g)'],['../class_event.html#ac0a08d29afd15543c803d8b66b882945',1,'Event::broadcast(NewFriendRequestEvent g)'],['../class_event.html#a2238261596237fbfe190e9f35d775bc6',1,'Event::broadcast(MemberJoinEvent g)'],['../class_event.html#ab41264e1a59a8db82ebcc2d7f79aa861',1,'Event::broadcast(MemberLeaveEvent g)'],['../class_event.html#a9be5a8c018742d45f5a51b6154763b0b',1,'Event::broadcast(RecallEvent r)'],['../class_event.html#ab191036bba782e15dd9f65f4734c0c7e',1,'Event::broadcast(SchedulingEvent g)'],['../class_event.html#a23b5f0a09f8f1444a85947bef801979b',1,'Event::broadcast(BotJoinGroupEvent b)'],['../class_event.html#a27a73f7b92d9a1f28c662c35dce9a7f4',1,'Event::broadcast(GroupTempMessageEvent g)']]],
+  ['btail_28',['BTail',['../class_event.html#aa1162a522b52150377d50241c749a269',1,'Event']]],
+  ['buttons_29',['buttons',['../struct_light_app_style1.html#a7c9d2e092d1c6af7df134b5f2995a227',1,'LightAppStyle1']]]
 ];

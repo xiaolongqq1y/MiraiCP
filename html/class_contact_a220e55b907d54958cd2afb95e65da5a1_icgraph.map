@@ -1,7 +1,7 @@
 <map id="Contact::id" name="Contact::id">
 <area shape="rect" id="node1" title="id在全部情况存在" alt="" coords="1123,215,1208,242"/>
 <area shape="rect" id="node2" href="$tools_8h.html#ac60ae692764e2dc3e1e274355c24446d" title="At一个群成员" alt="" coords="700,570,739,596"/>
-<area shape="rect" id="node5" href="$class_contact.html#acff216bf0459571db3304576f563f6cc" title=" " alt="" coords="901,88,1021,115"/>
+<area shape="rect" id="node5" href="$class_contact.html#acff216bf0459571db3304576f563f6cc" title="构造contact类型" alt="" coords="901,88,1021,115"/>
 <area shape="rect" id="node6" href="$class_forward_message.html#a7eb7a43071253c735cbdf1edc17f2274" title=" " alt="" coords="847,139,1075,166"/>
 <area shape="rect" id="node7" href="$class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73" title="构建好友对象" alt="" coords="242,88,345,115"/>
 <area shape="rect" id="node8" href="$class_group.html#a4eadbc1ff13345e65c326bc31ab51a30" title=" " alt="" coords="909,240,1013,267"/>

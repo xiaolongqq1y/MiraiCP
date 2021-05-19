@@ -124,8 +124,10 @@ $(document).ready(function(){initNavTree('class_contact.html',''); initResizable
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:ae39444f378e6de7fd6c3e60981949af5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact</a> ()</td></tr>
+<tr class="memdesc:ae39444f378e6de7fd6c3e60981949af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">无参初始化Contact类型  <a href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">更多...</a><br /></td></tr>
 <tr class="separator:ae39444f378e6de7fd6c3e60981949af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff216bf0459571db3304576f563f6cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#acff216bf0459571db3304576f563f6cc">Contact</a> (int <a class="el" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">type</a>, unsigned long long <a class="el" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">id</a>, unsigned long long gid, <a class="el" href="pch_8cpp.html#aca454f84dd198a937af6499dd758aa3d">std::string</a> name, unsigned long long <a class="el" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a>)</td></tr>
+<tr class="memdesc:acff216bf0459571db3304576f563f6cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造contact类型  <a href="class_contact.html#acff216bf0459571db3304576f563f6cc">更多...</a><br /></td></tr>
 <tr class="separator:acff216bf0459571db3304576f563f6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a182b686fa824fe5c9a3a5181f873e2a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">type</a> ()</td></tr>
 <tr class="memdesc:a182b686fa824fe5c9a3a5181f873e2a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前对象类型  <a href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">更多...</a><br /></td></tr>
@@ -176,7 +178,7 @@ Protected 属性</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>group, friend, member的父类 </p>
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00769">769</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00771">771</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="ae39444f378e6de7fd6c3e60981949af5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae39444f378e6de7fd6c3e60981949af5">&#9670;&nbsp;</a></span>Contact() <span class="overload">[1/2]</span></h2>
@@ -201,19 +203,21 @@ Protected 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00778">778</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;              {</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">_type</a> = 0;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">_id</a> = 0;</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        this-&gt;<a class="code" href="class_contact.html#ad10855c0071226743dffc553dc913b88">_groupid</a> = 0;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        this-&gt;<a class="code" href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">_nickOrNameCard</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">_botid</a> = 0;</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    }</div>
-<div class="ttc" id="aclass_contact_html_a12ab960a72b55b8e7562d04d0b4bd6e0"><div class="ttname"><a href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">Contact::_id</a></div><div class="ttdeci">unsigned long long _id</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00772">tools.h:772</a></div></div>
-<div class="ttc" id="aclass_contact_html_a7841db9af58406a50d53d0ad6f7fa374"><div class="ttname"><a href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">Contact::_type</a></div><div class="ttdeci">int _type</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00771">tools.h:771</a></div></div>
-<div class="ttc" id="aclass_contact_html_a88b041d798fb05e1347c51d149c12a21"><div class="ttname"><a href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">Contact::_botid</a></div><div class="ttdeci">unsigned long long _botid</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00776">tools.h:776</a></div></div>
-<div class="ttc" id="aclass_contact_html_ad10855c0071226743dffc553dc913b88"><div class="ttname"><a href="class_contact.html#ad10855c0071226743dffc553dc913b88">Contact::_groupid</a></div><div class="ttdeci">unsigned long long _groupid</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00773">tools.h:773</a></div></div>
-<div class="ttc" id="aclass_contact_html_ae8c0a3a8718a84d9766d528df278ad4b"><div class="ttname"><a href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">Contact::_nickOrNameCard</a></div><div class="ttdeci">std::string _nickOrNameCard</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00774">tools.h:774</a></div></div>
+<p>无参初始化Contact类型 </p>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00784">784</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;              {</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">_type</a> = 0;</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">_id</a> = 0;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        this-&gt;<a class="code" href="class_contact.html#ad10855c0071226743dffc553dc913b88">_groupid</a> = 0;</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        this-&gt;<a class="code" href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">_nickOrNameCard</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">_botid</a> = 0;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    }</div>
+<div class="ttc" id="aclass_contact_html_a12ab960a72b55b8e7562d04d0b4bd6e0"><div class="ttname"><a href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">Contact::_id</a></div><div class="ttdeci">unsigned long long _id</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00774">tools.h:774</a></div></div>
+<div class="ttc" id="aclass_contact_html_a7841db9af58406a50d53d0ad6f7fa374"><div class="ttname"><a href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">Contact::_type</a></div><div class="ttdeci">int _type</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00773">tools.h:773</a></div></div>
+<div class="ttc" id="aclass_contact_html_a88b041d798fb05e1347c51d149c12a21"><div class="ttname"><a href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">Contact::_botid</a></div><div class="ttdeci">unsigned long long _botid</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00778">tools.h:778</a></div></div>
+<div class="ttc" id="aclass_contact_html_ad10855c0071226743dffc553dc913b88"><div class="ttname"><a href="class_contact.html#ad10855c0071226743dffc553dc913b88">Contact::_groupid</a></div><div class="ttdeci">unsigned long long _groupid</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00775">tools.h:775</a></div></div>
+<div class="ttc" id="aclass_contact_html_ae8c0a3a8718a84d9766d528df278ad4b"><div class="ttname"><a href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">Contact::_nickOrNameCard</a></div><div class="ttdeci">std::string _nickOrNameCard</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00776">tools.h:776</a></div></div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -221,7 +225,7 @@ Protected 属性</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_contact_ae39444f378e6de7fd6c3e60981949af5_icgraph.png" border="0" usemap="#aclass_contact_ae39444f378e6de7fd6c3e60981949af5_icgraph" alt=""/></div>
 <map name="aclass_contact_ae39444f378e6de7fd6c3e60981949af5_icgraph" id="aclass_contact_ae39444f378e6de7fd6c3e60981949af5_icgraph">
-<area shape="rect" title=" " alt="" coords="431,46,551,73"/>
+<area shape="rect" title="无参初始化Contact类型" alt="" coords="431,46,551,73"/>
 <area shape="rect" href="class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2" title="从json节点反序列化" alt="" coords="224,39,383,80"/>
 <area shape="rect" href="class_contact.html#a1ae828255543de1ff394bc79e9262cc7" title=" " alt="" coords="11,5,170,47"/>
 <area shape="rect" href="pch_8cpp.html#a5a6a6a055d2edb20a003b0e706b36538" title=" " alt="" coords="5,71,176,112"/>
@@ -282,17 +286,53 @@ Protected 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00786">786</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;                                                                                                               {</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">_type</a> = <a class="code" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">type</a>;</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">_id</a> = <a class="code" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">id</a>;</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        this-&gt;<a class="code" href="class_contact.html#ad10855c0071226743dffc553dc913b88">_groupid</a> = gid;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        this-&gt;<a class="code" href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">_nickOrNameCard</a> = name;</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">_botid</a> = <a class="code" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a>;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    };</div>
-<div class="ttc" id="aclass_contact_html_a182b686fa824fe5c9a3a5181f873e2a1"><div class="ttname"><a href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">Contact::type</a></div><div class="ttdeci">int type()</div><div class="ttdoc">当前对象类型</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00798">tools.h:798</a></div></div>
-<div class="ttc" id="aclass_contact_html_a220e55b907d54958cd2afb95e65da5a1"><div class="ttname"><a href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">Contact::id</a></div><div class="ttdeci">unsigned long long id()</div><div class="ttdoc">id在全部情况存在</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00804">tools.h:804</a></div></div>
-<div class="ttc" id="aclass_contact_html_a869c10fc8e1abeedc10d805576b1450a"><div class="ttname"><a href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">Contact::botid</a></div><div class="ttdeci">unsigned long long botid()</div><div class="ttdoc">所属bot</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00820">tools.h:820</a></div></div>
+<p>构造contact类型 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1" title="当前对象类型">Contact::type()</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1" title="id在全部情况存在">Contact::id()</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gid</td><td>是member的时候是群id，否则为0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4" title="当type为3的时候存在，否则为0，可以看作补充id">Contact::groupid</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>群名片或昵称或群名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd>Contact::name() </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">botid</td><td>对应的botid </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00804">804</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;                                                                                                               {</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">_type</a> = <a class="code" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">type</a>;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">_id</a> = <a class="code" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">id</a>;</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        this-&gt;<a class="code" href="class_contact.html#ad10855c0071226743dffc553dc913b88">_groupid</a> = gid;</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        this-&gt;<a class="code" href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">_nickOrNameCard</a> = name;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        this-&gt;<a class="code" href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">_botid</a> = <a class="code" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a>;</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    };</div>
+<div class="ttc" id="aclass_contact_html_a182b686fa824fe5c9a3a5181f873e2a1"><div class="ttname"><a href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">Contact::type</a></div><div class="ttdeci">int type()</div><div class="ttdoc">当前对象类型</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00816">tools.h:816</a></div></div>
+<div class="ttc" id="aclass_contact_html_a220e55b907d54958cd2afb95e65da5a1"><div class="ttname"><a href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">Contact::id</a></div><div class="ttdeci">unsigned long long id()</div><div class="ttdoc">id在全部情况存在</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00822">tools.h:822</a></div></div>
+<div class="ttc" id="aclass_contact_html_a869c10fc8e1abeedc10d805576b1450a"><div class="ttname"><a href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">Contact::botid</a></div><div class="ttdeci">unsigned long long botid()</div><div class="ttdoc">所属bot</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00838">tools.h:838</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -300,7 +340,7 @@ Protected 属性</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_contact_acff216bf0459571db3304576f563f6cc_cgraph.png" border="0" usemap="#aclass_contact_acff216bf0459571db3304576f563f6cc_cgraph" alt=""/></div>
 <map name="aclass_contact_acff216bf0459571db3304576f563f6cc_cgraph" id="aclass_contact_acff216bf0459571db3304576f563f6cc_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,125,83"/>
+<area shape="rect" title="构造contact类型" alt="" coords="5,56,125,83"/>
 <area shape="rect" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a" title="所属bot" alt="" coords="173,5,276,32"/>
 <area shape="rect" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1" title="id在全部情况存在" alt="" coords="182,56,267,83"/>
 <area shape="rect" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1" title="当前对象类型" alt="" coords="175,107,275,133"/>
@@ -335,9 +375,9 @@ Protected 属性</h2></td></tr>
 
 <p>头像url地址 </p>
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00817">817</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a92b8feb1a780637b71e06f3f9e954043">_avatarUrl</a>; };</div>
-<div class="ttc" id="aclass_contact_html_a92b8feb1a780637b71e06f3f9e954043"><div class="ttname"><a href="class_contact.html#a92b8feb1a780637b71e06f3f9e954043">Contact::_avatarUrl</a></div><div class="ttdeci">std::string _avatarUrl</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00775">tools.h:775</a></div></div>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00835">835</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a92b8feb1a780637b71e06f3f9e954043">_avatarUrl</a>; };</div>
+<div class="ttc" id="aclass_contact_html_a92b8feb1a780637b71e06f3f9e954043"><div class="ttname"><a href="class_contact.html#a92b8feb1a780637b71e06f3f9e954043">Contact::_avatarUrl</a></div><div class="ttdeci">std::string _avatarUrl</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00777">tools.h:777</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -366,8 +406,8 @@ Protected 属性</h2></td></tr>
 
 <p>所属bot </p>
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00820">820</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">_botid</a>; };</div>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00838">838</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a88b041d798fb05e1347c51d149c12a21">_botid</a>; };</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -376,7 +416,7 @@ Protected 属性</h2></td></tr>
 <div class="center"><img src="class_contact_a869c10fc8e1abeedc10d805576b1450a_icgraph.png" border="0" usemap="#aclass_contact_a869c10fc8e1abeedc10d805576b1450a_icgraph" alt=""/></div>
 <map name="aclass_contact_a869c10fc8e1abeedc10d805576b1450a_icgraph" id="aclass_contact_a869c10fc8e1abeedc10d805576b1450a_icgraph">
 <area shape="rect" title="所属bot" alt="" coords="1065,132,1168,159"/>
-<area shape="rect" href="class_contact.html#acff216bf0459571db3304576f563f6cc" title=" " alt="" coords="872,5,992,32"/>
+<area shape="rect" href="class_contact.html#acff216bf0459571db3304576f563f6cc" title="构造contact类型" alt="" coords="872,5,992,32"/>
 <area shape="rect" href="class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73" title="构建好友对象" alt="" coords="242,56,345,83"/>
 <area shape="rect" href="class_group.html#add1e65680741fd67e842bd55d619f871" title="取群主" alt="" coords="872,208,992,235"/>
 <area shape="rect" href="class_member.html#a1313aa1274273237f2dbfaa053a9d23e" title=" " alt="" coords="231,107,355,133"/>
@@ -445,7 +485,7 @@ Protected 属性</h2></td></tr>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        j[<span class="stringliteral">&quot;nickornamecard&quot;</span>],</div>
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        j[<span class="stringliteral">&quot;botid&quot;</span>]);</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;}</div>
-<div class="ttc" id="aclass_contact_html_ae39444f378e6de7fd6c3e60981949af5"><div class="ttname"><a href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact::Contact</a></div><div class="ttdeci">Contact()</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00778">tools.h:778</a></div></div>
+<div class="ttc" id="aclass_contact_html_ae39444f378e6de7fd6c3e60981949af5"><div class="ttname"><a href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact::Contact</a></div><div class="ttdeci">Contact()</div><div class="ttdoc">无参初始化Contact类型</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00784">tools.h:784</a></div></div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -454,7 +494,7 @@ Protected 属性</h2></td></tr>
 <div class="center"><img src="class_contact_aafc428cdb4c1920864bf747ad7dce9f2_cgraph.png" border="0" usemap="#aclass_contact_aafc428cdb4c1920864bf747ad7dce9f2_cgraph" alt=""/></div>
 <map name="aclass_contact_aafc428cdb4c1920864bf747ad7dce9f2_cgraph" id="aclass_contact_aafc428cdb4c1920864bf747ad7dce9f2_cgraph">
 <area shape="rect" title="从json节点反序列化" alt="" coords="5,5,164,47"/>
-<area shape="rect" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5" title=" " alt="" coords="212,13,332,39"/>
+<area shape="rect" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5" title="无参初始化Contact类型" alt="" coords="212,13,332,39"/>
 </map>
 </div>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -536,7 +576,7 @@ Protected 属性</h2></td></tr>
 <area shape="rect" title=" " alt="" coords="5,35,164,76"/>
 <area shape="rect" href="class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2" title="从json节点反序列化" alt="" coords="212,5,371,47"/>
 <area shape="rect" href="class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="243,71,340,98"/>
-<area shape="rect" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5" title=" " alt="" coords="419,13,539,39"/>
+<area shape="rect" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5" title="无参初始化Contact类型" alt="" coords="419,13,539,39"/>
 <area shape="rect" href="class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="432,71,525,98"/>
 <area shape="rect" href="class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="587,46,705,73"/>
 <area shape="rect" href="class_logger.html#aefc80c70d2253aed0119c468d7999ff1" title="发送警告(warning级日志)" alt="" coords="753,71,871,98"/>
@@ -576,8 +616,8 @@ Protected 属性</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00811">811</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#ad10855c0071226743dffc553dc913b88">_groupid</a>; }</div>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00829">829</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#ad10855c0071226743dffc553dc913b88">_groupid</a>; }</div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -645,8 +685,8 @@ Protected 属性</h2></td></tr>
 <dl class="section examples"><dt>示例</dt><dd><a class="el" href="_xE4_xBD_xBF_xE7_x94_xA8_xE5_xAE_x9A_xE6_x97_xB6_xE4_xBB_xBB_xE5_x8A_xA1-example.html#a8">使用定时任务</a> , 以及 <a class="el" href="_xE8_xB8_xA2_xE5_x87_xBA_xE7_xBE_xA4_xE6_x88_x90_xE5_x91_x98-example.html#a5">踢出群成员</a>.</dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00804">804</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">_id</a>; }</div>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00822">822</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a12ab960a72b55b8e7562d04d0b4bd6e0">_id</a>; }</div>
 </div><!-- fragment --><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -656,7 +696,7 @@ Protected 属性</h2></td></tr>
 <map name="aclass_contact_a220e55b907d54958cd2afb95e65da5a1_icgraph" id="aclass_contact_a220e55b907d54958cd2afb95e65da5a1_icgraph">
 <area shape="rect" title="id在全部情况存在" alt="" coords="1123,215,1208,242"/>
 <area shape="rect" href="tools_8h.html#ac60ae692764e2dc3e1e274355c24446d" title="At一个群成员" alt="" coords="700,570,739,596"/>
-<area shape="rect" href="class_contact.html#acff216bf0459571db3304576f563f6cc" title=" " alt="" coords="901,88,1021,115"/>
+<area shape="rect" href="class_contact.html#acff216bf0459571db3304576f563f6cc" title="构造contact类型" alt="" coords="901,88,1021,115"/>
 <area shape="rect" href="class_forward_message.html#a7eb7a43071253c735cbdf1edc17f2274" title=" " alt="" coords="847,139,1075,166"/>
 <area shape="rect" href="class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73" title="构建好友对象" alt="" coords="242,88,345,115"/>
 <area shape="rect" href="class_group.html#a4eadbc1ff13345e65c326bc31ab51a30" title=" " alt="" coords="909,240,1013,267"/>
@@ -710,8 +750,8 @@ Protected 属性</h2></td></tr>
 
 <p>群名称，群成员群名片，或好友昵称 </p>
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00814">814</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">_nickOrNameCard</a>; };</div>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00832">832</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#ae8c0a3a8718a84d9766d528df278ad4b">_nickOrNameCard</a>; };</div>
 </div><!-- fragment --><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -768,18 +808,18 @@ Protected 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00822">822</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;                                 {</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        <a class="code" href="pch_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d">nlohmann::json</a> j;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        j[<span class="stringliteral">&quot;type&quot;</span>] = <a class="code" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">type</a>();</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        j[<span class="stringliteral">&quot;id&quot;</span>] = <a class="code" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">id</a>();</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        j[<span class="stringliteral">&quot;groupid&quot;</span>] = <a class="code" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4">groupid</a>();</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        j[<span class="stringliteral">&quot;nickornamecard&quot;</span>] = <a class="code" href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066">nickOrNameCard</a>();</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        j[<span class="stringliteral">&quot;botid&quot;</span>] = <a class="code" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a>();</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        <span class="keywordflow">return</span> j;</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    }</div>
-<div class="ttc" id="aclass_contact_html_a07e7ddca539bf8e5ac2d2ad00d8b7ba4"><div class="ttname"><a href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4">Contact::groupid</a></div><div class="ttdeci">unsigned long long groupid()</div><div class="ttdoc">当type为3的时候存在，否则为0，可以看作补充id</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00811">tools.h:811</a></div></div>
-<div class="ttc" id="aclass_contact_html_a3f78c5f66d0b71ad06267c6a3b492066"><div class="ttname"><a href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066">Contact::nickOrNameCard</a></div><div class="ttdeci">std::string nickOrNameCard()</div><div class="ttdoc">群名称，群成员群名片，或好友昵称</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00814">tools.h:814</a></div></div>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00840">840</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;                                 {</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        <a class="code" href="pch_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d">nlohmann::json</a> j;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        j[<span class="stringliteral">&quot;type&quot;</span>] = <a class="code" href="class_contact.html#a182b686fa824fe5c9a3a5181f873e2a1">type</a>();</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        j[<span class="stringliteral">&quot;id&quot;</span>] = <a class="code" href="class_contact.html#a220e55b907d54958cd2afb95e65da5a1">id</a>();</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;        j[<span class="stringliteral">&quot;groupid&quot;</span>] = <a class="code" href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4">groupid</a>();</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        j[<span class="stringliteral">&quot;nickornamecard&quot;</span>] = <a class="code" href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066">nickOrNameCard</a>();</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        j[<span class="stringliteral">&quot;botid&quot;</span>] = <a class="code" href="class_contact.html#a869c10fc8e1abeedc10d805576b1450a">botid</a>();</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        <span class="keywordflow">return</span> j;</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    }</div>
+<div class="ttc" id="aclass_contact_html_a07e7ddca539bf8e5ac2d2ad00d8b7ba4"><div class="ttname"><a href="class_contact.html#a07e7ddca539bf8e5ac2d2ad00d8b7ba4">Contact::groupid</a></div><div class="ttdeci">unsigned long long groupid()</div><div class="ttdoc">当type为3的时候存在，否则为0，可以看作补充id</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00829">tools.h:829</a></div></div>
+<div class="ttc" id="aclass_contact_html_a3f78c5f66d0b71ad06267c6a3b492066"><div class="ttname"><a href="class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066">Contact::nickOrNameCard</a></div><div class="ttdeci">std::string nickOrNameCard()</div><div class="ttdoc">群名称，群成员群名片，或好友昵称</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00832">tools.h:832</a></div></div>
 </div><!-- fragment --><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -851,11 +891,11 @@ Protected 属性</h2></td></tr>
 </div><div class="memdoc">
 <p>序列化成文本，可以通过deserializationFromString反序列化，利于保存 </p><dl class="section see"><dt>参见</dt><dd>Contact::fromString() </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00834">834</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                                      {</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a6739337b623df49bc51e2fc997bfd6e8">serialization</a>().dump();</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    }</div>
-<div class="ttc" id="aclass_contact_html_a6739337b623df49bc51e2fc997bfd6e8"><div class="ttname"><a href="class_contact.html#a6739337b623df49bc51e2fc997bfd6e8">Contact::serialization</a></div><div class="ttdeci">nlohmann::json serialization()</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00822">tools.h:822</a></div></div>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00852">852</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;                                      {</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a6739337b623df49bc51e2fc997bfd6e8">serialization</a>().dump();</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;    }</div>
+<div class="ttc" id="aclass_contact_html_a6739337b623df49bc51e2fc997bfd6e8"><div class="ttname"><a href="class_contact.html#a6739337b623df49bc51e2fc997bfd6e8">Contact::serialization</a></div><div class="ttdeci">nlohmann::json serialization()</div><div class="ttdef"><b>Definition:</b> <a href="tools_8h_source.html#l00840">tools.h:840</a></div></div>
 </div><!-- fragment --><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -923,8 +963,8 @@ Protected 属性</h2></td></tr>
 <li>3 <a class="el" href="class_member.html" title="群成员类声明">Member</a> 群成员 </li>
 </ul>
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00798">798</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">_type</a>; }</div>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00816">816</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a7841db9af58406a50d53d0ad6f7fa374">_type</a>; }</div>
 </div><!-- fragment --><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -933,7 +973,7 @@ Protected 属性</h2></td></tr>
 <div class="center"><img src="class_contact_a182b686fa824fe5c9a3a5181f873e2a1_icgraph.png" border="0" usemap="#aclass_contact_a182b686fa824fe5c9a3a5181f873e2a1_icgraph" alt=""/></div>
 <map name="aclass_contact_a182b686fa824fe5c9a3a5181f873e2a1_icgraph" id="aclass_contact_a182b686fa824fe5c9a3a5181f873e2a1_icgraph">
 <area shape="rect" title="当前对象类型" alt="" coords="1123,157,1223,184"/>
-<area shape="rect" href="class_contact.html#acff216bf0459571db3304576f563f6cc" title=" " alt="" coords="901,81,1021,108"/>
+<area shape="rect" href="class_contact.html#acff216bf0459571db3304576f563f6cc" title="构造contact类型" alt="" coords="901,81,1021,108"/>
 <area shape="rect" href="class_forward_message.html#a7eb7a43071253c735cbdf1edc17f2274" title=" " alt="" coords="847,132,1075,159"/>
 <area shape="rect" href="class_forward_message.html#a3dccf0e2db76db7767507a1e71e9b788" title="发送给群或好友或群成员" alt="" coords="875,183,1046,209"/>
 <area shape="rect" href="class_contact.html#a6739337b623df49bc51e2fc997bfd6e8" title=" " alt="" coords="889,233,1033,260"/>
@@ -982,7 +1022,7 @@ Protected 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00775">775</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00777">777</a> 行定义.</p>
 
 </div>
 </div>
@@ -1006,7 +1046,7 @@ Protected 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00776">776</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00778">778</a> 行定义.</p>
 
 </div>
 </div>
@@ -1030,7 +1070,7 @@ Protected 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00773">773</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00775">775</a> 行定义.</p>
 
 </div>
 </div>
@@ -1054,7 +1094,7 @@ Protected 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00772">772</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00774">774</a> 行定义.</p>
 
 </div>
 </div>
@@ -1078,7 +1118,7 @@ Protected 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00774">774</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00776">776</a> 行定义.</p>
 
 </div>
 </div>
@@ -1102,7 +1142,7 @@ Protected 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00771">771</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="tools_8h_source.html">tools.h</a> 第 <a class="el" href="tools_8h_source.html#l00773">773</a> 行定义.</p>
 
 </div>
 </div>

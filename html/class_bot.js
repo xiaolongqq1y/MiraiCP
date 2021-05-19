@@ -7,11 +7,10 @@ var class_bot =
     [ "getFriendList", "class_bot.html#a6584044628bd3754e52d1dac2cebe789", null ],
     [ "getGroupList", "class_bot.html#acda3c7f35156966087c8f55340f9b48f", null ],
     [ "GroupListToString", "class_bot.html#add67cc5d276fd34f57406dbe1043394b", null ],
-    [ "id", "class_bot.html#a24d56f1b3e802988718995639d8d79bc", null ],
     [ "nick", "class_bot.html#af1538b49ce58759e210c41c402ff6680", null ],
     [ "refreshInfo", "class_bot.html#a3354dc4fbf569d19e11ac04ac8bf0b01", null ],
     [ "_avatarUrl", "class_bot.html#a97e1d4b00be61ae2afe9d4640b1b47e9", null ],
-    [ "_id", "class_bot.html#a7d53cd1a8072e392c0c9d1d508eb4924", null ],
     [ "_nick", "class_bot.html#aa980911dbb3047b33967a113fbd46884", null ],
+    [ "id", "class_bot.html#a0858777e9117c59d26532e68c74fc561", null ],
     [ "inited", "class_bot.html#aea6ef468ac5f253e89f79818e0723bd2", null ]
 ];

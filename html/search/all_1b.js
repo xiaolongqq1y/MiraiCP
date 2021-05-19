@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['群成员权限_306',['群成员权限',['../group___xE7_xBE_xA4_xE6_x88_x90_xE5_x91_x98_xE6_x9D_x83_xE9_x99_x90.html',1,'']]],
-  ['群成员退出事件_307',['群成员退出事件',['../group___xE7_xBE_xA4_xE6_x88_x90_xE5_x91_x98_xE9_x80_x80_xE5_x87_xBA_xE4_xBA_x8B_xE4_xBB_xB6.html',1,'']]]
+  ['需要表态的值_307',['需要表态的值',['../group___xE9_x9C_x80_xE8_xA6_x81_xE8_xA1_xA8_xE6_x80_x81_xE7_x9A_x84_xE5_x80_xBC.html',1,'']]]
 ];
