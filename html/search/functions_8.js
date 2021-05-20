@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['java_5ftech_5feritquearcus_5fmiraicp_5fcpp_5f1lib_5fevent_433',['Java_tech_eritquearcus_miraicp_CPP_1lib_Event',['../pch_8cpp.html#a5a6a6a055d2edb20a003b0e706b36538',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Event(JNIEnv *env, jobject, jstring content):&#160;pch.cpp'],['../tech__eritquearcus__miraicp___c_p_p__lib_8h.html#aff944d20fe212190127653753b17f6c2',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Event(JNIEnv *, jobject, jstring):&#160;pch.cpp']]],
-  ['java_5ftech_5feritquearcus_5fmiraicp_5fcpp_5f1lib_5fplugindisable_434',['Java_tech_eritquearcus_miraicp_CPP_1lib_PluginDisable',['../pch_8cpp.html#a26eb81fca96393265b287bbe4bf3ade8',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_PluginDisable(JNIEnv *env, jobject job):&#160;pch.cpp'],['../tech__eritquearcus__miraicp___c_p_p__lib_8h.html#a4180c7b053eaedae4d46b65b1540bb6e',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_PluginDisable(JNIEnv *, jobject):&#160;pch.cpp']]],
-  ['java_5ftech_5feritquearcus_5fmiraicp_5fcpp_5f1lib_5fverify_435',['Java_tech_eritquearcus_miraicp_CPP_1lib_Verify',['../pch_8cpp.html#a86032e8c2d72757b8da2e5b19ca5756b',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Verify(JNIEnv *env, jobject):&#160;pch.cpp'],['../tech__eritquearcus__miraicp___c_p_p__lib_8h.html#a1fb4e6271aaa1d968b8199dcd00dbb45',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Verify(JNIEnv *, jobject):&#160;pch.cpp']]],
-  ['jlongtostring_436',['JLongToString',['../class_tools.html#adcb84f7e2d172133f56b3ec8c84a40fc',1,'Tools']]],
-  ['jstring2str_437',['jstring2str',['../class_tools.html#aabf8a80dcd00513cb7516e8251109313',1,'Tools']]]
+  ['id_426',['id',['../class_contact.html#a220e55b907d54958cd2afb95e65da5a1',1,'Contact']]],
+  ['image_427',['Image',['../class_image.html#aa574ff79b5b2d3a1bd46ff55cd9d9283',1,'Image']]],
+  ['included_428',['included',['../classthread_manager.html#a648b29dc90c990d1915ca1a92eb210e6',1,'threadManager']]],
+  ['info_429',['Info',['../class_logger.html#a13e1837413a7cdecd8ea11909f1842be',1,'Logger']]],
+  ['info0_430',['info0',['../class_low_level_a_p_i.html#a9bb2f0a4e7c0cb7eee2e100b791d38d7',1,'LowLevelAPI']]],
+  ['init_431',['Init',['../class_config.html#a379658b5044c19b2e2016aae0e326d59',1,'Config']]],
+  ['init_432',['init',['../class_logger.html#a4b9d5f4a3eaf23db64c6d0eabc8c3b31',1,'Logger::init()'],['../class_scheduling_event.html#a2d7962abf12bf27090398f4b93f672ff',1,'SchedulingEvent::init()']]],
+  ['initexception_433',['InitException',['../class_init_exception.html#a3b5682b4e6156c0166eccec4e8bb34d5',1,'InitException']]]
 ];

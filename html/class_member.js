@@ -12,6 +12,5 @@ var class_member =
     [ "uploadImg", "class_member.html#aba78f8099187033776154e6a3e60b881", null ],
     [ "KickM", "class_member.html#a3c1d041eecd575f4e3c02ea82765db36", null ],
     [ "Mute_id", "class_member.html#a619ee4a517e8e4c707d6c130e20b0051", null ],
-    [ "permission", "class_member.html#a34070a5524ede3ecb35c6ea7dba21f9f", null ],
-    [ "Query_permission", "class_member.html#aca2ce7ca96323c2073d8ada4e93711f6", null ]
+    [ "permission", "class_member.html#a34070a5524ede3ecb35c6ea7dba21f9f", null ]
 ];

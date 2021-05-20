@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['ondisable_456',['onDisable',['../_procession_8cpp.html#a6a8d17ca0478ca5e5e061c280faa8791',1,'onDisable():&#160;Procession.cpp'],['../tools_8h.html#a6a8d17ca0478ca5e5e061c280faa8791',1,'onDisable():&#160;Procession.cpp']]],
-  ['onenable_457',['onEnable',['../_procession_8cpp.html#af6b40412027c7beb9eb51bbfed51aff6',1,'onEnable():&#160;Procession.cpp'],['../tools_8h.html#af6b40412027c7beb9eb51bbfed51aff6',1,'onEnable():&#160;Procession.cpp']]],
-  ['operator_2b_458',['operator+',['../class_mirai_code.html#af50c8e268885cb5a30639cdfd93ab69a',1,'MiraiCode::operator+(MiraiCodeable *a)'],['../class_mirai_code.html#ad46c00f666302f374a93226b5c45f95d',1,'MiraiCode::operator+(std::string a)']]],
-  ['operator_2b_3d_459',['operator+=',['../class_mirai_code.html#ad855466d9041e36a3e74c20050de286f',1,'MiraiCode::operator+=(MiraiCodeable *a)'],['../class_mirai_code.html#a88eae07053c7a244439ac2dc0bede763',1,'MiraiCode::operator+=(std::string a)']]],
-  ['operator_3d_460',['operator=',['../class_mirai_code.html#ae0f3c44dd9a20a6551e5b8eb5eff4cf3',1,'MiraiCode::operator=(MiraiCodeable *a)'],['../class_mirai_code.html#ae808b01b772ac73243fdff4fcb3e5846',1,'MiraiCode::operator=(std::string a)']]]
+  ['newenv_451',['newEnv',['../classthread_manager.html#a8210ba94ee5c9bfe1318319500576c85',1,'threadManager']]],
+  ['newfriendrequestevent_452',['NewFriendRequestEvent',['../class_new_friend_request_event.html#a476e7a5b53d9fe96435354cc8f59c361',1,'NewFriendRequestEvent']]],
+  ['nick_453',['nick',['../class_bot.html#af1538b49ce58759e210c41c402ff6680',1,'Bot']]],
+  ['nickornamecard_454',['nickOrNameCard',['../class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066',1,'Contact']]],
+  ['nodehandle_455',['NodeHandle',['../class_event_1_1_node_handle.html#adb9d3b16afc698f81ef8e4b32491c9de',1,'Event::NodeHandle']]]
 ];

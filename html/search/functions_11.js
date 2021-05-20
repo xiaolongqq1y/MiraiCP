@@ -1,19 +1,15 @@
 var searchData=
 [
-  ['schedulingevent_476',['SchedulingEvent',['../class_scheduling_event.html#a88d8e83d9c898200ff757ce0d5e07d03',1,'SchedulingEvent']]],
-  ['send0_477',['send0',['../class_low_level_a_p_i.html#ac6e830ba53c3477de726793a26357256',1,'LowLevelAPI']]],
-  ['sendfile_478',['sendFile',['../class_group.html#a5c6be84a0330257d8c30f69aa91ef41f',1,'Group']]],
-  ['sendmiraicode_479',['SendMiraiCode',['../class_friend.html#af9a80b1d0cc93c166dea7dd08cb516c9',1,'Friend::SendMiraiCode(MiraiCodeable *msg)'],['../class_friend.html#aa09d60a4befb6901d1f4ee2c1a3e43bf',1,'Friend::SendMiraiCode(MiraiCode msg)'],['../class_friend.html#a2f376e17df7c86cb0366d94abf932a3d',1,'Friend::SendMiraiCode(std::string msg, JNIEnv *=manager-&gt;getEnv())'],['../class_member.html#a7b4b9cbf9705a28f41fcb96164b149a9',1,'Member::SendMiraiCode(MiraiCodeable *msg)'],['../class_member.html#a2a614ae3a22349a9a957549385c4b785',1,'Member::SendMiraiCode(MiraiCode msg)'],['../class_member.html#af9970405f6e4f3861ca8d03bf45846e7',1,'Member::SendMiraiCode(std::string msg, JNIEnv *=manager-&gt;getEnv())'],['../class_group.html#ade4058f1885105d85991de006b3cbb00',1,'Group::SendMiraiCode(MiraiCodeable *msg)'],['../class_group.html#ad45e5571cccf2e7e4ad0476bae120a19',1,'Group::SendMiraiCode(MiraiCode msg)'],['../class_group.html#a7322d8f63002ef4939d3a71c3f9d0f97',1,'Group::SendMiraiCode(std::string msg, JNIEnv *=manager-&gt;getEnv())']]],
-  ['sendmsg_480',['SendMsg',['../class_friend.html#a0f32b2c4784f164847c69c6908d5ffc7',1,'Friend::SendMsg()'],['../class_member.html#a20b2f9a17d4e2e4f07dbb707f95177e3',1,'Member::SendMsg()'],['../class_group.html#a32ec58c091a30f8113ca941e800882f3',1,'Group::SendMsg()']]],
-  ['sendto_481',['sendTo',['../class_forward_message.html#a3dccf0e2db76db7767507a1e71e9b788',1,'ForwardMessage']]],
-  ['serialization_482',['serialization',['../class_contact.html#a6739337b623df49bc51e2fc997bfd6e8',1,'Contact']]],
-  ['serializationtostring_483',['serializationToString',['../class_contact.html#a190dd1c2ecfccf67edc3d2b1cff87835',1,'Contact']]],
-  ['serializetostring_484',['serializeToString',['../class_message_source.html#a4989eaf784cda998f2a3f46bcf9426d9',1,'MessageSource::serializeToString()'],['../class_remote_file.html#a971914cc9e832e785ec9667761bb49a2',1,'RemoteFile::serializeToString()']]],
-  ['setenv_485',['setEnv',['../classthread_manager.html#af9c06705302ca26890977cd3a2054d3e',1,'threadManager']]],
-  ['sethandlestate_486',['setHandleState',['../class_logger.html#ae5ec9c28bca82dcb1b0a48b8160e5653',1,'Logger']]],
-  ['setmuteall_487',['setMuteAll',['../class_group.html#aea89cadb40851cf802bae949284b603e',1,'Group']]],
-  ['setscheduling_488',['SetScheduling',['../tools_8h.html#a8462ee5c3b259475b08a041a1d4397c6',1,'tools.h']]],
-  ['stop_489',['stop',['../class_event_1_1_node_handle.html#ae038c558c5da4aaa60e4bf5abf8dd572',1,'Event::NodeHandle']]],
-  ['str2jstring_490',['str2jstring',['../class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc',1,'Tools']]],
-  ['stringtovector_491',['StringToVector',['../class_tools.html#a7c61d205bdc3f53c96417b26f262da94',1,'Tools']]]
+  ['raise_464',['raise',['../class_mirai_c_p_exception.html#a6bf4207dc82e7410e136e352176a5ec9',1,'MiraiCPException::raise()'],['../class_init_exception.html#affb7debf7372181e6ccc30023c9ab623',1,'InitException::raise()'],['../class_upload_exception.html#a2717697bd3a12fc76040131fe0780bdb',1,'UploadException::raise()'],['../class_a_p_i_exception.html#a4daa184b72e7fc0630868f7bd257a75c',1,'APIException::raise()'],['../class_bot_exception.html#aaabca37352497f92063a899480a116dc',1,'BotException::raise()'],['../class_mute_exception.html#af109372d76aede1d7db4a87001a75c68',1,'MuteException::raise()'],['../class_member_exception.html#a904e9a32da679e8b54afb8503133542e',1,'MemberException::raise()'],['../class_friend_exception.html#a1d7505c9809a40b45875351727e05d35',1,'FriendException::raise()'],['../class_group_exception.html#a1075132ff00a9f7226822a079832adfa',1,'GroupException::raise()']]],
+  ['recall_465',['recall',['../class_message_source.html#a5a90d563a930cd5e8c8b471954bab509',1,'MessageSource']]],
+  ['recallevent_466',['RecallEvent',['../class_recall_event.html#a6b5b2940bdfd72fcb3042d42354f83d6',1,'RecallEvent']]],
+  ['recallexception_467',['RecallException',['../class_recall_exception.html#a81c89de96b24d756808cd45dc46d2b3c',1,'RecallException']]],
+  ['refreshinfo_468',['refreshInfo',['../class_bot.html#a3354dc4fbf569d19e11ac04ac8bf0b01',1,'Bot']]],
+  ['registerevent_469',['registerEvent',['../class_event.html#ad3d76f3c8bd243c17a82a24c5bd135c0',1,'Event']]],
+  ['registerhandle_470',['registerHandle',['../class_logger.html#aae91535858f620e4f5f1938683d601d5',1,'Logger']]],
+  ['reject_471',['reject',['../class_group_invite_event.html#af85780c24f7212c9cc50b9d83ef55594',1,'GroupInviteEvent::reject(std::string source)'],['../class_group_invite_event.html#a37bc0ddb350abb31cbebc6126ea9b5d9',1,'GroupInviteEvent::reject()'],['../class_new_friend_request_event.html#ac43dae75ba441bbc690f6c25d7c3ecfc',1,'NewFriendRequestEvent::reject(std::string source)'],['../class_new_friend_request_event.html#a30ef44b5b9eccb9fc93bd1c40a16ca4b',1,'NewFriendRequestEvent::reject()']]],
+  ['remotefile_472',['RemoteFile',['../class_remote_file.html#a2a606d3e0fddf6251ded708a089dfdb5',1,'RemoteFile']]],
+  ['remotefileexception_473',['RemoteFileException',['../class_remote_file_exception.html#af5f2ce55af609a9b6b16b43529900790',1,'RemoteFileException']]],
+  ['replace_474',['replace',['../class_tools.html#a73a5bbcbdd583d014bf3f8e5db3a89eb',1,'Tools']]],
+  ['returnnull_475',['returnNull',['../pch_8cpp.html#abc6b375fa85c1b0aba1555d12c2df685',1,'pch.cpp']]]
 ];

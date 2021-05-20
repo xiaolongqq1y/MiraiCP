@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['newenv_450',['newEnv',['../classthread_manager.html#a8210ba94ee5c9bfe1318319500576c85',1,'threadManager']]],
-  ['newfriendrequestevent_451',['NewFriendRequestEvent',['../class_new_friend_request_event.html#a476e7a5b53d9fe96435354cc8f59c361',1,'NewFriendRequestEvent']]],
-  ['nick_452',['nick',['../class_bot.html#af1538b49ce58759e210c41c402ff6680',1,'Bot']]],
-  ['nickornamecard_453',['nickOrNameCard',['../class_contact.html#a3f78c5f66d0b71ad06267c6a3b492066',1,'Contact']]],
-  ['node_454',['Node',['../class_event_1_1_node.html#a1dcde1d47b72d6876bc05e103cc70573',1,'Event::Node']]],
-  ['nodehandle_455',['NodeHandle',['../class_event_1_1_node_handle.html#adb9d3b16afc698f81ef8e4b32491c9de',1,'Event::NodeHandle']]]
+  ['member_442',['Member',['../class_member.html#a1313aa1274273237f2dbfaa053a9d23e',1,'Member::Member(unsigned long long qqid, unsigned long long groupid, unsigned long long botid, JNIEnv *=manager-&gt;getEnv())'],['../class_member.html#a51e0e2424f6662912d44fbdb6b18c83a',1,'Member::Member(Contact c)']]],
+  ['memberexception_443',['MemberException',['../class_member_exception.html#ae3cc6e7ffd32c9e608862a65b52baa32',1,'MemberException']]],
+  ['memberjoinevent_444',['MemberJoinEvent',['../class_member_join_event.html#ad536c8db11e375d702476aa113a19cc1',1,'MemberJoinEvent']]],
+  ['memberleaveevent_445',['MemberLeaveEvent',['../class_member_leave_event.html#ac714a3add4ac210728a26acd8bdf6f00',1,'MemberLeaveEvent']]],
+  ['memberlisttostring_446',['MemberListToString',['../class_group.html#ac89491904da04e7ac2958d8a1ff05e5d',1,'Group']]],
+  ['messagesource_447',['MessageSource',['../class_message_source.html#a19d28a14e61cc59cf8c4ff874d9cf6de',1,'MessageSource::MessageSource()'],['../class_message_source.html#ad03054a89dc3fc0ad539cceb398887a3',1,'MessageSource::MessageSource(const std::string &amp;ids, const std::string &amp;internalids, const std::string &amp;source)']]],
+  ['miraicode_448',['MiraiCode',['../class_mirai_code.html#a03a0bc66a6fa10cda5b195047e2496a7',1,'MiraiCode::MiraiCode(MiraiCodeable *a)'],['../class_mirai_code.html#a1947977cd8641057d61a7094263809a1',1,'MiraiCode::MiraiCode(std::string a)']]],
+  ['mute_449',['Mute',['../class_member.html#a58a543e956ab5c1d77f29a2c15e675cb',1,'Member']]],
+  ['muteexception_450',['MuteException',['../class_mute_exception.html#a03929d5b76e5a8f7055df6587844f66d',1,'MuteException']]]
 ];

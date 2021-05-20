@@ -51,17 +51,18 @@ var hierarchy =
       [ "LightApp", "class_light_app.html", null ],
       [ "RemoteFile", "class_remote_file.html", null ]
     ] ],
-    [ "Event::Node", "class_event_1_1_node.html", [
-      [ "Event::BJNode", "class_event_1_1_b_j_node.html", null ],
-      [ "Event::GINode", "class_event_1_1_g_i_node.html", null ],
-      [ "Event::GMENode", "class_event_1_1_g_m_e_node.html", null ],
-      [ "Event::GTMENode", "class_event_1_1_g_t_m_e_node.html", null ],
-      [ "Event::MJNode", "class_event_1_1_m_j_node.html", null ],
-      [ "Event::MLNode", "class_event_1_1_m_l_node.html", null ],
-      [ "Event::NFRENode", "class_event_1_1_n_f_r_e_node.html", null ],
-      [ "Event::PMENode", "class_event_1_1_p_m_e_node.html", null ],
-      [ "Event::RNode", "class_event_1_1_r_node.html", null ],
-      [ "Event::SNode", "class_event_1_1_s_node.html", null ]
+    [ "Event::Node0", "class_event_1_1_node0.html", [
+      [ "Event::Node< MemberLeaveEvent >", "class_event_1_1_node.html", null ],
+      [ "Event::Node< PrivateMessageEvent >", "class_event_1_1_node.html", null ],
+      [ "Event::Node< RecallEvent >", "class_event_1_1_node.html", null ],
+      [ "Event::Node< GroupInviteEvent >", "class_event_1_1_node.html", null ],
+      [ "Event::Node< NewFriendRequestEvent >", "class_event_1_1_node.html", null ],
+      [ "Event::Node< MemberJoinEvent >", "class_event_1_1_node.html", null ],
+      [ "Event::Node< GroupTempMessageEvent >", "class_event_1_1_node.html", null ],
+      [ "Event::Node< GroupMessageEvent >", "class_event_1_1_node.html", null ],
+      [ "Event::Node< BotJoinGroupEvent >", "class_event_1_1_node.html", null ],
+      [ "Event::Node< SchedulingEvent >", "class_event_1_1_node.html", null ],
+      [ "Event::Node< T >", "class_event_1_1_node.html", null ]
     ] ],
     [ "Event::NodeHandle", "class_event_1_1_node_handle.html", null ],
     [ "SchedulingEvent", "class_scheduling_event.html", null ],

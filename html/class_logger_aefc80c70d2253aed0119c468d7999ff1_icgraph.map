@@ -1,52 +1,52 @@
 <map id="Logger::Warning" name="Logger::Warning">
-<area shape="rect" id="node1" title="发送警告(warning级日志)" alt="" coords="1195,701,1312,728"/>
-<area shape="rect" id="node2" href="$class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="1028,1081,1147,1108"/>
-<area shape="rect" id="node45" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="1028,701,1147,728"/>
-<area shape="rect" id="node3" href="$class_group_invite_event.html#a8baf6dc678651bd959477dcd87b86df2" title=" " alt="" coords="352,557,517,584"/>
-<area shape="rect" id="node4" href="$class_new_friend_request_event.html#a2adcb8c617896fc0eaf799f4bacaf0f0" title="接受好友申请" alt="" coords="353,238,516,279"/>
-<area shape="rect" id="node7" href="$class_group.html#a4eadbc1ff13345e65c326bc31ab51a30" title=" " alt="" coords="837,1056,941,1083"/>
-<area shape="rect" id="node8" href="$class_group.html#a46cd7c2b83738574ceb528de83817b54" title=" " alt="" coords="809,853,968,880"/>
-<area shape="rect" id="node10" href="$class_bot.html#a6584044628bd3754e52d1dac2cebe789" title="取好友列表" alt="" coords="826,1664,951,1691"/>
-<area shape="rect" id="node12" href="$class_bot.html#acda3c7f35156966087c8f55340f9b48f" title="取群列表" alt="" coords="827,1613,951,1640"/>
-<area shape="rect" id="node14" href="$class_low_level_a_p_i.html#ad285de08b2fb584b482db3e0144c1196" title="取该联系人的一些信息" alt="" coords="797,904,980,931"/>
-<area shape="rect" id="node18" href="$class_group.html#a918ea0138d912c7d39b3ba95c4c3bf50" title="取群成员列表&#45;vector&lt;long&gt;" alt="" coords="813,1107,964,1133"/>
-<area shape="rect" id="node20" href="$class_group.html#add1e65680741fd67e842bd55d619f871" title="取群主" alt="" coords="829,1259,949,1285"/>
-<area shape="rect" id="node21" href="$class_member.html#a37b4986d11cd5c950d92dbc5d9296684" title=" " alt="" coords="809,1005,969,1032"/>
-<area shape="rect" id="node22" href="$pch_8cpp.html#a5a6a6a055d2edb20a003b0e706b36538" title=" " alt="" coords="349,357,520,398"/>
-<area shape="rect" id="node23" href="$class_member.html#ae23c4a4ff625eb0c29f27a0c66a76aee" title=" " alt="" coords="837,1309,940,1336"/>
-<area shape="rect" id="node24" href="$class_member.html#a58a543e956ab5c1d77f29a2c15e675cb" title=" " alt="" coords="835,600,942,627"/>
-<area shape="rect" id="node25" href="$class_image.html#a33f8850fcab39bb5ca332a04400c8d50" title=" " alt="" coords="827,651,950,677"/>
-<area shape="rect" id="node26" href="$class_message_source.html#a5a90d563a930cd5e8c8b471954bab509" title=" " alt="" coords="811,701,966,728"/>
-<area shape="rect" id="node27" href="$class_bot.html#a3354dc4fbf569d19e11ac04ac8bf0b01" title="刷新bot信息" alt="" coords="834,1208,943,1235"/>
-<area shape="rect" id="node29" href="$class_group_invite_event.html#af85780c24f7212c9cc50b9d83ef55594" title=" " alt="" coords="355,440,514,467"/>
-<area shape="rect" id="node30" href="$class_new_friend_request_event.html#ac43dae75ba441bbc690f6c25d7c3ecfc" title="拒绝好友申请" alt="" coords="353,491,516,533"/>
-<area shape="rect" id="node31" href="$class_low_level_a_p_i.html#ac6e830ba53c3477de726793a26357256" title="抽象封装底层发送信息接口" alt="" coords="819,1157,958,1184"/>
-<area shape="rect" id="node38" href="$class_group.html#a5c6be84a0330257d8c30f69aa91ef41f" title=" " alt="" coords="831,752,946,779"/>
-<area shape="rect" id="node39" href="$class_forward_message.html#a3dccf0e2db76db7767507a1e71e9b788" title="发送给群或好友或群成员" alt="" coords="803,803,974,829"/>
-<area shape="rect" id="node40" href="$class_group.html#aea89cadb40851cf802bae949284b603e" title=" " alt="" coords="825,955,952,981"/>
-<area shape="rect" id="node41" href="$class_low_level_a_p_i.html#a34e8b356a0298a68876c21b64373d5af" title="上传图片" alt="" coords="804,245,973,272"/>
-<area shape="rect" id="node5" href="$_procession_8cpp.html#af6b40412027c7beb9eb51bbfed51aff6" title=" " alt="" coords="225,245,301,272"/>
-<area shape="rect" id="node6" href="$pch_8cpp.html#a86032e8c2d72757b8da2e5b19ca5756b" title=" " alt="" coords="5,111,177,153"/>
-<area shape="rect" id="node9" href="$class_group.html#a0a6a2139b33f4a67d0ec1da7a8c50960" title=" " alt="" coords="596,752,721,779"/>
-<area shape="rect" id="node11" href="$class_bot.html#a2734db2add77775b1b8ec5b66b749d74" title="好友列表string形式返回，利于保存" alt="" coords="581,1664,736,1691"/>
-<area shape="rect" id="node13" href="$class_bot.html#add67cc5d276fd34f57406dbe1043394b" title="群列表string形式返回，利于保存" alt="" coords="581,1613,736,1640"/>
-<area shape="rect" id="node15" href="$class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73" title="构建好友对象" alt="" coords="607,853,710,880"/>
-<area shape="rect" id="node16" href="$class_group.html#add4d15440d039be09abf8f8fc316dc8c" title=" " alt="" coords="609,803,709,829"/>
-<area shape="rect" id="node17" href="$class_member.html#a1313aa1274273237f2dbfaa053a9d23e" title=" " alt="" coords="597,904,721,931"/>
-<area shape="rect" id="node19" href="$class_group.html#ac89491904da04e7ac2958d8a1ff05e5d" title=" " alt="" coords="568,955,749,981"/>
-<area shape="rect" id="node28" href="$class_bot.html#a0d6809b54d75c621eb3cc7022943fd3e" title=" " alt="" coords="616,1309,701,1336"/>
-<area shape="rect" id="node32" href="$class_friend.html#a2f376e17df7c86cb0366d94abf932a3d" title="发送miraicode" alt="" coords="581,1208,736,1235"/>
-<area shape="rect" id="node33" href="$class_member.html#af9970405f6e4f3861ca8d03bf45846e7" title="发送miraicode" alt="" coords="576,1056,741,1083"/>
-<area shape="rect" id="node34" href="$class_group.html#a7322d8f63002ef4939d3a71c3f9d0f97" title="发送MiraiCode信息" alt="" coords="582,1107,735,1133"/>
-<area shape="rect" id="node35" href="$class_friend.html#a0f32b2c4784f164847c69c6908d5ffc7" title="发送纯文本信息" alt="" coords="374,757,495,784"/>
-<area shape="rect" id="node36" href="$class_member.html#a20b2f9a17d4e2e4f07dbb707f95177e3" title="发送文本信息，不进行miraicode解析" alt="" coords="593,1157,725,1184"/>
-<area shape="rect" id="node37" href="$class_group.html#a32ec58c091a30f8113ca941e800882f3" title="发送信息" alt="" coords="375,1108,495,1135"/>
-<area shape="rect" id="node42" href="$class_friend.html#ac271985962999f208d7d3f4b24572ef7" title="上传本地图片，务必要用绝对路径. 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到好友. 最大支持图片大小为30MB." alt="" coords="372,181,497,208"/>
-<area shape="rect" id="node43" href="$class_member.html#aba78f8099187033776154e6a3e60b881" title="上传本地图片，务必要用绝对路径 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到群" alt="" coords="591,296,727,323"/>
-<area shape="rect" id="node44" href="$class_group.html#a5d5ee1411e024a25c3576daf019f99f5" title="上传本地图片，务必要用绝对路径 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到群" alt="" coords="373,109,497,136"/>
-<area shape="rect" id="node46" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="842,144,935,171"/>
-<area shape="rect" id="node49" href="$pch_8cpp.html#abc6b375fa85c1b0aba1555d12c2df685" title=" " alt="" coords="620,397,697,424"/>
-<area shape="rect" id="node50" href="$tools_8h.html#a8462ee5c3b259475b08a041a1d4397c6" title=" " alt="" coords="835,195,942,221"/>
-<area shape="rect" id="node47" href="$class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="610,245,707,272"/>
-<area shape="rect" id="node48" href="$class_logger.html#a13e1837413a7cdecd8ea11909f1842be" title="发送普通(info级日志)" alt="" coords="390,48,479,75"/>
+<area shape="rect" id="node1" title="发送警告(warning级日志)" alt="" coords="851,647,968,673"/>
+<area shape="rect" id="node2" href="$class_tools.html#aabf8a80dcd00513cb7516e8251109313" title=" " alt="" coords="684,1027,803,1053"/>
+<area shape="rect" id="node44" href="$class_tools.html#ae0606aeddaa91c91435ec3a4e3a0d0dc" title=" " alt="" coords="684,647,803,673"/>
+<area shape="rect" id="node3" href="$class_group_invite_event.html#a8baf6dc678651bd959477dcd87b86df2" title=" " alt="" coords="8,465,173,492"/>
+<area shape="rect" id="node4" href="$class_new_friend_request_event.html#a2adcb8c617896fc0eaf799f4bacaf0f0" title="接受好友申请" alt="" coords="9,263,172,305"/>
+<area shape="rect" id="node5" href="$class_group.html#a4eadbc1ff13345e65c326bc31ab51a30" title=" " alt="" coords="493,1052,597,1079"/>
+<area shape="rect" id="node6" href="$class_group.html#a46cd7c2b83738574ceb528de83817b54" title=" " alt="" coords="465,697,624,724"/>
+<area shape="rect" id="node8" href="$class_bot.html#a6584044628bd3754e52d1dac2cebe789" title="取好友列表" alt="" coords="482,1559,607,1585"/>
+<area shape="rect" id="node10" href="$class_bot.html#acda3c7f35156966087c8f55340f9b48f" title="取群列表" alt="" coords="483,1508,607,1535"/>
+<area shape="rect" id="node12" href="$class_low_level_a_p_i.html#ad285de08b2fb584b482db3e0144c1196" title="取该联系人的一些信息" alt="" coords="453,799,636,825"/>
+<area shape="rect" id="node16" href="$class_group.html#a918ea0138d912c7d39b3ba95c4c3bf50" title="取群成员列表&#45;vector&lt;long&gt;" alt="" coords="469,951,620,977"/>
+<area shape="rect" id="node18" href="$class_group.html#add1e65680741fd67e842bd55d619f871" title="取群主" alt="" coords="485,545,605,572"/>
+<area shape="rect" id="node19" href="$class_member.html#a37b4986d11cd5c950d92dbc5d9296684" title=" " alt="" coords="465,748,625,775"/>
+<area shape="rect" id="node20" href="$pch_8cpp.html#a5a6a6a055d2edb20a003b0e706b36538" title=" " alt="" coords="5,95,176,137"/>
+<area shape="rect" id="node21" href="$class_member.html#ae23c4a4ff625eb0c29f27a0c66a76aee" title=" " alt="" coords="493,1153,596,1180"/>
+<area shape="rect" id="node22" href="$class_member.html#a58a543e956ab5c1d77f29a2c15e675cb" title=" " alt="" coords="491,1204,598,1231"/>
+<area shape="rect" id="node23" href="$class_image.html#a33f8850fcab39bb5ca332a04400c8d50" title=" " alt="" coords="483,495,606,521"/>
+<area shape="rect" id="node24" href="$class_message_source.html#a5a90d563a930cd5e8c8b471954bab509" title=" " alt="" coords="467,849,622,876"/>
+<area shape="rect" id="node25" href="$class_bot.html#a3354dc4fbf569d19e11ac04ac8bf0b01" title="刷新bot信息" alt="" coords="490,1356,599,1383"/>
+<area shape="rect" id="node28" href="$class_group_invite_event.html#af85780c24f7212c9cc50b9d83ef55594" title=" " alt="" coords="11,329,170,356"/>
+<area shape="rect" id="node29" href="$class_new_friend_request_event.html#ac43dae75ba441bbc690f6c25d7c3ecfc" title="拒绝好友申请" alt="" coords="9,399,172,441"/>
+<area shape="rect" id="node30" href="$class_low_level_a_p_i.html#ac6e830ba53c3477de726793a26357256" title="抽象封装底层发送信息接口" alt="" coords="475,647,614,673"/>
+<area shape="rect" id="node37" href="$class_group.html#a5c6be84a0330257d8c30f69aa91ef41f" title=" " alt="" coords="487,900,602,927"/>
+<area shape="rect" id="node38" href="$class_forward_message.html#a3dccf0e2db76db7767507a1e71e9b788" title="发送给群或好友或群成员" alt="" coords="459,1001,630,1028"/>
+<area shape="rect" id="node39" href="$class_group.html#aea89cadb40851cf802bae949284b603e" title=" " alt="" coords="481,1103,608,1129"/>
+<area shape="rect" id="node40" href="$class_low_level_a_p_i.html#a34e8b356a0298a68876c21b64373d5af" title="上传图片" alt="" coords="460,596,629,623"/>
+<area shape="rect" id="node7" href="$class_group.html#a0a6a2139b33f4a67d0ec1da7a8c50960" title=" " alt="" coords="252,867,377,893"/>
+<area shape="rect" id="node9" href="$class_bot.html#a2734db2add77775b1b8ec5b66b749d74" title="好友列表string形式返回，利于保存" alt="" coords="237,1559,392,1585"/>
+<area shape="rect" id="node11" href="$class_bot.html#add67cc5d276fd34f57406dbe1043394b" title="群列表string形式返回，利于保存" alt="" coords="237,1508,392,1535"/>
+<area shape="rect" id="node13" href="$class_friend.html#a24d5d1e22b735f5f78ac30da904bbc73" title="构建好友对象" alt="" coords="263,968,366,995"/>
+<area shape="rect" id="node14" href="$class_group.html#add4d15440d039be09abf8f8fc316dc8c" title=" " alt="" coords="265,1019,365,1045"/>
+<area shape="rect" id="node15" href="$class_member.html#a1313aa1274273237f2dbfaa053a9d23e" title=" " alt="" coords="253,917,377,944"/>
+<area shape="rect" id="node17" href="$class_group.html#ac89491904da04e7ac2958d8a1ff05e5d" title=" " alt="" coords="224,1069,405,1096"/>
+<area shape="rect" id="node26" href="$class_bot.html#a0d6809b54d75c621eb3cc7022943fd3e" title=" " alt="" coords="272,1407,357,1433"/>
+<area shape="rect" id="node27" href="$class_bot.html#a94279cd991ebd5665e67246ff7563af0" title="头像下载链接" alt="" coords="41,1407,141,1433"/>
+<area shape="rect" id="node31" href="$class_friend.html#a2f376e17df7c86cb0366d94abf932a3d" title="发送miraicode" alt="" coords="237,563,392,589"/>
+<area shape="rect" id="node32" href="$class_member.html#af9970405f6e4f3861ca8d03bf45846e7" title="发送miraicode" alt="" coords="232,613,397,640"/>
+<area shape="rect" id="node33" href="$class_group.html#a7322d8f63002ef4939d3a71c3f9d0f97" title="发送MiraiCode信息" alt="" coords="238,664,391,691"/>
+<area shape="rect" id="node34" href="$class_friend.html#a0f32b2c4784f164847c69c6908d5ffc7" title="发送纯文本信息" alt="" coords="254,715,375,741"/>
+<area shape="rect" id="node35" href="$class_member.html#a20b2f9a17d4e2e4f07dbb707f95177e3" title="发送文本信息，不进行miraicode解析" alt="" coords="249,765,381,792"/>
+<area shape="rect" id="node36" href="$class_group.html#a32ec58c091a30f8113ca941e800882f3" title="发送信息" alt="" coords="255,816,375,843"/>
+<area shape="rect" id="node41" href="$class_friend.html#ac271985962999f208d7d3f4b24572ef7" title="上传本地图片，务必要用绝对路径. 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到好友. 最大支持图片大小为30MB." alt="" coords="28,161,153,188"/>
+<area shape="rect" id="node42" href="$class_member.html#aba78f8099187033776154e6a3e60b881" title="上传本地图片，务必要用绝对路径 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到群" alt="" coords="247,512,383,539"/>
+<area shape="rect" id="node43" href="$class_group.html#a5d5ee1411e024a25c3576daf019f99f5" title="上传本地图片，务必要用绝对路径 由于mirai要区分图片发送对象，所以使用本函数上传的图片只能发到群" alt="" coords="29,212,153,239"/>
+<area shape="rect" id="node45" href="$pch_8cpp.html#a86032e8c2d72757b8da2e5b19ca5756b" title=" " alt="" coords="459,209,631,250"/>
+<area shape="rect" id="node46" href="$class_logger.html#a623dbe79c347ea0d063f5d6b900c5bc2" title="日志底层实现封装" alt="" coords="498,5,591,32"/>
+<area shape="rect" id="node49" href="$pch_8cpp.html#abc6b375fa85c1b0aba1555d12c2df685" title=" " alt="" coords="276,56,353,83"/>
+<area shape="rect" id="node50" href="$tools_8h.html#a8462ee5c3b259475b08a041a1d4397c6" title=" " alt="" coords="491,157,598,184"/>
+<area shape="rect" id="node47" href="$class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="266,157,363,184"/>
+<area shape="rect" id="node48" href="$class_logger.html#a13e1837413a7cdecd8ea11909f1842be" title="发送普通(info级日志)" alt="" coords="270,5,359,32"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="Java_tech_eritquearcus_miraicp_CPP_1lib_Event" name="Java_tech_eritquearcus_miraicp_CPP_1lib_Event">
 <area shape="rect" id="node1" title=" " alt="" coords="5,225,176,266"/>
-<area shape="rect" id="node2" href="$class_event.html#a2e51d104dd14766942e6e126b9086466" title=" " alt="" coords="258,5,377,32"/>
+<area shape="rect" id="node2" href="$class_event.html#a29fb8c1219447ae57de8f4637ba25e11" title=" " alt="" coords="258,5,377,32"/>
 <area shape="rect" id="node3" href="$class_contact.html#aafc428cdb4c1920864bf747ad7dce9f2" title="从json节点反序列化" alt="" coords="238,57,397,98"/>
 <area shape="rect" id="node5" href="$class_message_source.html#a593939fc75a52d99f210da0482a85443" title="从json字符串反序列化到MessageSource对象" alt="" coords="224,225,411,266"/>
 <area shape="rect" id="node6" href="$class_logger.html#abb690146dbd2c6fb7e603caf123096dd" title="发送错误(error级日志)" alt="" coords="519,177,617,204"/>

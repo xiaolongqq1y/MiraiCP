@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['kick_438',['Kick',['../class_member.html#ae23c4a4ff625eb0c29f27a0c66a76aee',1,'Member']]]
+  ['java_5ftech_5feritquearcus_5fmiraicp_5fcpp_5f1lib_5fevent_434',['Java_tech_eritquearcus_miraicp_CPP_1lib_Event',['../pch_8cpp.html#a5a6a6a055d2edb20a003b0e706b36538',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Event(JNIEnv *env, jobject, jstring content):&#160;pch.cpp'],['../tech__eritquearcus__miraicp___c_p_p__lib_8h.html#aff944d20fe212190127653753b17f6c2',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Event(JNIEnv *, jobject, jstring):&#160;pch.cpp']]],
+  ['java_5ftech_5feritquearcus_5fmiraicp_5fcpp_5f1lib_5fplugindisable_435',['Java_tech_eritquearcus_miraicp_CPP_1lib_PluginDisable',['../pch_8cpp.html#a26eb81fca96393265b287bbe4bf3ade8',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_PluginDisable(JNIEnv *env, jobject job):&#160;pch.cpp'],['../tech__eritquearcus__miraicp___c_p_p__lib_8h.html#a4180c7b053eaedae4d46b65b1540bb6e',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_PluginDisable(JNIEnv *, jobject):&#160;pch.cpp']]],
+  ['java_5ftech_5feritquearcus_5fmiraicp_5fcpp_5f1lib_5fverify_436',['Java_tech_eritquearcus_miraicp_CPP_1lib_Verify',['../pch_8cpp.html#a86032e8c2d72757b8da2e5b19ca5756b',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Verify(JNIEnv *env, jobject):&#160;pch.cpp'],['../tech__eritquearcus__miraicp___c_p_p__lib_8h.html#a1fb4e6271aaa1d968b8199dcd00dbb45',1,'Java_tech_eritquearcus_miraicp_CPP_1lib_Verify(JNIEnv *, jobject):&#160;pch.cpp']]],
+  ['jlongtostring_437',['JLongToString',['../class_tools.html#adcb84f7e2d172133f56b3ec8c84a40fc',1,'Tools']]],
+  ['jstring2str_438',['jstring2str',['../class_tools.html#aabf8a80dcd00513cb7516e8251109313',1,'Tools']]]
 ];
